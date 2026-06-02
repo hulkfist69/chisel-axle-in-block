@@ -1,4 +1,4 @@
-# Axle Chisel
+# Chisel Encased Axles
 
 [![Release](https://img.shields.io/github/v/release/hulkfist69/chisel-axle-in-block?sort=semver)](https://github.com/hulkfist69/chisel-axle-in-block/releases)
 [![License](https://img.shields.io/github/license/hulkfist69/chisel-axle-in-block)](LICENSE)

@@ -1,4 +1,4 @@
-# Axle Chisel — Mod DB page copy
+# Chisel Encased Axles — Mod DB page copy
 
 Paste-ready text for the mods.vintagestory.at page. Two versions: a short
 summary for the top blurb, and the full description.
@@ -14,8 +14,8 @@ the mechanical network.
 
 ## Full description
 
-**Axle Chisel** finally lets the chisel and the mechanical power network play
-nice together.
+**Chisel Encased Axles** finally lets the chisel and the mechanical power network
+play nice together.
 
 Vintage Story already lets you hide an axle inside a building block (wrench in
 the offhand, block in your main hand, right-click the axle). But the moment you
