@@ -1,172 +1,110 @@
-﻿client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] starting v0.1.1 b6b5c13 side=Client
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] PatchAll succeeded
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] ===== discovery dump begin =====
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] -- pass 1: exact-name probes --
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BlockAxle  [in VSSurvivalMod]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: BlockMPBase -> BlockGeneric -> Block -> CollectibleObject -> RegistryObject -> Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type NOT FOUND: Vintagestory.GameContent.Mechanics.BlockEntityAxle
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle  [in VSSurvivalMod]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: BEBehaviorMPBase -> BlockEntityBehavior -> Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field center : Vec3f
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field orients : BlockFacing[]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field capi : ICoreClientAPI
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field orientations : String
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field axleStandLocWest : AssetLocation
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field axleStandLocEast : AssetLocation
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field axleshape : CompositeShape
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   prop  AddStands : Boolean
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type NOT FOUND: Vintagestory.GameContent.Mechanics.BlockMechBase
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockMicroBlock  [in VSSurvivalMod]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: Block -> CollectibleObject -> RegistryObject -> Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field IsSnowCovered : Boolean
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field capi : ICoreClientAPI
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field snowLayerBlockId : Int32
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field MBSounds : ThreadLocal`1
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockEntityMicroBlock  [in VSSurvivalMod]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: BlockEntity -> Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field VoxelCuboids : List`1
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field originalCuboids : UInt32[]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field BlockIds : Int32[]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field DecorIds : Int32[]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field DecorRotations : Int32
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field BlockIdsRotated : Int32[]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field DecorIdsRotated : Int32[]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field rotated : Int32
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field Mesh : MeshData
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field selectionBoxesMetaMode : Cuboidf[]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field selectionBoxesStd : Cuboidf[]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field selectionBoxesVoxels : Cuboidf[]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field prevSize : Int32
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field <BlockName>k__BackingField : String
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field emitSideAo : Int32
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field absorbAnyLight : Boolean
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field sidecenterSolid : SmallBoolArray
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field sideAlmostSolid : SmallBoolArray
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field rotationY : Int16
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field sizeRel : Single
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field totalVoxels : Int32
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   field withColorMapData : Boolean
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   prop  OriginalVoxelCuboids : UInt32[]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   prop  MaterialIds : Int32[]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   prop  BlockName : String
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   prop  VolumeRel : Single
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] -- pass 2: substring scan (Axle / MicroBlock) --
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: System.Xml.Schema.XmlSchemaMaxLengthFacet  [in System.Private.Xml]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: XmlSchemaNumericFacet -> XmlSchemaFacet -> XmlSchemaAnnotated -> XmlSchemaObject -> Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: OpenTK.Graphics.ES30.AppleTextureMaxLevel  [in OpenTK.Graphics]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: Enum -> ValueType -> Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: OpenTK.Graphics.ES20.AppleTextureMaxLevel  [in OpenTK.Graphics]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: Enum -> ValueType -> Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: OpenTK.Graphics.ES11.AppleTextureMaxLevel  [in OpenTK.Graphics]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: Enum -> ValueType -> Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: chisel.src.BELockedMicroblock  [in chiseltools]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: BlockEntityChisel -> BlockEntityMicroBlock -> BlockEntity -> Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: Vintagestory.ServerMods.MicroblockCommands  [in VSSurvivalMod]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: Vintagestory.ServerMods.MicroblockTool  [in VSSurvivalMod]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: PaintBrushTool -> ToolBase -> Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: Vintagestory.GameContent.BEBehaviorMicroblockSnowCover  [in VSSurvivalMod]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: BlockEntityBehavior -> Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockEntityMicroBlock  [in VSSurvivalMod]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: BlockEntity -> Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: Vintagestory.GameContent.MicroBlockSounds  [in VSSurvivalMod]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: BlockSounds -> Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockMicroBlock  [in VSSurvivalMod]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: Block -> CollectibleObject -> RegistryObject -> Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: Vintagestory.GameContent.IMicroblockBehavior  [in VSSurvivalMod]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: (none)
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: Vintagestory.GameContent.MicroBlockModelCache  [in VSSurvivalMod]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: ModSystem -> Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle  [in VSSurvivalMod]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: BEBehaviorMPBase -> BlockEntityBehavior -> Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BlockAxle  [in VSSurvivalMod]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: BlockMPBase -> BlockGeneric -> Block -> CollectibleObject -> RegistryObject -> Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] type found: AxleChisel.AxleChiselModSystem  [in AxleChisel]
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel]   extends: ModSystem -> Object
-client-main.log: 1.6.2026 20:57:49 [Notification] [axlechisel] ===== discovery dump end =====
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] starting v0.1.1 b6b5c13 side=Server
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] PatchAll succeeded
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] ===== discovery dump begin =====
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] -- pass 1: exact-name probes --
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BlockAxle  [in VSSurvivalMod]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: BlockMPBase -> BlockGeneric -> Block -> CollectibleObject -> RegistryObject -> Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type NOT FOUND: Vintagestory.GameContent.Mechanics.BlockEntityAxle
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle  [in VSSurvivalMod]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: BEBehaviorMPBase -> BlockEntityBehavior -> Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field center : Vec3f
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field orients : BlockFacing[]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field capi : ICoreClientAPI
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field orientations : String
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field axleStandLocWest : AssetLocation
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field axleStandLocEast : AssetLocation
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field axleshape : CompositeShape
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   prop  AddStands : Boolean
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type NOT FOUND: Vintagestory.GameContent.Mechanics.BlockMechBase
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockMicroBlock  [in VSSurvivalMod]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: Block -> CollectibleObject -> RegistryObject -> Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field IsSnowCovered : Boolean
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field capi : ICoreClientAPI
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field snowLayerBlockId : Int32
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field MBSounds : ThreadLocal`1
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockEntityMicroBlock  [in VSSurvivalMod]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: BlockEntity -> Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field VoxelCuboids : List`1
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field originalCuboids : UInt32[]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field BlockIds : Int32[]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field DecorIds : Int32[]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field DecorRotations : Int32
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field BlockIdsRotated : Int32[]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field DecorIdsRotated : Int32[]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field rotated : Int32
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field Mesh : MeshData
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field selectionBoxesMetaMode : Cuboidf[]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field selectionBoxesStd : Cuboidf[]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field selectionBoxesVoxels : Cuboidf[]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field prevSize : Int32
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field <BlockName>k__BackingField : String
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field emitSideAo : Int32
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field absorbAnyLight : Boolean
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field sidecenterSolid : SmallBoolArray
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field sideAlmostSolid : SmallBoolArray
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field rotationY : Int16
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field sizeRel : Single
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field totalVoxels : Int32
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   field withColorMapData : Boolean
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   prop  OriginalVoxelCuboids : UInt32[]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   prop  MaterialIds : Int32[]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   prop  BlockName : String
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   prop  VolumeRel : Single
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] -- pass 2: substring scan (Axle / MicroBlock) --
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: System.Xml.Schema.XmlSchemaMaxLengthFacet  [in System.Private.Xml]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: XmlSchemaNumericFacet -> XmlSchemaFacet -> XmlSchemaAnnotated -> XmlSchemaObject -> Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: OpenTK.Graphics.ES30.AppleTextureMaxLevel  [in OpenTK.Graphics]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: Enum -> ValueType -> Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: OpenTK.Graphics.ES20.AppleTextureMaxLevel  [in OpenTK.Graphics]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: Enum -> ValueType -> Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: OpenTK.Graphics.ES11.AppleTextureMaxLevel  [in OpenTK.Graphics]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: Enum -> ValueType -> Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: chisel.src.BELockedMicroblock  [in chiseltools]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: BlockEntityChisel -> BlockEntityMicroBlock -> BlockEntity -> Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.ServerMods.MicroblockCommands  [in VSSurvivalMod]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.ServerMods.MicroblockTool  [in VSSurvivalMod]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: PaintBrushTool -> ToolBase -> Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.BEBehaviorMicroblockSnowCover  [in VSSurvivalMod]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: BlockEntityBehavior -> Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockEntityMicroBlock  [in VSSurvivalMod]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: BlockEntity -> Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.MicroBlockSounds  [in VSSurvivalMod]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: BlockSounds -> Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockMicroBlock  [in VSSurvivalMod]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: Block -> CollectibleObject -> RegistryObject -> Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.IMicroblockBehavior  [in VSSurvivalMod]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: (none)
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.MicroBlockModelCache  [in VSSurvivalMod]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: ModSystem -> Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle  [in VSSurvivalMod]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: BEBehaviorMPBase -> BlockEntityBehavior -> Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BlockAxle  [in VSSurvivalMod]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: BlockMPBase -> BlockGeneric -> Block -> CollectibleObject -> RegistryObject -> Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] type found: AxleChisel.AxleChiselModSystem  [in AxleChisel]
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel]   extends: ModSystem -> Object
-server-main.log: 1.6.2026 20:57:29 [Notification] [axlechisel] ===== discovery dump end =====
+﻿client-main.log: 1.6.2026 21:23:23 [Notification] [axlechisel] starting v0.2.0 bc714ae side=Client
+client-main.log: 1.6.2026 21:23:23 [Notification] [axlechisel] PatchAll succeeded
+client-main.log: 1.6.2026 21:23:23 [Notification] [axlechisel] ===== discovery dump begin =====
+client-main.log: 1.6.2026 21:23:23 [Notification] [axlechisel] -- pass 1: exact-name probes --
+client-main.log: 1.6.2026 21:23:23 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BlockAxle  [in VSSurvivalMod]
+client-main.log: 1.6.2026 21:23:23 [Notification] [axlechisel]   extends: BlockMPBase -> BlockGeneric -> Block -> CollectibleObject -> RegistryObject -> Object
+client-main.log: 1.6.2026 21:23:23 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle  [in VSSurvivalMod]
+client-main.log: 1.6.2026 21:23:23 [Notification] [axlechisel]   extends: BEBehaviorMPBase -> BlockEntityBehavior -> Object
+client-main.log: 1.6.2026 21:23:23 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockMicroBlock  [in VSSurvivalMod]
+client-main.log: 1.6.2026 21:23:23 [Notification] [axlechisel]   extends: Block -> CollectibleObject -> RegistryObject -> Object
+client-main.log: 1.6.2026 21:23:23 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockEntityMicroBlock  [in VSSurvivalMod]
+client-main.log: 1.6.2026 21:23:23 [Notification] [axlechisel]   extends: BlockEntity -> Object
+client-main.log: 1.6.2026 21:23:23 [Notification] [axlechisel] type found: Vintagestory.GameContent.ItemChisel  [in VSSurvivalMod]
+client-main.log: 1.6.2026 21:23:23 [Notification] [axlechisel]   extends: Item -> CollectibleObject -> RegistryObject -> Object
+client-main.log: 1.6.2026 21:23:23 [Notification] [axlechisel] ===== discovery dump end =====
+client-main.log: 1.6.2026 21:23:23 [Notification] [axlechisel] patched ItemChisel.OnHeldInteractStart (axle interception active)
+client-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel] === axle chisel intercepted at 512012, 3, 511953 ===
+client-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]   block.Code = game:woodenaxle-we
+client-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]   variant rotation = we
+client-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]   block.Shape = game:block/wood/mechanics/axle
+client-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]   BE type = Vintagestory.GameContent.BlockEntityGeneric
+client-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]   axle behavior = Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle
+client-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]     center = x=0.5, y=0.5, z=0.5
+client-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]     orients = [west,east]
+client-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]     capi = Vintagestory.Client.NoObf.ClientCoreAPI
+client-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]     orientations = we
+client-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]     axleStandLocWest = game:shapes/block/wood/mechanics/axle-stand-west.json
+client-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]     axleStandLocEast = game:shapes/block/wood/mechanics/axle-stand-east.json
+client-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]     axleshape = 
+client-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel] === axle chisel intercepted at 512011, 3, 511953 ===
+client-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]   block.Code = game:woodenaxle-we
+client-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]   variant rotation = we
+client-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]   block.Shape = game:block/wood/mechanics/axle
+client-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]   BE type = Vintagestory.GameContent.BlockEntityGeneric
+client-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]   axle behavior = Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle
+client-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]     center = x=0.5, y=0.5, z=0.5
+client-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]     orients = [west,east]
+client-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]     capi = Vintagestory.Client.NoObf.ClientCoreAPI
+client-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]     orientations = we
+client-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]     axleStandLocWest = game:shapes/block/wood/mechanics/axle-stand-west.json
+client-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]     axleStandLocEast = game:shapes/block/wood/mechanics/axle-stand-east.json
+client-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]     axleshape = 
+client-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel] === axle chisel intercepted at 512012, 3, 511953 ===
+client-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]   block.Code = game:woodenaxle-we
+client-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]   variant rotation = we
+client-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]   block.Shape = game:block/wood/mechanics/axle
+client-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]   BE type = Vintagestory.GameContent.BlockEntityGeneric
+client-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]   axle behavior = Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle
+client-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]     center = x=0.5, y=0.5, z=0.5
+client-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]     orients = [west,east]
+client-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]     capi = Vintagestory.Client.NoObf.ClientCoreAPI
+client-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]     orientations = we
+client-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]     axleStandLocWest = game:shapes/block/wood/mechanics/axle-stand-west.json
+client-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]     axleStandLocEast = game:shapes/block/wood/mechanics/axle-stand-east.json
+client-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]     axleshape = 
+server-main.log: 1.6.2026 21:23:05 [Notification] [axlechisel] starting v0.2.0 bc714ae side=Server
+server-main.log: 1.6.2026 21:23:05 [Notification] [axlechisel] PatchAll succeeded
+server-main.log: 1.6.2026 21:23:05 [Notification] [axlechisel] ===== discovery dump begin =====
+server-main.log: 1.6.2026 21:23:05 [Notification] [axlechisel] -- pass 1: exact-name probes --
+server-main.log: 1.6.2026 21:23:05 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BlockAxle  [in VSSurvivalMod]
+server-main.log: 1.6.2026 21:23:05 [Notification] [axlechisel]   extends: BlockMPBase -> BlockGeneric -> Block -> CollectibleObject -> RegistryObject -> Object
+server-main.log: 1.6.2026 21:23:05 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle  [in VSSurvivalMod]
+server-main.log: 1.6.2026 21:23:05 [Notification] [axlechisel]   extends: BEBehaviorMPBase -> BlockEntityBehavior -> Object
+server-main.log: 1.6.2026 21:23:05 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockMicroBlock  [in VSSurvivalMod]
+server-main.log: 1.6.2026 21:23:05 [Notification] [axlechisel]   extends: Block -> CollectibleObject -> RegistryObject -> Object
+server-main.log: 1.6.2026 21:23:05 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockEntityMicroBlock  [in VSSurvivalMod]
+server-main.log: 1.6.2026 21:23:05 [Notification] [axlechisel]   extends: BlockEntity -> Object
+server-main.log: 1.6.2026 21:23:05 [Notification] [axlechisel] type found: Vintagestory.GameContent.ItemChisel  [in VSSurvivalMod]
+server-main.log: 1.6.2026 21:23:05 [Notification] [axlechisel]   extends: Item -> CollectibleObject -> RegistryObject -> Object
+server-main.log: 1.6.2026 21:23:05 [Notification] [axlechisel] ===== discovery dump end =====
+server-main.log: 1.6.2026 21:23:05 [Notification] [axlechisel] patched ItemChisel.OnHeldInteractStart (axle interception active)
+server-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel] === axle chisel intercepted at 512012, 3, 511953 ===
+server-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]   block.Code = game:woodenaxle-we
+server-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]   variant rotation = we
+server-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]   block.Shape = game:block/wood/mechanics/axle
+server-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]   BE type = Vintagestory.GameContent.BlockEntityGeneric
+server-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]   axle behavior = Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle
+server-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]     center = x=0.5, y=0.5, z=0.5
+server-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]     orients = [west,east]
+server-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]     capi = 
+server-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]     orientations = we
+server-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]     axleStandLocWest = game:shapes/block/wood/mechanics/axle-stand-west.json
+server-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]     axleStandLocEast = game:shapes/block/wood/mechanics/axle-stand-east.json
+server-main.log: 1.6.2026 21:24:23 [Notification] [axlechisel]     axleshape = 
+server-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel] === axle chisel intercepted at 512011, 3, 511953 ===
+server-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]   block.Code = game:woodenaxle-we
+server-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]   variant rotation = we
+server-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]   block.Shape = game:block/wood/mechanics/axle
+server-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]   BE type = Vintagestory.GameContent.BlockEntityGeneric
+server-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]   axle behavior = Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle
+server-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]     center = x=0.5, y=0.5, z=0.5
+server-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]     orients = [west,east]
+server-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]     capi = 
+server-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]     orientations = we
+server-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]     axleStandLocWest = game:shapes/block/wood/mechanics/axle-stand-west.json
+server-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]     axleStandLocEast = game:shapes/block/wood/mechanics/axle-stand-east.json
+server-main.log: 1.6.2026 21:24:25 [Notification] [axlechisel]     axleshape = 
+server-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel] === axle chisel intercepted at 512012, 3, 511953 ===
+server-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]   block.Code = game:woodenaxle-we
+server-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]   variant rotation = we
+server-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]   block.Shape = game:block/wood/mechanics/axle
+server-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]   BE type = Vintagestory.GameContent.BlockEntityGeneric
+server-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]   axle behavior = Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle
+server-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]     center = x=0.5, y=0.5, z=0.5
+server-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]     orients = [west,east]
+server-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]     capi = 
+server-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]     orientations = we
+server-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]     axleStandLocWest = game:shapes/block/wood/mechanics/axle-stand-west.json
+server-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]     axleStandLocEast = game:shapes/block/wood/mechanics/axle-stand-east.json
+server-main.log: 1.6.2026 21:24:27 [Notification] [axlechisel]     axleshape = 
