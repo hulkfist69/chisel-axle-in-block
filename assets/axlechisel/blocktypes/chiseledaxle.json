@@ -2,7 +2,7 @@
 	code: "chiseledaxle",
 	class: "BlockChiseledAxle",
 	entityClass: "ChiseledAxle",
-	entityBehaviors: [ { name: "SupportBeam" }, { name: "MicroblockSnowCover" }, { name: "MPAxle", properties: { withStands: false } } ],
+	entityBehaviors: [ { name: "SupportBeam" }, { name: "MPAxle", properties: { withStands: false } } ],
 	attributes: {
 		dropSelf: true
 	},
