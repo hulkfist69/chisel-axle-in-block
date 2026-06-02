@@ -4,6 +4,26 @@ Captures what the v0.1.1 discovery dump + the VS 1.22 source (anegostudios/
 vssurvivalmod) tell us, and the implementation plan that follows. This is the
 basis for the real integration work; read alongside HANDOFF.md.
 
+## 0. CORRECTION (v0.3.0) — what the user actually wants
+
+The real workflow is **encase, then chisel the encasing block**:
+1. Encase an axle in a building block — VANILLA: wrench in offhand, block in
+   main hand, right-click the axle. (Confirmed on the official Wrench wiki:
+   "Applying blocks into Wooden axles". The old "Axle in blocks" mod is now
+   redundant and is reported broken in 1.22.)
+2. Then chisel that **encasing block**, with the axle preserved and networked.
+
+So the chisel target is the *encased block*, NOT the bare axle. v0.2.0 hooked the
+wrong thing (chiseling a plain axle). v0.3.0 repurposes the chisel hook as an
+inspector: right-clicking an axle-bearing position (BE has BEBehaviorMPAxle) with
+a chisel dumps the full block/BE/behavior/decor state so we learn how 1.22
+represents an encased axle (still BlockAxle? building block + axle behavior? a
+decor?). That representation drives the real implementation.
+
+The encasing logic itself appears to live in closed-source VintagestoryLib (not
+in ItemWrench.cs / BlockAxle.cs), which is why we capture it from the running
+game instead of reading source.
+
 ## 1. Class map (verified)
 
 ### Mechanical power / axle

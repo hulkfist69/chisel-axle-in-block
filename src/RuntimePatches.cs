@@ -70,6 +70,12 @@ namespace AxleChisel
 
         // Harmony injects byEntity / blockSel / handling by parameter name. Returning
         // false skips the original method (the vanilla destructive conversion).
+        //
+        // v0.3.0 inspector: when the chiseled target is an axle-bearing position (the BE
+        // carries a BEBehaviorMPAxle - true for both a plain axle and an axle that's been
+        // encased in a block via the wrench), dump the FULL block/BE/behavior/decor state
+        // so we learn how 1.22 represents an encased axle, and preserve it (prevent the
+        // vanilla destructive conversion). Non-axle blocks chisel normally.
         private static bool ChiselInteractPrefix(EntityAgent byEntity, BlockSelection blockSel, ref EnumHandHandling handling)
         {
             try
@@ -78,20 +84,16 @@ namespace AxleChisel
                 var world = byEntity.World;
                 if (world == null) return true;
 
-                var block = world.BlockAccessor.GetBlock(blockSel.Position);
-                if (AxleBlockType == null || block == null || !AxleBlockType.IsInstanceOfType(block))
-                {
-                    return true; // not an axle -> let vanilla chiseling proceed
-                }
+                var be = world.BlockAccessor.GetBlockEntity(blockSel.Position);
+                var axleBeh = be == null ? null : FindBehavior(be, AxleBehaviorType);
+                if (axleBeh == null) return true; // no axle here -> normal chiseling
 
-                LogAxleTarget(world, blockSel.Position, block);
+                DumpTarget(world, blockSel.Position, be, axleBeh);
 
-                // For now: preserve the axle instead of letting it be destroyed. The
-                // combined chiseled-axle block lands in the next build.
                 if (world.Side == EnumAppSide.Client)
                 {
                     (world.Api as ICoreClientAPI)?.ShowChatMessage(
-                        "[axlechisel] axle preserved - combined chiseled-axle block is WIP");
+                        "[axlechisel] axle-bearing block inspected + preserved (see log)");
                 }
 
                 handling = EnumHandHandling.PreventDefaultAction;
@@ -104,35 +106,53 @@ namespace AxleChisel
             }
         }
 
-        // Dump exactly what we need to construct the combined block next iteration:
-        // the axle's variant/orientation and its BEBehaviorMPAxle state.
-        private static void LogAxleTarget(IWorldAccessor world, BlockPos pos, Block block)
+        // Full ground-truth dump of an axle-bearing position so we can see exactly what an
+        // encased axle is in 1.22: the block, its variants, every BE behavior, the axle
+        // behavior's fields, and any decors at the position.
+        private static void DumpTarget(IWorldAccessor world, BlockPos pos, object be, object axleBeh)
         {
             var log = world.Logger;
-            log.Notification("[axlechisel] === axle chisel intercepted at " + pos + " ===");
-            log.Notification("[axlechisel]   block.Code = " + block.Code);
-            if (block.Variant != null)
-            {
+            var block = world.BlockAccessor.GetBlock(pos);
+            log.Notification("[axlechisel] === axle-bearing block at " + pos + " ===");
+            log.Notification("[axlechisel]   block.Code = " + block?.Code);
+            log.Notification("[axlechisel]   block.GetType = " + (block?.GetType().FullName ?? "null"));
+            if (block?.Variant != null)
                 foreach (var kv in block.Variant)
                     log.Notification("[axlechisel]   variant " + kv.Key + " = " + kv.Value);
-            }
-            log.Notification("[axlechisel]   block.Shape = " + (block.Shape?.Base?.ToString() ?? "null"));
+            log.Notification("[axlechisel]   block.Shape = " + (block?.Shape?.Base?.ToString() ?? "null"));
+            log.Notification("[axlechisel]   block.DrawType = " + block?.DrawType + "  material=" + block?.BlockMaterial);
 
-            var be = world.BlockAccessor.GetBlockEntity(pos);
-            if (be == null) { log.Notification("[axlechisel]   no block entity at pos"); return; }
             log.Notification("[axlechisel]   BE type = " + be.GetType().FullName);
+            // All behaviors on the BE (an encasing may add/replace behaviors).
+            var behField = be.GetType().GetField("Behaviors", BindingFlags.Instance | BindingFlags.Public | BindingFlags.FlattenHierarchy);
+            if (behField?.GetValue(be) is System.Collections.IEnumerable behs)
+                foreach (var b in behs)
+                    if (b != null) log.Notification("[axlechisel]   behavior: " + b.GetType().FullName);
 
-            // Find the axle behavior on the BE and dump its declared fields' values.
-            var beh = FindBehavior(be, AxleBehaviorType);
-            if (beh == null) { log.Notification("[axlechisel]   no BEBehaviorMPAxle on BE"); return; }
-            log.Notification("[axlechisel]   axle behavior = " + beh.GetType().FullName);
-            foreach (var f in beh.GetType().GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.DeclaredOnly))
+            // Axle behavior field values (orientation, network, and any encasing block ref).
+            log.Notification("[axlechisel]   --- axle behavior fields ---");
+            foreach (var f in axleBeh.GetType().GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.DeclaredOnly))
             {
                 object val;
-                try { val = f.GetValue(beh); } catch { val = "<err>"; }
+                try { val = f.GetValue(axleBeh); } catch { val = "<err>"; }
                 if (val is Array arr) val = "[" + string.Join(",", arr.Cast<object>()) + "]";
                 log.Notification("[axlechisel]     " + f.Name + " = " + val);
             }
+
+            // Decors at this position (encasing may be implemented as a decor).
+            try
+            {
+                var ba = world.BlockAccessor;
+                var getDecors = ba.GetType().GetMethod("GetDecors", new[] { typeof(BlockPos) });
+                if (getDecors?.Invoke(ba, new object[] { pos }) is Array decors)
+                {
+                    log.Notification("[axlechisel]   decors[] length = " + decors.Length);
+                    for (int i = 0; i < decors.Length; i++)
+                        if (decors.GetValue(i) is Block d) log.Notification("[axlechisel]     decor[" + i + "] = " + d.Code);
+                }
+                else log.Notification("[axlechisel]   GetDecors -> none");
+            }
+            catch (Exception ex) { log.Notification("[axlechisel]   decor probe err: " + ex.Message); }
         }
 
         // Returns the BlockEntityBehavior on 'be' assignable to behaviorType, via the
