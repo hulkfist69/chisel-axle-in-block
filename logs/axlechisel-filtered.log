@@ -1,10 +1,21 @@
-﻿server-main.log: 1.6.2026 22:13:51 [Notification] [axlechisel] starting v0.5.0 2a5d0af side=Server
-server-main.log: 1.6.2026 22:13:51 [Notification] [axlechisel] PatchAll succeeded
-server-main.log: 1.6.2026 22:13:51 [Notification] [axlechisel] ===== discovery dump begin =====
-server-main.log: 1.6.2026 22:13:51 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BlockAxle  [in VSSurvivalMod]
-server-main.log: 1.6.2026 22:13:51 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle  [in VSSurvivalMod]
-server-main.log: 1.6.2026 22:13:51 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockEntityBehaviorCoverable  [in VSSurvivalMod]
-server-main.log: 1.6.2026 22:13:51 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockChisel  [in VSSurvivalMod]
-server-main.log: 1.6.2026 22:13:51 [Notification] [axlechisel] type found: Vintagestory.GameContent.ItemChisel  [in VSSurvivalMod]
-server-main.log: 1.6.2026 22:13:51 [Notification] [axlechisel] ===== discovery dump end =====
-server-main.log: 1.6.2026 22:13:51 [Notification] [axlechisel] patched ItemChisel.OnHeldInteractStart (encased-axle conversion active)
+﻿client-main.log: 1.6.2026 22:24:53 [Notification] [axlechisel] starting v0.5.1 ac31234 side=Client
+client-main.log: 1.6.2026 22:24:53 [Notification] [axlechisel] PatchAll succeeded
+client-main.log: 1.6.2026 22:24:53 [Notification] [axlechisel] ===== discovery dump begin =====
+client-main.log: 1.6.2026 22:24:53 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BlockAxle  [in VSSurvivalMod]
+client-main.log: 1.6.2026 22:24:53 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle  [in VSSurvivalMod]
+client-main.log: 1.6.2026 22:24:53 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockEntityBehaviorCoverable  [in VSSurvivalMod]
+client-main.log: 1.6.2026 22:24:53 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockChisel  [in VSSurvivalMod]
+client-main.log: 1.6.2026 22:24:53 [Notification] [axlechisel] type found: Vintagestory.GameContent.ItemChisel  [in VSSurvivalMod]
+client-main.log: 1.6.2026 22:24:53 [Notification] [axlechisel] ===== discovery dump end =====
+client-main.log: 1.6.2026 22:24:53 [Notification] [axlechisel] patched ItemChisel.OnHeldInteractStart (encased-axle conversion active)
+server-main.log: 1.6.2026 22:24:33 [Notification] [axlechisel] starting v0.5.1 ac31234 side=Server
+server-main.log: 1.6.2026 22:24:33 [Notification] [axlechisel] PatchAll succeeded
+server-main.log: 1.6.2026 22:24:33 [Notification] [axlechisel] ===== discovery dump begin =====
+server-main.log: 1.6.2026 22:24:33 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BlockAxle  [in VSSurvivalMod]
+server-main.log: 1.6.2026 22:24:33 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle  [in VSSurvivalMod]
+server-main.log: 1.6.2026 22:24:33 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockEntityBehaviorCoverable  [in VSSurvivalMod]
+server-main.log: 1.6.2026 22:24:33 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockChisel  [in VSSurvivalMod]
+server-main.log: 1.6.2026 22:24:33 [Notification] [axlechisel] type found: Vintagestory.GameContent.ItemChisel  [in VSSurvivalMod]
+server-main.log: 1.6.2026 22:24:33 [Notification] [axlechisel] ===== discovery dump end =====
+server-main.log: 1.6.2026 22:24:33 [Notification] [axlechisel] patched ItemChisel.OnHeldInteractStart (encased-axle conversion active)
+server-main.log: 1.6.2026 22:25:24 [Notification] [axlechisel] converted encased axle -> chiseledaxle-ns (material game:debarkedlog-oak-we) at 512013, 3, 511947

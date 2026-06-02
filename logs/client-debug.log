@@ -1,13 +1,1070 @@
-1.6.2026 22:13:40 [Debug] Creating game window with window mode Fullscreen
-1.6.2026 22:13:41.536 [VerboseDebug] Loadsounds, found 49 sounds
-1.6.2026 22:13:42.362 [VerboseDebug] [VSCreativeMod.dll] Check for mod systems in mod %appdata%\Vintagestory\Mods\VSCreativeMod.dll
-1.6.2026 22:13:42.410 [VerboseDebug] [VSCreativeMod.dll] Selected assembly %appdata%\Vintagestory\Mods\VSCreativeMod.dll
-1.6.2026 22:13:42.426 [VerboseDebug] [VSEssentials.dll] Check for mod systems in mod %appdata%\Vintagestory\Mods\VSEssentials.dll
-1.6.2026 22:13:42.440 [VerboseDebug] [VSEssentials.dll] Selected assembly %appdata%\Vintagestory\Mods\VSEssentials.dll
-1.6.2026 22:13:42.446 [VerboseDebug] [VSSurvivalMod.dll] Check for mod systems in mod %appdata%\Vintagestory\Mods\VSSurvivalMod.dll
-1.6.2026 22:13:42.455 [VerboseDebug] [VSSurvivalMod.dll] Selected assembly %appdata%\Vintagestory\Mods\VSSurvivalMod.dll
-1.6.2026 22:13:42.640 [VerboseDebug] Left bottom main menu text is at 16.25/1373.7953125 w/h 375,56.2046875
-1.6.2026 22:13:47 [Debug] GuiScreenConnectingToServer constructed
-1.6.2026 22:17:11 [Debug] GuiScreenConnectingToServer constructed
-1.6.2026 22:17:11.256 [VerboseDebug] Left bottom main menu text is at 16.25/1373.7953125 w/h 375,56.2046875
-1.6.2026 22:17:16 [Debug] After gamewindow.Run()
+1.6.2026 22:24:19 [Debug] Creating game window with window mode Fullscreen
+1.6.2026 22:24:20.201 [VerboseDebug] Loadsounds, found 49 sounds
+1.6.2026 22:24:21.043 [VerboseDebug] [VSCreativeMod.dll] Check for mod systems in mod %appdata%\Vintagestory\Mods\VSCreativeMod.dll
+1.6.2026 22:24:21.089 [VerboseDebug] [VSCreativeMod.dll] Selected assembly %appdata%\Vintagestory\Mods\VSCreativeMod.dll
+1.6.2026 22:24:21.104 [VerboseDebug] [VSEssentials.dll] Check for mod systems in mod %appdata%\Vintagestory\Mods\VSEssentials.dll
+1.6.2026 22:24:21.115 [VerboseDebug] [VSEssentials.dll] Selected assembly %appdata%\Vintagestory\Mods\VSEssentials.dll
+1.6.2026 22:24:21.121 [VerboseDebug] [VSSurvivalMod.dll] Check for mod systems in mod %appdata%\Vintagestory\Mods\VSSurvivalMod.dll
+1.6.2026 22:24:21.130 [VerboseDebug] [VSSurvivalMod.dll] Selected assembly %appdata%\Vintagestory\Mods\VSSurvivalMod.dll
+1.6.2026 22:24:21.269 [VerboseDebug] Left bottom main menu text is at 16.25/1373.7953125 w/h 375,56.2046875
+1.6.2026 22:24:29 [Debug] GuiScreenConnectingToServer constructed
+1.6.2026 22:24:50.918 [VerboseDebug] --- Server started ---
+1.6.2026 22:24:52.115 [VerboseDebug] Received server assets packet; waiting on light levels packet before decoding.
+1.6.2026 22:24:52.119 [VerboseDebug] Handling ServerIdentification packet; requires remapping is False
+1.6.2026 22:24:52.121 [VerboseDebug] Received world meta data
+1.6.2026 22:24:52.125 [VerboseDebug] Received server assets
+1.6.2026 22:24:52.300 [VerboseDebug] [VSCreativeMod.dll] Check for mod systems in mod %appdata%\Vintagestory\Mods\VSCreativeMod.dll
+1.6.2026 22:24:52.306 [VerboseDebug] [VSCreativeMod.dll] Selected assembly %appdata%\Vintagestory\Mods\VSCreativeMod.dll
+1.6.2026 22:24:52.310 [VerboseDebug] [VSEssentials.dll] Check for mod systems in mod %appdata%\Vintagestory\Mods\VSEssentials.dll
+1.6.2026 22:24:52.317 [VerboseDebug] [VSEssentials.dll] Selected assembly %appdata%\Vintagestory\Mods\VSEssentials.dll
+1.6.2026 22:24:52.323 [VerboseDebug] [VSSurvivalMod.dll] Check for mod systems in mod %appdata%\Vintagestory\Mods\VSSurvivalMod.dll
+1.6.2026 22:24:52.338 [VerboseDebug] [VSSurvivalMod.dll] Selected assembly %appdata%\Vintagestory\Mods\VSSurvivalMod.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [awearablelight] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\awearablelight-v1.1.9.zip_35df85a16398\AWearableLight.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [awearablelight] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\awearablelight-v1.1.9.zip_35df85a16398\AWearableLight.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [chiseltools] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\ChiselTools1.17.1.zip_e26d2ac12cbc\chiseltools.dll, C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\ChiselTools1.17.1.zip_e26d2ac12cbc\VoxReader.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [chiseltools] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\ChiselTools1.17.1.zip_e26d2ac12cbc\chiseltools.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [darkvision] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\DarkVisionV1.3.2.zip_6b295182c0ec\darkvision.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [darkvision] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\DarkVisionV1.3.2.zip_6b295182c0ec\darkvision.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [farmlandnutrientmanagement] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\FarmlandNutrientManagement_1.5.1.zip_0f58ef7b3021\FarmlandNutrientManagement.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [farmlandnutrientmanagement] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\FarmlandNutrientManagement_1.5.1.zip_0f58ef7b3021\FarmlandNutrientManagement.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [hardcorewaterforked] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\hardcorewaterforked-1.4.5.zip_f43547d4ea5f\HardcoreWater.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [hardcorewaterforked] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\hardcorewaterforked-1.4.5.zip_f43547d4ea5f\HardcoreWater.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [immersivemining] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\ImmersiveMining_0.2.20.zip_95df6f9471bd\ImmersiveMining.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [immersivemining] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\ImmersiveMining_0.2.20.zip_95df6f9471bd\ImmersiveMining.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [kilnshelves] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\KilnShelves_1.1.0.zip_f4b855679a8d\KilnShelves.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [kilnshelves] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\KilnShelves_1.1.0.zip_f4b855679a8d\KilnShelves.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [primitivesurvival] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\primitivesurvival_5.0.5.zip_ffd3c073867b\primitivesurvival.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [primitivesurvival] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\primitivesurvival_5.0.5.zip_ffd3c073867b\primitivesurvival.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [prospecttogether] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\ProspectTogether-2.2.1.zip_2c49dbb8d32c\ProspectTogether.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [prospecttogether] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\ProspectTogether-2.2.1.zip_2c49dbb8d32c\ProspectTogether.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [stonequarryrepckfipil] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\StoneQuarryRepacked.3.6.2.zip_4306e7cdc8a5\StoneQuarry.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [stonequarryrepckfipil] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\StoneQuarryRepacked.3.6.2.zip_4306e7cdc8a5\StoneQuarry.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [thetruearchimedesscrew] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\thetruearchscrew-0.1.40.zip_cd36ad8b785a\archimedes_screw.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [thetruearchimedesscrew] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\thetruearchscrew-0.1.40.zip_cd36ad8b785a\archimedes_screw.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [aculinaryartillery] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\ACulinaryArtillery 2.0.0-dev.19.zip_46c9cd323719\ACulinaryArtillery.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [aculinaryartillery] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\ACulinaryArtillery 2.0.0-dev.19.zip_46c9cd323719\ACulinaryArtillery.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [animalcages] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\animalcages_v5.0.0.zip_492d2dcf1447\AnimalCages.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [animalcages] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\animalcages_v5.0.0.zip_492d2dcf1447\AnimalCages.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [animalhitch] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\AnimalHitch_V1.1.0.zip_6d2d0ee72aa8\AnimalHitch.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [animalhitch] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\AnimalHitch_V1.1.0.zip_6d2d0ee72aa8\AnimalHitch.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [archering] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\archering_1.0.5.zip_22d70f9ea857\Archering.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [archering] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\archering_1.0.5.zip_22d70f9ea857\Archering.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [egocaribautomapmarkers] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\Auto Map Markers 5.0.3 - Vintage Story 1.22.zip_ff41715051bc\automapmarkers.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [egocaribautomapmarkers] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\Auto Map Markers 5.0.3 - Vintage Story 1.22.zip_ff41715051bc\automapmarkers.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [axlechisel] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\AxleChisel-0.5.1.zip_fb16e9407d81\AxleChisel.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [axlechisel] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\AxleChisel-0.5.1.zip_fb16e9407d81\AxleChisel.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [bedspawnv2] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\bedspawnv2_1.7.0.zip_80ad75ec660d\BedSpawn.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [bedspawnv2] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\bedspawnv2_1.7.0.zip_80ad75ec660d\BedSpawn.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [bloodtrail] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\BloodTrail-v1.2.2.zip_cd77a682d47c\BloodTrail.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [bloodtrail] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\BloodTrail-v1.2.2.zip_cd77a682d47c\BloodTrail.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [butchering] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\butchering_1.13.3.zip_b8fb3fe7767a\Butchering.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [butchering] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\butchering_1.13.3.zip_b8fb3fe7767a\Butchering.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [carryon] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\CarryOn-1.22.0_v1.14.1.zip_5f9767b17841\CarryOn.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [carryon] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\CarryOn-1.22.0_v1.14.1.zip_5f9767b17841\CarryOn.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [chestorganizerm4] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\ChestOrganizer-1.2.6.zip_9837e64a9aac\ChestOrganizer.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [chestorganizerm4] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\ChestOrganizer-1.2.6.zip_9837e64a9aac\ChestOrganizer.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [chop] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\chop_1.0.0.zip_7505ec018a62\Chop.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [chop] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\chop_1.0.0.zip_7505ec018a62\Chop.dll
+1.6.2026 22:24:52.717 [VerboseDebug] [coriaendershaders] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\coriaendershaders-v1.2.1_v1.22.2.zip_55c7bac35e41\CoriaenderShaders.dll
+1.6.2026 22:24:52.718 [VerboseDebug] [coriaendershaders] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\coriaendershaders-v1.2.1_v1.22.2.zip_55c7bac35e41\CoriaenderShaders.dll
+1.6.2026 22:24:52.718 [VerboseDebug] [extrainfo] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\ExtraInfo-v2.2.1.zip_1e672230b1ae\ExtraInfo.dll
+1.6.2026 22:24:52.718 [VerboseDebug] [extrainfo] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\ExtraInfo-v2.2.1.zip_1e672230b1ae\ExtraInfo.dll
+1.6.2026 22:24:52.718 [VerboseDebug] [firepitsshowfuel] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\firepitsshowfuel_2.0.0-dev.1.zip_74cfa2ef2eb8\FirepitsShowFuel.dll
+1.6.2026 22:24:52.718 [VerboseDebug] [firepitsshowfuel] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\firepitsshowfuel_2.0.0-dev.1.zip_74cfa2ef2eb8\FirepitsShowFuel.dll
+1.6.2026 22:24:52.718 [VerboseDebug] [foodshelves] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\foodshelves_3.0.3.zip_c5847e351c50\FoodShelves.dll
+1.6.2026 22:24:52.718 [VerboseDebug] [foodshelves] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\foodshelves_3.0.3.zip_c5847e351c50\FoodShelves.dll
+1.6.2026 22:24:52.718 [VerboseDebug] [footprints] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\Footprints-v1.2.2.zip_103107dd6e81\Footprints.dll
+1.6.2026 22:24:52.718 [VerboseDebug] [footprints] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\Footprints-v1.2.2.zip_103107dd6e81\Footprints.dll
+1.6.2026 22:24:52.718 [VerboseDebug] [freedomunits] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\FreedomUnits-1.1.5.zip_bf4d1e7b616c\FreedomUnits.dll
+1.6.2026 22:24:52.718 [VerboseDebug] [freedomunits] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\FreedomUnits-1.1.5.zip_bf4d1e7b616c\FreedomUnits.dll
+1.6.2026 22:24:52.718 [VerboseDebug] [knapster] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\Knapster_v4.0.0.zip_cd8961e5b874\Knapster.dll
+1.6.2026 22:24:52.718 [VerboseDebug] [knapster] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\Knapster_v4.0.0.zip_cd8961e5b874\Knapster.dll
+1.6.2026 22:24:52.718 [VerboseDebug] [medievalexpansion] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\medievalexpansion-3.13.1.zip_8b717d5e1e2f\medievalexpansion.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [movedoors] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\MoveWrench-0.5.14.zip_fd5d917698b8\MoveDoors.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [movedoors] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\MoveWrench-0.5.14.zip_fd5d917698b8\MoveDoors.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [trailmodmaro] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\NaturalTrailsMod_1.3.1.zip_e991a2a35e75\trailmod.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [trailmodmaro] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\NaturalTrailsMod_1.3.1.zip_e991a2a35e75\trailmod.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [orekiwoofsbeehives] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\orekiwoofsbeehives_v2.0.0-v1.21.0.zip_f1ddccee0c77\OrekiWoofsBeehives.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [orekiwoofsbeehives] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\orekiwoofsbeehives_v2.0.0-v1.21.0.zip_f1ddccee0c77\OrekiWoofsBeehives.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [panningmachine] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\panningmachine_1.0.11.zip_392fb635ffaf\PanningMachine.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [panningmachine] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\panningmachine_1.0.11.zip_392fb635ffaf\PanningMachine.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [petai] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\petai_v5.1.1.zip_bc54c2e5013e\PetAI.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [petai] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\petai_v5.1.1.zip_bc54c2e5013e\PetAI.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [placeonslabs] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\placeonslabs_1.1.3.zip_863b2849a5c3\PlaceOnSlabs.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [placeonslabs] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\placeonslabs_1.1.3.zip_863b2849a5c3\PlaceOnSlabs.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [claywheel] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\pottery-wheel_2.0.1.zip_5f1174f690e1\PotteryWheel.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [claywheel] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\pottery-wheel_2.0.1.zip_5f1174f690e1\PotteryWheel.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [realisticwater] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\realisticwater_0.2.2.zip_0a0840cfc917\RealisticWater_0.2.2.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [realisticwater] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\realisticwater_0.2.2.zip_0a0840cfc917\RealisticWater_0.2.2.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [rivers] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\rivers_5.0.0.zip_4e365b1be967\Rivers.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [rivers] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\rivers_5.0.0.zip_4e365b1be967\Rivers.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [roamingbees] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\roamingbees_v2.0.0-v1.21.0.zip_6744dd58dc96\RoamingBees.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [roamingbees] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\roamingbees_v2.0.0-v1.21.0.zip_6744dd58dc96\RoamingBees.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [smithingplus] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\smithingplus_1.9.0-rc.1.zip_dae80ec1006f\SmithingPlus.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [smithingplus] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\smithingplus_1.9.0-rc.1.zip_dae80ec1006f\SmithingPlus.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [stonebakeoven] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\stonebakeoven_1.3.0.zip_a6eccdbfb304\stonebakeoven.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [stonebakeoven] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\stonebakeoven_1.3.0.zip_a6eccdbfb304\stonebakeoven.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [toolsmith] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\toolsmith_1.2.16.zip_678fdedaa694\Toolsmith.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [toolsmith] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\toolsmith_1.2.16.zip_678fdedaa694\Toolsmith.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [vsecomachina] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\vsecomachina_0.6.1.zip_eb2f9347a03e\vsecomachina.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [vsecomachina] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\vsecomachina_0.6.1.zip_eb2f9347a03e\vsecomachina.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [vsroofing] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\vsroofing_1.5.7.zip_b1a420c864c8\vsroofing.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [vsroofing] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\vsroofing_1.5.7.zip_b1a420c864c8\vsroofing.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [waterfall] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\Waterfall_v1.2.2.zip_f97f19a976fe\Waterfall.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [waterfall] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\Waterfall_v1.2.2.zip_f97f19a976fe\Waterfall.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [pinrecipes] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\pinrecipes_1.1.2.zip_9a04b5be67b6\PinRecipes.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [pinrecipes] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\pinrecipes_1.1.2.zip_9a04b5be67b6\PinRecipes.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [waterwheelriver] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\waterwheelforrivers.zip_68720e7cd713\WaterWheelRiver.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [waterwheelriver] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\waterwheelforrivers.zip_68720e7cd713\WaterWheelRiver.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [wolftaming] Check for mod systems in mod C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\wolftaming_v5.0.1.zip_8d23a5c17c81\WolfTaming.dll
+1.6.2026 22:24:52.719 [VerboseDebug] [wolftaming] Loaded assembly C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\wolftaming_v5.0.1.zip_8d23a5c17c81\WolfTaming.dll
+1.6.2026 22:24:52 [Debug] [forgetfulseeds] Successfully compiled mod with Roslyn
+1.6.2026 22:24:52.828 [VerboseDebug] [forgetfulseeds] Successfully compiled 1 source files
+1.6.2026 22:24:52.828 [VerboseDebug] 71 assemblies loaded
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for awearablelight
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for chickenfeed
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for cbr
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for chiseltools
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for darkvision
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for hqzlights
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for farmlandnutrientmanagement
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for fastpackeddirtpaths
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for fragilecharcoal
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for hardcorewaterforked
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for immersivemining
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for kilnshelves
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for longtermhusbandry
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for morefat
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for plainsandvalleys
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for primitivesurvival
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for prospecttogether
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for p2lumbersling
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for seedharvest
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for stonequarryrepckfipil
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for thetruearchimedesscrew
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for game
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for waterwheelnormalwater
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for aculinaryartillery
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for animalcages
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for animalhitch
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for archering
+1.6.2026 22:24:52.828 [VerboseDebug] Instantiate mod systems for egocaribautomapmarkers
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for axlechisel
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for bedspawnv2
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for betterruins
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for bloodtrail
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for butchering
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for carryon
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for chestorganizerm4
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for chop
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for coriaendershaders
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for extrainfo
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for fennelfeed
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for firepitsshowfuel
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for foodshelves
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for footprints
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for freedomunits
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for immersiveminingandahalf
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for knapster
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for movedoors
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for trailmodmaro
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for orekiwoofsbeehives
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for panningmachine
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for petai
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for placeonslabs
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for claywheel
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for realisticwater
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for rivers
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for roamingbees
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for seedsfromgrains
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for smithingplus
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for stonebakeoven
+1.6.2026 22:24:52.829 [VerboseDebug] Instantiate mod systems for targetDotMedium
+1.6.2026 22:24:52.830 [VerboseDebug] Instantiate mod systems for toolsmith
+1.6.2026 22:24:52.830 [VerboseDebug] Instantiate mod systems for creative
+1.6.2026 22:24:52.830 [VerboseDebug] Instantiate mod systems for vsecomachina
+1.6.2026 22:24:52.830 [VerboseDebug] Instantiate mod systems for vsroofing
+1.6.2026 22:24:52.830 [VerboseDebug] Instantiate mod systems for survival
+1.6.2026 22:24:52.830 [VerboseDebug] Instantiate mod systems for waterfall
+1.6.2026 22:24:52.830 [VerboseDebug] Instantiate mod systems for expandedfoods
+1.6.2026 22:24:52.830 [VerboseDebug] Instantiate mod systems for pinrecipes
+1.6.2026 22:24:52.830 [VerboseDebug] Instantiate mod systems for waterwheelriver
+1.6.2026 22:24:52.830 [VerboseDebug] Instantiate mod systems for wolftaming
+1.6.2026 22:24:52.830 [VerboseDebug] Instantiate mod systems for forgetfulseeds
+1.6.2026 22:24:52 [Debug] [knapster] [Gantry] Initialising Gantry Client logger.
+1.6.2026 22:24:53.212 [VerboseDebug] Single player game - starting mods on the client-side
+1.6.2026 22:24:53 [Debug] [KilnShelves] BeehiveKiln Harmony patch applied
+1.6.2026 22:24:53.236 [VerboseDebug] [toolsmith] Smithing Plus found, trying to patch in attributes to the forgettable config!
+1.6.2026 22:24:53.237 [VerboseDebug] [toolsmith] Added Toolsmith Attributes to Smithing Plus's Forgettable Attributes config!
+1.6.2026 22:24:53.243 [VerboseDebug] Server assets - done step 1, next steps off-thread
+1.6.2026 22:24:53.244 [VerboseDebug] Searching file system (including mods) for asset files
+1.6.2026 22:24:53.359 [VerboseDebug] Populated 865 EntityTypes from server
+1.6.2026 22:24:54.088 [VerboseDebug] Populated 7678 ItemTypes from server, highest ItemID is 10035
+1.6.2026 22:24:54.111 [VerboseDebug] Finished the search for asset files
+1.6.2026 22:24:54.330 [VerboseDebug] Loaded lang file: en
+1.6.2026 22:24:54.443 [VerboseDebug] Patch file primitivesurvival:patches/realsmoke/handofthedead.json, patch 0: Unmet DependsOn condition (realsmoke)
+1.6.2026 22:24:54.443 [VerboseDebug] Patch file primitivesurvival:patches/realsmoke/handofthedead.json, patch 1: Unmet DependsOn condition (realsmoke)
+1.6.2026 22:24:54.443 [VerboseDebug] Patch file primitivesurvival:patches/realsmoke/smoker.json, patch 0: Unmet DependsOn condition (realsmoke)
+1.6.2026 22:24:54.444 [VerboseDebug] Patch file lumbersling:patches/ancienttools/ancienttools-blocktypes-debarkednarrow.json, patch 0: Unmet DependsOn condition (ancienttools)
+1.6.2026 22:24:54.444 [VerboseDebug] Patch file lumbersling:patches/ancienttools/ancienttools-blocktypes-debarkednarrow.json, patch 1: Unmet DependsOn condition (ancienttools)
+1.6.2026 22:24:54.444 [VerboseDebug] Patch file lumbersling:patches/ancienttools/ancienttools-itemtypes-resources-bark.json, patch 0: Unmet DependsOn condition (ancienttools)
+1.6.2026 22:24:54.444 [VerboseDebug] Patch file lumbersling:patches/ancienttools/ancienttools-itemtypes-resources-bark.json, patch 1: Unmet DependsOn condition (ancienttools)
+1.6.2026 22:24:54.444 [VerboseDebug] Patch file lumbersling:patches/ancienttools/ancienttools-itemtypes-tools-adze.json, patch 0: Unmet DependsOn condition (ancienttools)
+1.6.2026 22:24:54.444 [VerboseDebug] Patch file lumbersling:patches/ancienttools/ancienttools-itemtypes-tools-adze.json, patch 1: Unmet DependsOn condition (ancienttools)
+1.6.2026 22:24:54.444 [VerboseDebug] Patch file lumbersling:patches/atwatersedge/atwatersedge-itemtypes-resources-halvedcattailroot.json, patch 0: Unmet DependsOn condition (atwatersedge)
+1.6.2026 22:24:54.444 [VerboseDebug] Patch file lumbersling:patches/atwatersedge/atwatersedge-itemtypes-resources-halvedcattailroot.json, patch 1: Unmet DependsOn condition (atwatersedge)
+1.6.2026 22:24:54.444 [VerboseDebug] Patch file lumbersling:patches/atwatersedge/atwatersedge-itemtypes-resources-halvedpapyrusroot.json, patch 0: Unmet DependsOn condition (atwatersedge)
+1.6.2026 22:24:54.444 [VerboseDebug] Patch file lumbersling:patches/atwatersedge/atwatersedge-itemtypes-resources-halvedpapyrusroot.json, patch 1: Unmet DependsOn condition (atwatersedge)
+1.6.2026 22:24:54.444 [VerboseDebug] Patch file lumbersling:patches/atwatersedge/atwatersedge-itemtypes-resources-halvedtuleroot.json, patch 0: Unmet DependsOn condition (atwatersedge)
+1.6.2026 22:24:54.444 [VerboseDebug] Patch file lumbersling:patches/atwatersedge/atwatersedge-itemtypes-resources-halvedtuleroot.json, patch 1: Unmet DependsOn condition (atwatersedge)
+1.6.2026 22:24:54.444 [VerboseDebug] Patch file lumbersling:patches/fseasonedfirewood/patches/sf_recipe_lumbersling_hide.json, patch 0: Unmet DependsOn condition (fseasonedfirewood)
+1.6.2026 22:24:54.444 [VerboseDebug] Patch file lumbersling:patches/fseasonedfirewood/patches/sf_recipe_lumbersling_hide.json, patch 1: Unmet DependsOn condition (fseasonedfirewood)
+1.6.2026 22:24:54.444 [VerboseDebug] Patch file lumbersling:patches/fseasonedfirewood/patches/sf_recipe_lumbersling_hide.json, patch 2: Unmet DependsOn condition (fseasonedfirewood)
+1.6.2026 22:24:54.444 [VerboseDebug] Patch file lumbersling:patches/fseasonedfirewood/patches/sf_recipe_lumbersling_hide.json, patch 3: Unmet DependsOn condition (fseasonedfirewood)
+1.6.2026 22:24:54.444 [VerboseDebug] Patch file lumbersling:patches/fseasonedfirewood/patches/sf_recipe_lumbersling_leather.json, patch 0: Unmet DependsOn condition (fseasonedfirewood)
+1.6.2026 22:24:54.444 [VerboseDebug] Patch file lumbersling:patches/fseasonedfirewood/patches/sf_recipe_lumbersling_leather.json, patch 1: Unmet DependsOn condition (fseasonedfirewood)
+1.6.2026 22:24:54.447 [VerboseDebug] Patch file lumbersling:patches/fseasonedfirewood/patches/sf_recipe_lumbersling_linen.json, patch 0: Unmet DependsOn condition (fseasonedfirewood)
+1.6.2026 22:24:54.447 [VerboseDebug] Patch file lumbersling:patches/fseasonedfirewood/patches/sf_recipe_lumbersling_linen.json, patch 1: Unmet DependsOn condition (fseasonedfirewood)
+1.6.2026 22:24:54.447 [VerboseDebug] Patch file lumbersling:patches/fseasonedfirewood/patches/sf_storageflags.json, patch 0: Unmet DependsOn condition (fseasonedfirewood)
+1.6.2026 22:24:54.447 [VerboseDebug] Patch file lumbersling:patches/fseasonedfirewood/patches/sf_storageflags.json, patch 1: Unmet DependsOn condition (fseasonedfirewood)
+1.6.2026 22:24:54.447 [VerboseDebug] Patch file lumbersling:patches/stillnecessaries/survival-itemtypes-tool-branchcutter.json, patch 0: Unmet DependsOn condition (stillnecessaries)
+1.6.2026 22:24:54.447 [VerboseDebug] Patch file lumbersling:patches/stillnecessaries/survival-itemtypes-tool-branchcutter.json, patch 1: Unmet DependsOn condition (stillnecessaries)
+1.6.2026 22:24:54.454 [VerboseDebug] Patch file butchering:patches/compatibility/caninae/canina.json, patch 0: Unmet DependsOn condition (caninae)
+1.6.2026 22:24:54.454 [VerboseDebug] Patch file butchering:patches/compatibility/caninae/canina.json, patch 1: Unmet DependsOn condition (caninae)
+1.6.2026 22:24:54.454 [VerboseDebug] Patch file butchering:patches/compatibility/caninae/canina.json, patch 2: Unmet DependsOn condition (caninae)
+1.6.2026 22:24:54.454 [VerboseDebug] Patch file butchering:patches/compatibility/caninae/canina.json, patch 3: Unmet DependsOn condition (caninae)
+1.6.2026 22:24:54.454 [VerboseDebug] Patch file butchering:patches/compatibility/caninae/canina.json, patch 4: Unmet DependsOn condition (caninae)
+1.6.2026 22:24:54.454 [VerboseDebug] Patch file butchering:patches/compatibility/caninae/cerdocyonina.json, patch 0: Unmet DependsOn condition (caninae)
+1.6.2026 22:24:54.454 [VerboseDebug] Patch file butchering:patches/compatibility/caninae/cerdocyonina.json, patch 1: Unmet DependsOn condition (caninae)
+1.6.2026 22:24:54.454 [VerboseDebug] Patch file butchering:patches/compatibility/caninae/cerdocyonina.json, patch 2: Unmet DependsOn condition (caninae)
+1.6.2026 22:24:54.454 [VerboseDebug] Patch file butchering:patches/compatibility/caninae/cerdocyonina.json, patch 3: Unmet DependsOn condition (caninae)
+1.6.2026 22:24:54.454 [VerboseDebug] Patch file butchering:patches/compatibility/caninae/urocyonini.json, patch 0: Unmet DependsOn condition (caninae)
+1.6.2026 22:24:54.454 [VerboseDebug] Patch file butchering:patches/compatibility/caninae/urocyonini.json, patch 1: Unmet DependsOn condition (caninae)
+1.6.2026 22:24:54.454 [VerboseDebug] Patch file butchering:patches/compatibility/caninae/urocyonini.json, patch 2: Unmet DependsOn condition (caninae)
+1.6.2026 22:24:54.454 [VerboseDebug] Patch file butchering:patches/compatibility/caninae/urocyonini.json, patch 3: Unmet DependsOn condition (caninae)
+1.6.2026 22:24:54.454 [VerboseDebug] Patch file butchering:patches/compatibility/caninae/vulpini.json, patch 0: Unmet DependsOn condition (caninae)
+1.6.2026 22:24:54.454 [VerboseDebug] Patch file butchering:patches/compatibility/caninae/vulpini.json, patch 1: Unmet DependsOn condition (caninae)
+1.6.2026 22:24:54.454 [VerboseDebug] Patch file butchering:patches/compatibility/caninae/vulpini.json, patch 2: Unmet DependsOn condition (caninae)
+1.6.2026 22:24:54.454 [VerboseDebug] Patch file butchering:patches/compatibility/caninae/vulpini.json, patch 3: Unmet DependsOn condition (caninae)
+1.6.2026 22:24:54.456 [VerboseDebug] Patch file butchering:patches/compatibility/capreolinae/alceini.json, patch 0: Unmet DependsOn condition (capreolinae)
+1.6.2026 22:24:54.456 [VerboseDebug] Patch file butchering:patches/compatibility/capreolinae/alceini.json, patch 1: Unmet DependsOn condition (capreolinae)
+1.6.2026 22:24:54.456 [VerboseDebug] Patch file butchering:patches/compatibility/capreolinae/alceini.json, patch 2: Unmet DependsOn condition (capreolinae)
+1.6.2026 22:24:54.456 [VerboseDebug] Patch file butchering:patches/compatibility/capreolinae/alceini.json, patch 3: Unmet DependsOn condition (capreolinae)
+1.6.2026 22:24:54.456 [VerboseDebug] Patch file butchering:patches/compatibility/capreolinae/alceini.json, patch 4: Unmet DependsOn condition (capreolinae)
+1.6.2026 22:24:54.456 [VerboseDebug] Patch file butchering:patches/compatibility/capreolinae/capreolini.json, patch 0: Unmet DependsOn condition (capreolinae)
+1.6.2026 22:24:54.456 [VerboseDebug] Patch file butchering:patches/compatibility/capreolinae/capreolini.json, patch 1: Unmet DependsOn condition (capreolinae)
+1.6.2026 22:24:54.456 [VerboseDebug] Patch file butchering:patches/compatibility/capreolinae/capreolini.json, patch 2: Unmet DependsOn condition (capreolinae)
+1.6.2026 22:24:54.456 [VerboseDebug] Patch file butchering:patches/compatibility/capreolinae/capreolini.json, patch 3: Unmet DependsOn condition (capreolinae)
+1.6.2026 22:24:54.456 [VerboseDebug] Patch file butchering:patches/compatibility/capreolinae/capreolini.json, patch 4: Unmet DependsOn condition (capreolinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/capreolinae/odocoileini.json, patch 0: Unmet DependsOn condition (capreolinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/capreolinae/odocoileini.json, patch 1: Unmet DependsOn condition (capreolinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/capreolinae/odocoileini.json, patch 2: Unmet DependsOn condition (capreolinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/capreolinae/odocoileini.json, patch 3: Unmet DependsOn condition (capreolinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/capreolinae/odocoileini.json, patch 4: Unmet DependsOn condition (capreolinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/equushorses/equushorse.json, patch 0: Unmet DependsOn condition (equus)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/equushorses/equushorse.json, patch 1: Unmet DependsOn condition (equus)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/equushorses/equushorse.json, patch 2: Unmet DependsOn condition (equus)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/equushorses/equushorse.json, patch 3: Unmet DependsOn condition (equus)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/equushorses/equushorse.json, patch 4: Unmet DependsOn condition (equus)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/equushorses/equushorse.json, patch 5: Unmet DependsOn condition (equus)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/equushorses/equushorse.json, patch 6: Unmet DependsOn condition (equus)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/machairodontinae/machairodontinae.json, patch 0: Unmet DependsOn condition (machairodontinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/machairodontinae/machairodontinae.json, patch 1: Unmet DependsOn condition (machairodontinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/machairodontinae/machairodontinae.json, patch 2: Unmet DependsOn condition (machairodontinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/machairodontinae/machairodontinae.json, patch 3: Unmet DependsOn condition (machairodontinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/machairodontinae/machairodontinae.json, patch 4: Unmet DependsOn condition (machairodontinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/medievalexpansion/aurochs.json, patch 0: Unmet DependsOn condition (medievalexpansionpatch)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/medievalexpansion/aurochs.json, patch 1: Unmet DependsOn condition (medievalexpansionpatch)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/medievalexpansion/aurochs.json, patch 2: Unmet DependsOn condition (medievalexpansionpatch)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/medievalexpansion/aurochs.json, patch 3: Unmet DependsOn condition (medievalexpansionpatch)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/medievalexpansion/aurochs.json, patch 4: Unmet DependsOn condition (medievalexpansionpatch)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/medievalexpansion/aurochs.json, patch 5: Unmet DependsOn condition (medievalexpansionpatch)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/medievalexpansion/aurochs.json, patch 6: Unmet DependsOn condition (medievalexpansionpatch)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/pantherinae/neofelis.json, patch 0: Unmet DependsOn condition (pantherinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/pantherinae/neofelis.json, patch 1: Unmet DependsOn condition (pantherinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/pantherinae/neofelis.json, patch 2: Unmet DependsOn condition (pantherinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/pantherinae/neofelis.json, patch 3: Unmet DependsOn condition (pantherinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/pantherinae/neofelis.json, patch 4: Unmet DependsOn condition (pantherinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/pantherinae/panthera.json, patch 0: Unmet DependsOn condition (pantherinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/pantherinae/panthera.json, patch 1: Unmet DependsOn condition (pantherinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/pantherinae/panthera.json, patch 2: Unmet DependsOn condition (pantherinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/pantherinae/panthera.json, patch 3: Unmet DependsOn condition (pantherinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/pantherinae/panthera.json, patch 4: Unmet DependsOn condition (pantherinae)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/sirenia/sirenia.json, patch 0: Unmet DependsOn condition (sirenia)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/sirenia/sirenia.json, patch 1: Unmet DependsOn condition (sirenia)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/sirenia/sirenia.json, patch 2: Unmet DependsOn condition (sirenia)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/sirenia/sirenia.json, patch 3: Unmet DependsOn condition (sirenia)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/compatibility/sirenia/sirenia.json, patch 4: Unmet DependsOn condition (sirenia)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/config/enabledconfig.json, patch 3: Unmet IsValue condition (false!=True)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/config/enabledconfig.json, patch 4: Unmet IsValue condition (false!=True)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/config/enabledconfig.json, patch 5: Unmet IsValue condition (false!=True)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/config/enabledconfig.json, patch 6: Unmet IsValue condition (false!=True)
+1.6.2026 22:24:54.457 [VerboseDebug] Patch file butchering:patches/config/enabledconfig.json, patch 7: Unmet IsValue condition (false!=True)
+1.6.2026 22:24:54.461 [VerboseDebug] Patch file carryon:patches/carryonmore/bettercrates.json, patch 0: Unmet DependsOn condition (bettercrates)
+1.6.2026 22:24:54.468 [VerboseDebug] Patch file foodshelves:patches/longtermfood.json, patch 12: Unmet DependsOn condition (longtermfood)
+1.6.2026 22:24:54.468 [VerboseDebug] Patch file foodshelves:patches/longtermfood.json, patch 13: Unmet DependsOn condition (longtermfood)
+1.6.2026 22:24:54.607 [VerboseDebug] Patch 1 in chickenfeed:patches/trough.json: File game:blocktypes/wood/trough-small.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.609 [VerboseDebug] Patch 0 in farmlandnutrientmanagement:patches/biochar.json: File game:itemtypes/resource/drygrass.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.609 [VerboseDebug] Patch 1 in farmlandnutrientmanagement:patches/biochar.json: File game:itemtypes/resource/stick.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.610 [VerboseDebug] Patch 0 in farmlandnutrientmanagement:patches/farmland_and_char.json: File game:itemtypes/resource/crushed/powder.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.610 [VerboseDebug] Patch 1 in farmlandnutrientmanagement:patches/farmland_and_char.json: File game:blocktypes/soil/farmland.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.610 [VerboseDebug] Patch 0 in immersiveminingandahalf:compatibility/immersivemining/patches/animations/axechophorizontalnew.json: File game:entities/humanoid/player.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.724 [VerboseDebug] Patch 0 in immersiveminingandahalf:compatibility/immersivemining/patches/animations/axenew.json: File game:entities/humanoid/player.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.724 [VerboseDebug] Patch 0 in immersiveminingandahalf:compatibility/immersivemining/patches/animations/knifenew.json: File game:entities/humanoid/player.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.724 [VerboseDebug] Patch 0 in immersiveminingandahalf:compatibility/immersivemining/patches/animations/pickaxenew.json: File game:entities/humanoid/player.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.724 [VerboseDebug] Patch 0 in immersiveminingandahalf:compatibility/immersivemining/patches/animations/shovelnew.json: File game:entities/humanoid/player.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.724 [VerboseDebug] Patch 0 in immersivemining:patches/aws/shepeherd axe.json: File walkingstick:itemtypes/tool/walkingsticks/walkingstick-shepherds.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.724 [VerboseDebug] Patch 1 in immersivemining:patches/aws/shepeherd axe.json: File walkingstick:itemtypes/tool/walkingsticks/walkingstick-shepherds.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.724 [VerboseDebug] Patch 0 in immersivemining:patches/idg/axes.json: File indappledgroves:itemtypes/tools/forestaxe.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.724 [VerboseDebug] Patch 1 in immersivemining:patches/idg/axes.json: File indappledgroves:itemtypes/tools/forestaxe.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.724 [VerboseDebug] Patch 2 in immersivemining:patches/idg/axes.json: File indappledgroves:itemtypes/tools/maul.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.724 [VerboseDebug] Patch 3 in immersivemining:patches/idg/axes.json: File indappledgroves:itemtypes/tools/maul.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.724 [VerboseDebug] Patch 4 in immersivemining:patches/idg/axes.json: File indappledgroves:itemtypes/tools/grubaxe.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.724 [VerboseDebug] Patch 5 in immersivemining:patches/idg/axes.json: File indappledgroves:itemtypes/tools/grubaxe.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.724 [VerboseDebug] Patch 0 in immersivemining:patches/tools/bonepickaxe.json: File butchering:itemtypes/tool/pickaxe.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/primitivesurvival/primitivesurvival-blocktypes-wood-treehollowgrown.json: File primitivesurvival:blocktypes/wood/treehollowgrown.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 1 in lumbersling:patches/primitivesurvival/primitivesurvival-blocktypes-wood-treehollowgrown.json: File primitivesurvival:blocktypes/wood/treehollowgrown.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/primitivesurvival/primitivesurvival-blocktypes-wood-treehollowplaced.json: File primitivesurvival:blocktypes/wood/treehollowplaced.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 1 in lumbersling:patches/primitivesurvival/primitivesurvival-blocktypes-wood-treehollowplaced.json: File primitivesurvival:blocktypes/wood/treehollowplaced.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-blocktypes-plant-bamboo.json: File game:blocktypes/plant/bamboo.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-blocktypes-plant-leaves-bamboo.json: File game:blocktypes/plant/leaves/bamboo.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-blocktypes-plant-leaves-normal.json: File game:blocktypes/plant/leaves/normal.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-blocktypes-plant-plaintreesapling.json: File game:blocktypes/plant/plaintreesapling.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-blocktypes-wood-woodtyped-ladder.json: File game:blocktypes/wood/woodtyped/ladder.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-blocktypes-wood-woodtyped-log-debarked.json: File game:blocktypes/wood/woodtyped/log-debarked.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-blocktypes-wood-woodtyped-log-narrow.json: File game:blocktypes/wood/woodtyped/log-narrow.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-blocktypes-wood-woodtyped-log-section.json: File game:blocktypes/wood/woodtyped/log-section.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-blocktypes-wood-woodtyped-log-withresin.json: File game:blocktypes/wood/woodtyped/log-withresin.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-blocktypes-wood-woodtyped-log.json: File game:blocktypes/wood/woodtyped/log.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-blocktypes-wood-woodtyped-planks.json: File game:blocktypes/wood/woodtyped/planks.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-blocktypes-wood-woodtyped-suppportbeam.json: File game:blocktypes/wood/woodtyped/suppportbeam.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-itemtypes-resource-bamboostakes.json: File game:itemtypes/resource/bamboostakes.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-itemtypes-resource-firewood-aged.json: File game:itemtypes/resource/firewood-aged.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-itemtypes-resource-firewood.json: File game:itemtypes/resource/firewood.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-itemtypes-resource-plank.json: File game:itemtypes/resource/plank.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-itemtypes-resource-resin.json: File game:itemtypes/resource/resin.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-itemtypes-resource-stick.json: File game:itemtypes/resource/stick.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-itemtypes-resource-treeseed.json: File game:itemtypes/resource/treeseed.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-itemtypes-tool-axe-metal.json: File game:itemtypes/tool/axe-metal.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-itemtypes-tool-axe-stone.json: File game:itemtypes/tool/axe-stone.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in lumbersling:patches/survival-itemtypes-tool-shears.json: File game:itemtypes/tool/shears.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.725 [VerboseDebug] Patch 0 in aculinaryartillery:patches/firewood.json: File game:itemtypes/resource/firewood.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.726 [VerboseDebug] Patch 0 in game:patches/clay-oven.json: File game:blocktypes/clay/oven.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/compatibility/petai/rawmeat.json: File game:itemtypes/food/redmeat.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/compatibility/petai/rawmeat.json: File game:itemtypes/food/bushmeat.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/compatibility/smithingplus/hooknuggetrecipe.json: File butchering:recipes/smithing/onebutcheringhook.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/compatibility/smithingplus/hooknuggetrecipe.json: File butchering:recipes/grid/butcherhook.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/config/enabledconfig.json: File butchering:recipes/knapping/bone-pick.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/config/enabledconfig.json: File butchering:itemtypes/tool/pickaxe.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 2 in butchering:patches/config/enabledconfig.json: File butchering:recipes/grid/bonetools.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/cooking/claypot.json: File game:blocktypes/clay/fired/pot.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/cooking/claypot.json: File game:blocktypes/clay/fired/pot.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 2 in butchering:patches/cooking/claypot.json: File game:blocktypes/clay/fired/pot.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 3 in butchering:patches/cooking/claypot.json: File game:blocktypes/clay/fired/pot.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 4 in butchering:patches/cooking/claypot.json: File game:blocktypes/clay/fired/pot.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 5 in butchering:patches/cooking/claypot.json: File game:blocktypes/clay/fired/pot.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/cooking/meatystew.json: File game:recipes/cooking/meatystew.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/cooking/meatystew.json: File game:recipes/cooking/meatystew.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 2 in butchering:patches/cooking/meatystew.json: File game:recipes/cooking/meatystew.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 3 in butchering:patches/cooking/meatystew.json: File game:recipes/cooking/meatystew.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 4 in butchering:patches/cooking/meatystew.json: File game:recipes/cooking/meatystew.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 5 in butchering:patches/cooking/meatystew.json: File game:recipes/cooking/meatystew.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 6 in butchering:patches/cooking/meatystew.json: File game:recipes/cooking/meatystew.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 7 in butchering:patches/cooking/meatystew.json: File game:recipes/cooking/meatystew.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 8 in butchering:patches/cooking/meatystew.json: File game:recipes/cooking/meatystew.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 9 in butchering:patches/cooking/meatystew.json: File game:recipes/cooking/meatystew.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 10 in butchering:patches/cooking/meatystew.json: File game:recipes/cooking/meatystew.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 11 in butchering:patches/cooking/meatystew.json: File game:recipes/cooking/meatystew.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/cooking/soup.json: File game:recipes/cooking/soup.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/cooking/soup.json: File game:recipes/cooking/soup.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 2 in butchering:patches/cooking/soup.json: File game:recipes/cooking/soup.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 3 in butchering:patches/cooking/soup.json: File game:recipes/cooking/soup.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 4 in butchering:patches/cooking/soup.json: File game:recipes/cooking/soup.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/entities/bear.json: File game:entities/animal/mammal/bear-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/entities/bear.json: File game:entities/animal/mammal/bear-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/entities/chicken.json: File game:entities/animal/bird/chicken-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/entities/chicken.json: File game:entities/animal/bird/chicken-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 2 in butchering:patches/entities/chicken.json: File game:entities/animal/bird/chicken-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 3 in butchering:patches/entities/chicken.json: File game:entities/animal/bird/chicken-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/entities/deer.json: File game:entities/animal/mammal/hooved/deer-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/entities/deer.json: File game:entities/animal/mammal/hooved/deer-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 2 in butchering:patches/entities/deer.json: File game:entities/animal/mammal/hooved/deer-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 3 in butchering:patches/entities/deer.json: File game:entities/animal/mammal/hooved/deer-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/entities/fox.json: File game:entities/animal/mammal/fox-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 2 in butchering:patches/entities/fox.json: File game:entities/animal/mammal/fox-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 3 in butchering:patches/entities/fox.json: File game:entities/animal/mammal/fox-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 4 in butchering:patches/entities/fox.json: File game:entities/animal/mammal/fox-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/entities/gazelle.json: File game:entities/animal/mammal/hooved/gazelle-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/entities/gazelle.json: File game:entities/animal/mammal/hooved/gazelle-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 2 in butchering:patches/entities/gazelle.json: File game:entities/animal/mammal/hooved/gazelle-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 3 in butchering:patches/entities/gazelle.json: File game:entities/animal/mammal/hooved/gazelle-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/entities/goat.json: File game:entities/animal/mammal/hooved/goat-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/entities/goat.json: File game:entities/animal/mammal/hooved/goat-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 2 in butchering:patches/entities/goat.json: File game:entities/animal/mammal/hooved/goat-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 3 in butchering:patches/entities/goat.json: File game:entities/animal/mammal/hooved/goat-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/entities/hare.json: File game:entities/animal/mammal/hare-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/entities/hare.json: File game:entities/animal/mammal/hare-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 2 in butchering:patches/entities/hare.json: File game:entities/animal/mammal/hare-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 3 in butchering:patches/entities/hare.json: File game:entities/animal/mammal/hare-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/entities/hyena.json: File game:entities/animal/mammal/hyena-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/entities/hyena.json: File game:entities/animal/mammal/hyena-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 2 in butchering:patches/entities/hyena.json: File game:entities/animal/mammal/hyena-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 3 in butchering:patches/entities/hyena.json: File game:entities/animal/mammal/hyena-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/entities/moose.json: File game:entities/animal/mammal/hooved/moose-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/entities/moose.json: File game:entities/animal/mammal/hooved/moose-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 2 in butchering:patches/entities/moose.json: File game:entities/animal/mammal/hooved/moose-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 3 in butchering:patches/entities/moose.json: File game:entities/animal/mammal/hooved/moose-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/entities/pig.json: File game:entities/animal/mammal/hooved/pig-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/entities/pig.json: File game:entities/animal/mammal/hooved/pig-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 2 in butchering:patches/entities/pig.json: File game:entities/animal/mammal/hooved/pig-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 3 in butchering:patches/entities/pig.json: File game:entities/animal/mammal/hooved/pig-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/entities/raccoon.json: File game:entities/animal/mammal/raccoon-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/entities/raccoon.json: File game:entities/animal/mammal/raccoon-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 2 in butchering:patches/entities/raccoon.json: File game:entities/animal/mammal/raccoon-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 3 in butchering:patches/entities/raccoon.json: File game:entities/animal/mammal/raccoon-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/entities/sheep.json: File game:entities/animal/mammal/hooved/sheep-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/entities/sheep.json: File game:entities/animal/mammal/hooved/sheep-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 2 in butchering:patches/entities/sheep.json: File game:entities/animal/mammal/hooved/sheep-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 3 in butchering:patches/entities/sheep.json: File game:entities/animal/mammal/hooved/sheep-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/entities/wolf.json: File game:entities/animal/mammal/wolf-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/entities/wolf.json: File game:entities/animal/mammal/wolf-adult.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 2 in butchering:patches/entities/wolf.json: File game:entities/animal/mammal/wolf-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 3 in butchering:patches/entities/wolf.json: File game:entities/animal/mammal/wolf-baby.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/items/food/smoked.json: File game:itemtypes/food/redmeat.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 1 in butchering:patches/items/food/smoked.json: File game:itemtypes/food/redmeat.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 2 in butchering:patches/items/food/smoked.json: File game:itemtypes/food/bushmeat.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 3 in butchering:patches/items/food/smoked.json: File game:itemtypes/food/bushmeat.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 4 in butchering:patches/items/food/smoked.json: File game:itemtypes/food/fishfillet.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 5 in butchering:patches/items/food/smoked.json: File game:itemtypes/food/fishfillet.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/items/bone.json: File game:blocktypes/bone/carcass.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 4 in butchering:patches/items/bone.json: File game:blocktypes/stone/knappingsurface.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.727 [VerboseDebug] Patch 0 in butchering:patches/items/rot.json: File game:itemtypes/resource/rot.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 3 in carryon:patches/animations.json: File game:entities/humanoid/player.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 5 in carryon:patches/animations.json: File game:entities/humanoid/player.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 7 in carryon:patches/animations.json: File game:entities/humanoid/player.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 0 in orekiwoofsbeehives:patches/carryon.json: File orekiwoofsbeehives:blocktypes/beehive.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 0 in realisticwater:patches/waterbehaviour.json: File game:blocktypes/liquid/water.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 1 in realisticwater:patches/waterbehaviour.json: File game:blocktypes/liquid/saltwater.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 0 in smithingplus:patches/forlornestocrepair.json: File smithingplus:recipes/grid/forlornestoc.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 0 in toolsmith:patches/animations/crafting-animations-player-entity.json: File game:entities/humanoid/player.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 1 in toolsmith:patches/animations/crafting-animations-player-entity.json: File game:entities/humanoid/player.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 2 in toolsmith:patches/animations/crafting-animations-player-entity.json: File game:entities/humanoid/player.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 3 in toolsmith:patches/animations/crafting-animations-player-entity.json: File game:entities/humanoid/player.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 4 in toolsmith:patches/animations/crafting-animations-player-entity.json: File game:entities/humanoid/player.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 5 in toolsmith:patches/animations/crafting-animations-player-entity.json: File game:entities/humanoid/player.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 6 in toolsmith:patches/animations/crafting-animations-player-entity.json: File game:entities/humanoid/player.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 7 in toolsmith:patches/animations/crafting-animations-player-entity.json: File game:entities/humanoid/player.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 0 in toolsmith:patches/partshapes/vanilla-axe.json: File game:itemtypes/toolhead/axehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 1 in toolsmith:patches/partshapes/vanilla-axe.json: File game:itemtypes/toolhead/axehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 2 in toolsmith:patches/partshapes/vanilla-axe.json: File game:itemtypes/toolhead/axehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 3 in toolsmith:patches/partshapes/vanilla-axe.json: File game:itemtypes/toolhead/axehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 0 in toolsmith:patches/partshapes/vanilla-hammer.json: File game:itemtypes/toolhead/hammerhead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 1 in toolsmith:patches/partshapes/vanilla-hammer.json: File game:itemtypes/toolhead/hammerhead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 2 in toolsmith:patches/partshapes/vanilla-hammer.json: File game:itemtypes/toolhead/hammerhead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 3 in toolsmith:patches/partshapes/vanilla-hammer.json: File game:itemtypes/toolhead/hammerhead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 4 in toolsmith:patches/partshapes/vanilla-hammer.json: File game:itemtypes/toolhead/hammerhead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 5 in toolsmith:patches/partshapes/vanilla-hammer.json: File game:itemtypes/toolhead/hammerhead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 6 in toolsmith:patches/partshapes/vanilla-hammer.json: File game:itemtypes/toolhead/hammerhead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 7 in toolsmith:patches/partshapes/vanilla-hammer.json: File game:itemtypes/toolhead/hammerhead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 8 in toolsmith:patches/partshapes/vanilla-hammer.json: File game:itemtypes/tool/hammer.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 9 in toolsmith:patches/partshapes/vanilla-hammer.json: File game:itemtypes/tool/hammer.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 10 in toolsmith:patches/partshapes/vanilla-hammer.json: File game:itemtypes/tool/hammer.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 11 in toolsmith:patches/partshapes/vanilla-hammer.json: File game:itemtypes/tool/hammer.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 12 in toolsmith:patches/partshapes/vanilla-hammer.json: File game:itemtypes/tool/hammer.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 0 in toolsmith:patches/partshapes/vanilla-hoe.json: File game:itemtypes/toolhead/hoehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 1 in toolsmith:patches/partshapes/vanilla-hoe.json: File game:itemtypes/toolhead/hoehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 2 in toolsmith:patches/partshapes/vanilla-hoe.json: File game:itemtypes/toolhead/hoehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 3 in toolsmith:patches/partshapes/vanilla-hoe.json: File game:itemtypes/toolhead/hoehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 0 in toolsmith:patches/partshapes/vanilla-knife.json: File game:itemtypes/toolhead/knifeblade.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 1 in toolsmith:patches/partshapes/vanilla-knife.json: File game:itemtypes/toolhead/knifeblade.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 2 in toolsmith:patches/partshapes/vanilla-knife.json: File game:itemtypes/toolhead/knifeblade.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 0 in toolsmith:patches/partshapes/vanilla-pickaxe.json: File game:itemtypes/toolhead/pickaxehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 1 in toolsmith:patches/partshapes/vanilla-pickaxe.json: File game:itemtypes/toolhead/pickaxehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 2 in toolsmith:patches/partshapes/vanilla-pickaxe.json: File game:itemtypes/toolhead/pickaxehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 3 in toolsmith:patches/partshapes/vanilla-pickaxe.json: File game:itemtypes/toolhead/pickaxehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 4 in toolsmith:patches/partshapes/vanilla-pickaxe.json: File game:itemtypes/toolhead/pickaxehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 5 in toolsmith:patches/partshapes/vanilla-pickaxe.json: File game:itemtypes/toolhead/pickaxehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 6 in toolsmith:patches/partshapes/vanilla-pickaxe.json: File game:itemtypes/toolhead/pickaxehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 0 in toolsmith:patches/partshapes/vanilla-prospectingpick.json: File game:itemtypes/toolhead/prospectingpickhead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 1 in toolsmith:patches/partshapes/vanilla-prospectingpick.json: File game:itemtypes/toolhead/prospectingpickhead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 2 in toolsmith:patches/partshapes/vanilla-prospectingpick.json: File game:itemtypes/toolhead/prospectingpickhead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 3 in toolsmith:patches/partshapes/vanilla-prospectingpick.json: File game:itemtypes/toolhead/prospectingpickhead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 0 in toolsmith:patches/partshapes/vanilla-saw.json: File game:itemtypes/toolhead/sawblade.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 1 in toolsmith:patches/partshapes/vanilla-saw.json: File game:itemtypes/toolhead/sawblade.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 2 in toolsmith:patches/partshapes/vanilla-saw.json: File game:itemtypes/toolhead/sawblade.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 3 in toolsmith:patches/partshapes/vanilla-saw.json: File game:itemtypes/toolhead/sawblade.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 4 in toolsmith:patches/partshapes/vanilla-saw.json: File game:itemtypes/toolhead/sawblade.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 5 in toolsmith:patches/partshapes/vanilla-saw.json: File game:itemtypes/toolhead/sawblade.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 6 in toolsmith:patches/partshapes/vanilla-saw.json: File game:itemtypes/toolhead/sawblade.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 7 in toolsmith:patches/partshapes/vanilla-saw.json: File game:itemtypes/toolhead/sawblade.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 8 in toolsmith:patches/partshapes/vanilla-saw.json: File game:itemtypes/tool/saw.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 9 in toolsmith:patches/partshapes/vanilla-saw.json: File game:itemtypes/tool/saw.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 10 in toolsmith:patches/partshapes/vanilla-saw.json: File game:itemtypes/tool/saw.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 11 in toolsmith:patches/partshapes/vanilla-saw.json: File game:itemtypes/tool/saw.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 0 in toolsmith:patches/partshapes/vanilla-scythe.json: File game:itemtypes/toolhead/scythehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 1 in toolsmith:patches/partshapes/vanilla-scythe.json: File game:itemtypes/toolhead/scythehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 2 in toolsmith:patches/partshapes/vanilla-scythe.json: File game:itemtypes/toolhead/scythehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 3 in toolsmith:patches/partshapes/vanilla-scythe.json: File game:itemtypes/toolhead/scythehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 4 in toolsmith:patches/partshapes/vanilla-scythe.json: File game:itemtypes/toolhead/scythehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 5 in toolsmith:patches/partshapes/vanilla-scythe.json: File game:itemtypes/toolhead/scythehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 6 in toolsmith:patches/partshapes/vanilla-scythe.json: File game:itemtypes/toolhead/scythehead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 0 in toolsmith:patches/partshapes/vanilla-shovel.json: File game:itemtypes/toolhead/shovelhead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 1 in toolsmith:patches/partshapes/vanilla-shovel.json: File game:itemtypes/toolhead/shovelhead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 2 in toolsmith:patches/partshapes/vanilla-shovel.json: File game:itemtypes/toolhead/shovelhead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 3 in toolsmith:patches/partshapes/vanilla-shovel.json: File game:itemtypes/toolhead/shovelhead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 4 in toolsmith:patches/partshapes/vanilla-shovel.json: File game:itemtypes/toolhead/shovelhead.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 5 in toolsmith:patches/partshapes/vanilla-shovel.json: File game:itemtypes/tool/shovel.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 0 in toolsmith:patches/toolshapes/vanilla-shears.json: File game:itemtypes/tool/shears.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 1 in toolsmith:patches/toolshapes/vanilla-shears.json: File game:itemtypes/tool/shears.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 0 in toolsmith:patches/coldforgemetals.json: File game:itemtypes/resource/ingot.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 1 in toolsmith:patches/coldforgemetals.json: File game:itemtypes/resource/metalplate.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 2 in toolsmith:patches/coldforgemetals.json: File game:itemtypes/resource/metalplate.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 3 in toolsmith:patches/coldforgemetals.json: File game:itemtypes/resource/metalplate.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 4 in toolsmith:patches/coldforgemetals.json: File game:itemtypes/resource/metalplate.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 5 in toolsmith:patches/coldforgemetals.json: File game:itemtypes/resource/workitem.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 0 in vsroofing:patches/items.json: File game:itemtypes/resource/plank.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 1 in vsroofing:patches/items.json: File game:itemtypes/resource/stick.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 2 in vsroofing:patches/items.json: File game:itemtypes/resource/bamboostakes.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 3 in vsroofing:patches/items.json: File game:itemtypes/part/rod.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 4 in vsroofing:patches/items.json: File game:itemtypes/tool/chisel.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 5 in vsroofing:patches/items.json: File game:itemtypes/tool/chisel.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 6 in vsroofing:patches/items.json: File game:itemtypes/resource/flaxfibers.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 7 in vsroofing:patches/items.json: File game:itemtypes/resource/catttailtops.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 8 in vsroofing:patches/items.json: File game:itemtypes/resource/papyrustops.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.728 [VerboseDebug] Patch 9 in vsroofing:patches/items.json: File game:blocktypes/plant/wildvine.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.779 [VerboseDebug] Patch 0 in fennelfeed:patches/trough-large.json: File game:blocktypes/wood/trough-large.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.779 [VerboseDebug] Patch 1 in fennelfeed:patches/trough-large.json: File game:blocktypes/wood/trough-large.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.779 [VerboseDebug] Patch 2 in fennelfeed:patches/trough-large.json: File game:blocktypes/wood/trough-large.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.779 [VerboseDebug] Patch 0 in fennelfeed:patches/trough-small.json: File game:blocktypes/wood/trough-small.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.779 [VerboseDebug] Patch 1 in fennelfeed:patches/trough-small.json: File game:blocktypes/wood/trough-small.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.779 [VerboseDebug] Patch 2 in fennelfeed:patches/trough-small.json: File game:blocktypes/wood/trough-small.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.779 [VerboseDebug] Patch 0 in vsroofing:compatibility/primitivesurvival/patches/roof.json: File primitivesurvival:itemtypes/fishing/cordage.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.779 [VerboseDebug] Patch 1 in vsroofing:compatibility/primitivesurvival/patches/roof.json: File vsroofing:blocktypes/roof.json not found. Hint: This asset is usually only loaded Server side
+1.6.2026 22:24:54.822 [VerboseDebug] Patchloader finished
+1.6.2026 22:24:54.857 [VerboseDebug] All client-side assets loaded and patched; configs, shapes, textures and sounds are now available for loading
+1.6.2026 22:24:54.859 [VerboseDebug] Starting to load entity shapes
+1.6.2026 22:24:54.859 [VerboseDebug] Starting to load item shapes
+1.6.2026 22:24:54.860 [VerboseDebug] Entity shape loading starting ...
+1.6.2026 22:24:54.894 [VerboseDebug] [LoadShapes] Searched through items...
+1.6.2026 22:24:56.095 [VerboseDebug] Populated 39010 BlockTypes from server, highest BlockID is 60072
+1.6.2026 22:24:56.095 [VerboseDebug] Starting to load block shapes
+1.6.2026 22:24:56.196 [VerboseDebug] Resolved blocks and items stacks and drops
+1.6.2026 22:24:56.196 [VerboseDebug] [LoadShapes] Searching through blocks...
+1.6.2026 22:24:56.523 [VerboseDebug] Entity shape loading completed
+1.6.2026 22:24:56.543 [VerboseDebug] Loaded 26 ColorMap textures
+1.6.2026 22:24:56.544 [VerboseDebug] Loadsounds, found 800 sounds
+1.6.2026 22:24:56.769 [VerboseDebug] [LoadShapes] Searched through 39010 blocks
+1.6.2026 22:24:56.770 [VerboseDebug] [LoadShapes] Starting to parse block shapes...
+1.6.2026 22:24:56.770 [VerboseDebug] [LoadShapes] loaded 1 block shapes in obj and gltf formats
+1.6.2026 22:24:56.828 [VerboseDebug] Server assets - composing entity texture atlas on main thread
+1.6.2026 22:24:56.871 [VerboseDebug] Server assets - done entity textures composition
+1.6.2026 22:24:56.873 [VerboseDebug] Server assets - done entity textures mipmap creation
+1.6.2026 22:24:56.879 [VerboseDebug] Server assets - done entity textures random and average color collection
+1.6.2026 22:24:57.146 [VerboseDebug] [LoadShapes] parsed 650 shapes from JSON for 39010 blocks, some others done offthread
+1.6.2026 22:24:57.146 [VerboseDebug] [LoadShapes] parsed 615 shapes from JSON (2nd block loading thread)
+1.6.2026 22:24:57.146 [VerboseDebug] [LoadShapes] parsed 576 shapes from JSON (3rd block loading thread)
+1.6.2026 22:24:57.415 [VerboseDebug] [LoadShapes] parsed 1934 shapes from JSON for items
+1.6.2026 22:24:57.419 [VerboseDebug] BlockTextureAtlas start collecting textures (already holds 26 colormap textures)
+1.6.2026 22:24:58.068 [VerboseDebug] Server assets - composing item texture atlas on main thread
+1.6.2026 22:24:58.103 [VerboseDebug] Server assets - done item textures composition
+1.6.2026 22:24:58.104 [VerboseDebug] Server assets - done item textures mipmap creation
+1.6.2026 22:24:58.143 [VerboseDebug] Server assets - done item textures random and average color collection
+1.6.2026 22:24:59.620 [VerboseDebug] Server assets - done item tesselation spread over 24 frames
+1.6.2026 22:25:00.086 [VerboseDebug] Starting to load sounds fully
+1.6.2026 22:25:02.042 [VerboseDebug] Server assets - composing block texture atlas on main thread
+1.6.2026 22:25:02.062 [VerboseDebug] Server assets - done block textures composition
+1.6.2026 22:25:02.063 [VerboseDebug] Server assets - done block textures mipmap creation
+1.6.2026 22:25:02.090 [VerboseDebug] Server assets - done block textures random and average color collection
+1.6.2026 22:25:02.102 [VerboseDebug] Server assets - done step 9
+1.6.2026 22:25:02 [Debug] Opening socket to server...
+1.6.2026 22:25:02.156 [VerboseDebug] Server assets - done texture atlas frame buffer
+1.6.2026 22:25:02 [Debug] UDP: sending connection requests
+1.6.2026 22:25:02 [Debug] Ident packet sent.
+1.6.2026 22:25:02 [Debug] UDP: Server send DidReceiveUdp
+1.6.2026 22:25:02.879 [VerboseDebug] Handling ServerReady packet
+1.6.2026 22:25:02.879 [VerboseDebug] Starting system: Program
+1.6.2026 22:25:02.879 [VerboseDebug] Starting system: KnapsterAdminModMenu
+1.6.2026 22:25:02.881 [VerboseDebug] Starting system: Core
+1.6.2026 22:25:02.881 [VerboseDebug] Starting system: EntityPartitioning
+1.6.2026 22:25:02.881 [VerboseDebug] Starting system: ErrorReporter
+1.6.2026 22:25:02.883 [VerboseDebug] Starting system: TrailModCore
+1.6.2026 22:25:02.883 [VerboseDebug] Starting system: RiversApi
+1.6.2026 22:25:02.883 [VerboseDebug] Starting system: ModSystemControlPoints
+1.6.2026 22:25:02.883 [VerboseDebug] Starting system: ConfigManager
+1.6.2026 22:25:02.883 [VerboseDebug] Starting system: Core
+1.6.2026 22:25:02.883 [VerboseDebug] Starting system: SurvivalCoreSystem
+1.6.2026 22:25:02.895 [VerboseDebug] Starting system: ConfigLoader
+1.6.2026 22:25:02.895 [VerboseDebug] Starting system: ModCompatiblityUtil
+1.6.2026 22:25:02.895 [VerboseDebug] Starting system: ModJsonPatchLoader
+1.6.2026 22:25:02.895 [VerboseDebug] Starting system: EasyTillingClient
+1.6.2026 22:25:02.899 [VerboseDebug] Starting system: EasySmithingClient
+1.6.2026 22:25:02.900 [VerboseDebug] Starting system: EasyPressingClient
+1.6.2026 22:25:02.905 [VerboseDebug] Starting system: EasyPanningClient
+1.6.2026 22:25:02.906 [VerboseDebug] Starting system: EasyMixingBowlClient
+1.6.2026 22:25:02.907 [VerboseDebug] Starting system: EasyKnappingClient
+1.6.2026 22:25:02.909 [VerboseDebug] Starting system: EasyHarvestingClient
+1.6.2026 22:25:02.909 [VerboseDebug] Starting system: EasyGrindingClient
+1.6.2026 22:25:02.911 [VerboseDebug] Starting system: EasyClayFormingClient
+1.6.2026 22:25:02.911 [VerboseDebug] Starting system: MetalMaterialLoader
+1.6.2026 22:25:02.911 [VerboseDebug] Starting system: AWearableLightCore
+1.6.2026 22:25:02.912 [VerboseDebug] Loaded config 'awearablelight-client.json'.
+1.6.2026 22:25:02.912 [VerboseDebug] Starting system: ChiselToolLoader
+1.6.2026 22:25:02.912 [VerboseDebug] Starting system: DarkVisionMod
+1.6.2026 22:25:02.962 [VerboseDebug] Starting system: DarkVisionAPI
+1.6.2026 22:25:02.962 [VerboseDebug] Starting system: FNMCore
+1.6.2026 22:25:02.963 [VerboseDebug] Starting system: HardcoreWaterModSystem
+1.6.2026 22:25:02.963 [VerboseDebug] Starting system: ImmersiveMiningClient
+1.6.2026 22:25:02.966 [VerboseDebug] Starting system: ImmersiveMiningServer
+1.6.2026 22:25:02.966 [VerboseDebug] Starting system: KilnShelvesModSystem
+1.6.2026 22:25:02.966 [VerboseDebug] Starting system: PrimitiveSurvivalSystem
+1.6.2026 22:25:02.993 [VerboseDebug] Starting system: ProspectTogetherModSystem
+1.6.2026 22:25:03.030 [VerboseDebug] Starting system: Core
+1.6.2026 22:25:03.030 [VerboseDebug] Starting system: StoneSlabMeshCache
+1.6.2026 22:25:03.030 [VerboseDebug] Starting system: FluffyCloudsModSystem
+1.6.2026 22:25:03.030 [VerboseDebug] Starting system: ModSystemTfEditFromAttributes
+1.6.2026 22:25:03.030 [VerboseDebug] Starting system: GenMaps
+1.6.2026 22:25:03.031 [VerboseDebug] Starting system: ModSystemWorldGenStructures
+1.6.2026 22:25:03.031 [VerboseDebug] Starting system: ModSystemRenderFallingBlocksFast
+1.6.2026 22:25:03.031 [VerboseDebug] Starting system: FallingBlockParticlesModSystem
+1.6.2026 22:25:03.031 [VerboseDebug] Starting system: ModSystemItemRendererOptimizer
+1.6.2026 22:25:03.031 [VerboseDebug] Starting system: ModSystemFpHands
+1.6.2026 22:25:03.052 [VerboseDebug] Starting system: CharacterExtraDialogs
+1.6.2026 22:25:03.053 [VerboseDebug] Starting system: EntityNameTagRendererRegistry
+1.6.2026 22:25:03.053 [VerboseDebug] Starting system: ModSystemAmbientParticles
+1.6.2026 22:25:03.054 [VerboseDebug] Starting system: EntityParticleSpawner
+1.6.2026 22:25:03.055 [VerboseDebug] Starting system: EntityParticleSystem
+1.6.2026 22:25:03.064 [VerboseDebug] Starting system: POIRegistry
+1.6.2026 22:25:03.064 [VerboseDebug] Starting system: ModSystemProgressBar
+1.6.2026 22:25:03.064 [VerboseDebug] Starting system: RoomRegistry
+1.6.2026 22:25:03.064 [VerboseDebug] Starting system: WeatherSystemCommands
+1.6.2026 22:25:03.065 [VerboseDebug] Starting system: WeatherSystemClient
+1.6.2026 22:25:03.071 [VerboseDebug] Starting system: SystemRemotePlayerTracking
+1.6.2026 22:25:03.071 [VerboseDebug] Starting system: WorldMapManager
+1.6.2026 22:25:03.072 [VerboseDebug] Starting system: ACulinaryArtillery
+1.6.2026 22:25:03.073 [VerboseDebug] Starting system: Animalcages
+1.6.2026 22:25:03.074 [VerboseDebug] Starting system: AnimalHitchSystem
+1.6.2026 22:25:03.074 [VerboseDebug] Starting system: ArcheringModSystem
+1.6.2026 22:25:03.075 [VerboseDebug] Starting system: MapMarkerMod
+1.6.2026 22:25:03.109 [VerboseDebug] Starting system: MapMarkerGUISystem
+1.6.2026 22:25:03.109 [VerboseDebug] Starting system: AxleChiselModSystem
+1.6.2026 22:25:03.109 [VerboseDebug] Starting system: BedSpawnModSystem
+1.6.2026 22:25:03.109 [VerboseDebug] Starting system: Core
+1.6.2026 22:25:03.110 [VerboseDebug] Starting system: ButcheringSystem
+1.6.2026 22:25:03.110 [VerboseDebug] Starting system: CarrySystem
+1.6.2026 22:25:03 [Debug] [HudCarried] HUD renderer registered successfully
+1.6.2026 22:25:03.117 [VerboseDebug] Starting system: Main
+1.6.2026 22:25:03.117 [VerboseDebug] Starting system: ChopModSystem
+1.6.2026 22:25:03.117 [VerboseDebug] Starting system: CoriaenderShadersModSystem
+1.6.2026 22:25:03 [Debug] UDP: Client can receive UDP packets
+1.6.2026 22:25:03.214 [VerboseDebug] Starting system: Core
+1.6.2026 22:25:03.214 [VerboseDebug] Starting system: Core
+1.6.2026 22:25:03.214 [VerboseDebug] Starting system: Core
+1.6.2026 22:25:03.214 [VerboseDebug] Starting system: FirepitsShowFuelModSystem
+1.6.2026 22:25:03.214 [VerboseDebug] Starting system: Core
+1.6.2026 22:25:03.214 [VerboseDebug] Starting system: Core
+1.6.2026 22:25:03.221 [VerboseDebug] Starting system: FreedomUnitsMod
+1.6.2026 22:25:03.241 [VerboseDebug] Starting system: MoveDoorsModSystem
+1.6.2026 22:25:03.241 [VerboseDebug] Starting system: ModSystemTrampleProtection
+1.6.2026 22:25:03.242 [VerboseDebug] Starting system: PlantPositionRegistryModSystem2
+1.6.2026 22:25:03.242 [VerboseDebug] Starting system: PanningMachineModSystem
+1.6.2026 22:25:03.242 [VerboseDebug] Starting system: PetAI
+1.6.2026 22:25:03.242 [VerboseDebug] Starting system: ConfigSystem
+1.6.2026 22:25:03.242 [VerboseDebug] Starting system: ClayWheelModSystem
+1.6.2026 22:25:03.243 [VerboseDebug] Starting system: RealisticWaterModSystem
+1.6.2026 22:25:03.243 [VerboseDebug] Starting system: PlantPositionRegistryModSystem2
+1.6.2026 22:25:03.243 [VerboseDebug] Starting system: Core
+1.6.2026 22:25:03.243 [VerboseDebug] Starting system: OatsOven
+1.6.2026 22:25:03.243 [VerboseDebug] Starting system: ToolsmithModSystem
+1.6.2026 22:25:03.244 [VerboseDebug] Starting system: WorldEdit
+1.6.2026 22:25:03.246 [VerboseDebug] Starting system: EcoMachinaModSystem
+1.6.2026 22:25:03 [Debug] Render-only tapered wood: patched cube tesselator hooks: Vintagestory.Client.NoObf.CubeTesselator.Tesselate, Vintagestory.Client.NoObf.BleedingCubeTesselator.Tesselate.
+1.6.2026 22:25:03 [Debug] Render-only tapered wood: patched json tesselator hooks: Vintagestory.Client.NoObf.JsonTesselator.Tesselate, Vintagestory.Client.NoObf.BleedingJsonTesselator.Tesselate.
+1.6.2026 22:25:03 [Debug] Render-only tapered wood: patched json final mesh selection hook: Vintagestory.Client.NoObf.JsonTesselator.AddJsonModelDataToMesh.
+1.6.2026 22:25:03 [Debug] Render-only tapered wood: patched GetDefaultBlockMesh on Vintagestory.Client.NoObf.ShapeTesselatorManager (declaring Vintagestory.Client.NoObf.ShapeTesselatorManager).
+1.6.2026 22:25:03 [Debug] Render-only tapered wood: patched BlockVines.OnJsonTesselation hook for vine attachment snapping.
+1.6.2026 22:25:03 [Debug] Render-only tapered wood: patched Block.GetSelectionBoxes for vine selection-box snapping.
+1.6.2026 22:25:03 [Debug] Render-only tapered wood: patched BlockPlant.OnJsonTesselation hook for mushroom attachment snapping (filtered to BlockMushroom instances).
+1.6.2026 22:25:03 [Debug] Render-only tapered wood: patched Block.GetSelectionBoxes for mushroom selection-box snapping.
+1.6.2026 22:25:03 [Debug] Render-only tapered wood: patched Block.OnJsonTesselation hook for beehive attachment snapping (filtered to BlockBeehive instances; wildbeehive-inlog excluded).
+1.6.2026 22:25:03 [Debug] Render-only tapered wood: patched Block.GetSelectionBoxes for beehive selection-box snapping.
+1.6.2026 22:25:03 [Debug] Render-only tapered wood: patched Block.GetCollisionBoxes for beehive collision-box snapping.
+1.6.2026 22:25:03 [Debug] Render-only tapered wood: patched Vintagestory.Common.GameMain.RayTraceForSelection for BR-018 snap-priority selection override.
+1.6.2026 22:25:03 [Debug] Render-only tapered wood: patched Vintagestory.Client.NoObf.SystemMouseInWorldInteractions.UpdateCurrentSelection for BR-018 v11 Option B snap-priority selection override.
+1.6.2026 22:25:03.427 [VerboseDebug] Starting system: VSRoofingModSystem
+1.6.2026 22:25:03.427 [VerboseDebug] Starting system: StoryLockableDoor
+1.6.2026 22:25:03.428 [VerboseDebug] Starting system: StoryGenFailedSystem
+1.6.2026 22:25:03.428 [VerboseDebug] Starting system: ModSystemBossHealthBars
+1.6.2026 22:25:03.428 [VerboseDebug] Starting system: UpgradeTasks
+1.6.2026 22:25:03.428 [VerboseDebug] Starting system: ModSystemDetailModeSync
+1.6.2026 22:25:03.428 [VerboseDebug] Starting system: ModSystemTiledDungeons
+1.6.2026 22:25:03.428 [VerboseDebug] Starting system: MSShapeFromAttrCacheHelper
+1.6.2026 22:25:03.428 [VerboseDebug] Starting system: MyceliumSystem
+1.6.2026 22:25:03.428 [VerboseDebug] Starting system: ModSystemLabelMeshCache
+1.6.2026 22:25:03.429 [VerboseDebug] Starting system: ModSystemShapeFromAttributesTransform
+1.6.2026 22:25:03.429 [VerboseDebug] Starting system: ModSystemCatchCreature
+1.6.2026 22:25:03.429 [VerboseDebug] Starting system: FishingSupportModSystem
+1.6.2026 22:25:03.429 [VerboseDebug] Starting system: ModSystemGliding
+1.6.2026 22:25:03.429 [VerboseDebug] Starting system: ModSystemMeasuringRope
+1.6.2026 22:25:03.429 [VerboseDebug] Starting system: ModSystemStopRaiseShieldAnim
+1.6.2026 22:25:03.429 [VerboseDebug] Starting system: ModSystemSnowShoveling
+1.6.2026 22:25:03.429 [VerboseDebug] Starting system: ModSystemSubTongsDurability
+1.6.2026 22:25:03.430 [VerboseDebug] Starting system: Timeswitch
+1.6.2026 22:25:03.430 [VerboseDebug] Starting system: ScreenshakeToClientModSystem
+1.6.2026 22:25:03.430 [VerboseDebug] Starting system: StoryStructuresSpawnConditions
+1.6.2026 22:25:03.430 [VerboseDebug] Starting system: ModSystemNPCHairStyling
+1.6.2026 22:25:03.430 [VerboseDebug] Starting system: ModSystemSkinnableAdditions
+1.6.2026 22:25:03.430 [VerboseDebug] Starting system: ModSystemVillagerDebug
+1.6.2026 22:25:03.431 [VerboseDebug] Starting system: ModSystemAuction
+1.6.2026 22:25:03.432 [VerboseDebug] Starting system: ModSystemBlockReinforcement
+1.6.2026 22:25:03.435 [VerboseDebug] Starting system: Core
+1.6.2026 22:25:03.435 [VerboseDebug] Starting system: ModSystemBoatingSoundAndRatlineStamina
+1.6.2026 22:25:03.435 [VerboseDebug] Starting system: ModSystemShipConstructionSitePreview
+1.6.2026 22:25:03.435 [VerboseDebug] Starting system: CharacterSystem
+1.6.2026 22:25:03.436 [VerboseDebug] Starting system: MealMeshCache
+1.6.2026 22:25:03.436 [VerboseDebug] Starting system: VariablesModSystem
+1.6.2026 22:25:03.436 [VerboseDebug] Starting system: ModsystemElevator
+1.6.2026 22:25:03.436 [VerboseDebug] Starting system: ActivityModSystem
+1.6.2026 22:25:03.436 [VerboseDebug] Starting system: ActivityEditorSystem
+1.6.2026 22:25:03.437 [VerboseDebug] Starting system: ModSystemFarming
+1.6.2026 22:25:03.437 [VerboseDebug] Starting system: ModSystemCommandHandbook
+1.6.2026 22:25:03.438 [VerboseDebug] Starting system: ModSystemSurvivalHandbook
+1.6.2026 22:25:03.438 [VerboseDebug] Starting system: ModSystemTutorial
+1.6.2026 22:25:03.439 [VerboseDebug] Starting system: HeldItemMouseInputHandler
+1.6.2026 22:25:03.439 [VerboseDebug] Starting system: ModSystemNightVision
+1.6.2026 22:25:03.439 [VerboseDebug] Starting system: TobiasTeleporter
+1.6.2026 22:25:03.440 [VerboseDebug] Starting system: ModJournal
+1.6.2026 22:25:03.441 [VerboseDebug] Starting system: LiquidItemStackRenderer
+1.6.2026 22:25:03.441 [VerboseDebug] Starting system: ModSystemStructureLocator
+1.6.2026 22:25:03.441 [VerboseDebug] Starting system: ModLootRandomizer
+1.6.2026 22:25:03.441 [VerboseDebug] Starting system: ModSystemChiselCommands
+1.6.2026 22:25:03.441 [VerboseDebug] Starting system: MicroBlockModelCache
+1.6.2026 22:25:03.441 [VerboseDebug] Starting system: ModSystemEntityOwnership
+1.6.2026 22:25:03.442 [VerboseDebug] Starting system: ModSystemRifts
+1.6.2026 22:25:03.443 [VerboseDebug] Starting system: ModSystemRiftWeather
+1.6.2026 22:25:03.443 [VerboseDebug] Starting system: ModSleeping
+1.6.2026 22:25:03.453 [VerboseDebug] Starting system: ModSystemUnbreakSupportBeam
+1.6.2026 22:25:03.454 [VerboseDebug] Starting system: ModSystemSupportBeamPlacer
+1.6.2026 22:25:03.454 [VerboseDebug] Starting system: TeleporterManager
+1.6.2026 22:25:03.454 [VerboseDebug] Starting system: ModTemperature
+1.6.2026 22:25:03.454 [VerboseDebug] Starting system: SystemTemporalStability
+1.6.2026 22:25:03.455 [VerboseDebug] Starting system: TemporalStabilityEffects
+1.6.2026 22:25:03.457 [VerboseDebug] Starting system: ModSystemWearableStats
+1.6.2026 22:25:03.457 [VerboseDebug] Starting system: ModSystemEditableBook
+1.6.2026 22:25:03.457 [VerboseDebug] Starting system: MechanicalPowerMod
+1.6.2026 22:25:03.457 [VerboseDebug] Starting system: Waterfall
+1.6.2026 22:25:03.457 [VerboseDebug] Starting system: RecipePinsModSystem
+1.6.2026 22:25:03.466 [VerboseDebug] Starting system: WaterWheelRiverModSystem
+1.6.2026 22:25:03.466 [VerboseDebug] Starting system: Wolftaming
+1.6.2026 22:25:03.466 [VerboseDebug] Starting system: HammerTweaksNetwork
+1.6.2026 22:25:03.466 [VerboseDebug] Starting system: OrekiWoofsBeehivesModSystem
+1.6.2026 22:25:03.471 [VerboseDebug] Starting system: RoamingBeesModSystem
+1.6.2026 22:25:03.475 [VerboseDebug] Starting system: TradeHandbookInfoSystem
+1.6.2026 22:25:03.475 [VerboseDebug] Starting system: TradeHandbookInfo
+1.6.2026 22:25:03.475 [VerboseDebug] Starting system: ArchimedesScrewModSystem
+1.6.2026 22:25:03.477 [VerboseDebug] Starting system: MainSystem
+1.6.2026 22:25:03.477 [VerboseDebug] Starting system: RockManager
+1.6.2026 22:25:03.477 [VerboseDebug] Starting system: LoadColorMaps
+1.6.2026 22:25:03.477 [VerboseDebug] Starting system: GenDevastationLayer
+1.6.2026 22:25:03.477 [VerboseDebug] Starting system: ClothManager
+1.6.2026 22:25:03.482 [VerboseDebug] Starting system: RecipeRegistrySystem
+1.6.2026 22:25:03.482 [VerboseDebug] Starting system: ACARecipeRegistrySystem
+1.6.2026 22:25:03.482 [VerboseDebug] Starting system: ModSystemOreMap
+1.6.2026 22:25:03.483 [VerboseDebug] Starting system: ModSystemSnowballs
+1.6.2026 22:25:03.483 [VerboseDebug] Starting system: HumanoidOutfits
+1.6.2026 22:25:03.483 [VerboseDebug] Starting system: ModSystemDevastationEffects
+1.6.2026 22:25:03.484 [VerboseDebug] Starting system: RiversMod
+1.6.2026 22:25:03.709 [VerboseDebug] Sending request to join server
+1.6.2026 22:25:04.021 [VerboseDebug] World configs received and block tesselation complete
+1.6.2026 22:25:04.039 [VerboseDebug] Trigger mod event OnBlockTexturesLoaded
+1.6.2026 22:25:04.108 [VerboseDebug] Loaded highest priority sound assets
+1.6.2026 22:25:04 [Debug] BranchColorTinting: game:acacia hueShift=-0.161 satRatio=0.11 valRatio=2.47 → generated
+1.6.2026 22:25:04 [Debug] BranchColorTinting: game:aged hueShift=0.001 satRatio=0.25 valRatio=1.67 → generated
+1.6.2026 22:25:04 [Debug] BranchColorTinting: game:baldcypress hueShift=-0.032 satRatio=0.38 valRatio=3.54 → generated
+1.6.2026 22:25:04 [Debug] BranchColorTinting: game:birch hueShift=0.043 satRatio=0.11 valRatio=3.69 → generated
+1.6.2026 22:25:04 [Debug] BranchColorTinting: game:ebony hueShift=-0.028 satRatio=0.40 valRatio=2.71 → generated
+1.6.2026 22:25:04 [Debug] BranchColorTinting: game:kapok hueShift=0.063 satRatio=0.35 valRatio=2.67 → generated
+1.6.2026 22:25:04 [Debug] BranchColorTinting: game:larch hueShift=0.001 satRatio=0.17 valRatio=3.01 → generated
+1.6.2026 22:25:04 [Debug] BranchColorTinting: game:maple hueShift=-0.346 satRatio=0.06 valRatio=2.77 → generated
+1.6.2026 22:25:04 [Debug] BranchColorTinting: game:oak hueShift=-0.038 satRatio=0.33 valRatio=2.30 → generated
+1.6.2026 22:25:04 [Debug] BranchColorTinting: game:pine hueShift=-0.052 satRatio=0.61 valRatio=3.17 → generated
+1.6.2026 22:25:04 [Debug] BranchColorTinting: game:purpleheart hueShift=-0.011 satRatio=0.40 valRatio=2.45 → generated
+1.6.2026 22:25:04 [Debug] BranchColorTinting: game:redwood-2x2 hueShift=-0.034 satRatio=0.97 valRatio=1.82 → generated
+1.6.2026 22:25:04 [Debug] BranchColorTinting: game:redwood hueShift=-0.037 satRatio=0.98 valRatio=1.73 → generated
+1.6.2026 22:25:04 [Debug] BranchColorTinting: game:resin1 hueShift=0.042 satRatio=1.26 valRatio=3.01 → generated
+1.6.2026 22:25:04 [Debug] BranchColorTinting: game:resin2 hueShift=0.045 satRatio=1.25 valRatio=3.33 → generated
+1.6.2026 22:25:04 [Debug] BranchColorTinting: game:walnut hueShift=-0.051 satRatio=0.19 valRatio=2.45 → generated
+1.6.2026 22:25:04.184 [VerboseDebug] Loading sound file, game may stutter game:sounds/effect/ropestretch.ogg
+1.6.2026 22:25:04.195 [VerboseDebug] Slow to load clientSystem modhandler
+1.6.2026 22:25:04.237 [VerboseDebug] Done client systems OnLoaded
+1.6.2026 22:25:04.698 [VerboseDebug] Slow to load blocks (>1ms) game:lootvessel-arcticsupplies,game:clayoven-north,game:clayoven-east,game:clayoven-south
+1.6.2026 22:25:04 [Debug] Found permaboost: potash
+1.6.2026 22:25:04 [Debug] Found 1 fertility permaboosts
+1.6.2026 22:25:04 [Debug] Found fertilizer: game:bonemeal
+1.6.2026 22:25:04 [Debug] Highest nutrient: P
+1.6.2026 22:25:04 [Debug] Found fertilizer: game:potash
+1.6.2026 22:25:04 [Debug] Highest nutrient: K
+1.6.2026 22:25:04 [Debug] Found fertilizer: game:saltpeter
+1.6.2026 22:25:04 [Debug] Highest nutrient: K
+1.6.2026 22:25:04 [Debug] Found fertilizer: game:compost
+1.6.2026 22:25:04 [Debug] Highest nutrient: N
+1.6.2026 22:25:04 [Debug] Found fertilizer: primitivesurvival:earthwormcastings
+1.6.2026 22:25:04 [Debug] Highest nutrient: N
+1.6.2026 22:25:04 [Debug] Found fertilizer: aculinaryartillery:eggshell
+1.6.2026 22:25:04 [Debug] Highest nutrient: N
+1.6.2026 22:25:04 [Debug] Found fertilizer: expandedfoods:peanut-skins
+1.6.2026 22:25:04 [Debug] Highest nutrient: N
+1.6.2026 22:25:04 [Debug] Found 7 fertilizers
+1.6.2026 22:25:04.832 [VerboseDebug] Slow to load blocks (>1ms) game:aquatic-lilygiant-large,game:crop-amaranth-1,game:crop-amaranth-2,game:crop-amaranth-3
+1.6.2026 22:25:04.906 [VerboseDebug] Slow to load blocks (>1ms) game:fruittree-stem,game:fruittree-branch,game:fruittree-cutting,game:fruittree-foliage
+1.6.2026 22:25:04.965 [VerboseDebug] Server assets - done block tesselation
+1.6.2026 22:25:05.504 [VerboseDebug] Slow to load blocks (>1ms) game:wildvine-tropical-section-west,game:wildvine-tropical-end-west,game:baskettrap-reed,game:baskettrap-papyrus
+1.6.2026 22:25:05.892 [VerboseDebug] Slow to load blocks (>1ms) game:gravel-peridotite,game:gravel-phyllite,game:gravel-slate,game:gravel-bauxite
+1.6.2026 22:25:06.059 [VerboseDebug] Slow to load blocks (>1ms) game:rottenlog-stump,game:shelf-normal-north,game:shelf-normal-east,game:shelf-normal-south
+1.6.2026 22:25:06.468 [VerboseDebug] Slow to load blocks (>1ms) chiseltools:table-chiseled,chiseltools:chiseledtoolrack-north,chiseltools:chiseledtoolrack-east,chiseltools:chiseledtoolrack-south
+1.6.2026 22:25:06.601 [VerboseDebug] Slow to load blocks (>1ms) foodshelves:eggbasket-normal,foodshelves:fruitbasket-normal,foodshelves:mushroombasket-normal,foodshelves:vegetablebasket-normal
+1.6.2026 22:25:07.082 [VerboseDebug] Slow to load blocks (>1ms) foodshelves:fruitcooler-normal-north,foodshelves:fruitcooler-normal-east,foodshelves:fruitcooler-normal-south,foodshelves:fruitcooler-normal-west
+1.6.2026 22:25:07.614 [VerboseDebug] Slow to load blocks (>1ms) foodshelves:fooddisplaycase-normal-south,foodshelves:fooddisplaycase-normal-west,foodshelves:jar-normal,foodshelves:jarlarge-normal
+1.6.2026 22:25:07.739 [VerboseDebug] Slow to load blocks (>1ms) foodshelves:seedbins-normal-north,foodshelves:seedbins-normal-east,foodshelves:seedbins-normal-south,foodshelves:seedbins-normal-west
+1.6.2026 22:25:07.904 [VerboseDebug] Slow to load blocks (>1ms) foodshelves:ceilingrack-normal,foodshelves:floursack-normal-north,foodshelves:floursack-normal-east,foodshelves:floursack-normal-south
+1.6.2026 22:25:08.293 [VerboseDebug] Slow to load blocks (>1ms) butchering:butcherhookceiling-blackbronze-east,butchering:butcherhookceiling-iron-east,butchering:butcherhookceiling-copper-south,butchering:butcherhookceiling-tinbronze-south
+1.6.2026 22:25:08.458 [VerboseDebug] Slow to load blocks (>1ms) butchering:smokingrack-copper-north,butchering:smokingrack-iron-north,butchering:smokingrack-copper-east,butchering:smokingrack-iron-east
+1.6.2026 22:25:08.951 [VerboseDebug] Done blocks OnLoaded
+1.6.2026 22:25:09.090 [VerboseDebug] Slow to load items (>1ms) game:cheese-waxedcheddar-4slice,game:dough-spelt,game:dough-rye,game:dough-flax
+1.6.2026 22:25:09.497 [VerboseDebug] Slow to load items (>1ms) game:dough-rice,game:dough-cassava,game:dough-amaranth,game:dough-sunflower
+1.6.2026 22:25:10.135 [VerboseDebug] Slow to load items (>1ms) game:oar-crude-purpleheart,game:padlock-tinbronze,game:padlock-blackbronze,game:padlock-bismuthbronze
+1.6.2026 22:25:10.232 [VerboseDebug] Loading sound file, game may stutter game:sounds/player/poultice.ogg
+1.6.2026 22:25:10.251 [VerboseDebug] Loaded config 'awearablelight-client.json'.
+1.6.2026 22:25:10.251 [VerboseDebug] Loaded config 'awearablelight-client.json'.
+1.6.2026 22:25:10.252 [VerboseDebug] Loaded config 'awearablelight-client.json'.
+1.6.2026 22:25:10.252 [VerboseDebug] Loaded config 'awearablelight-client.json'.
+1.6.2026 22:25:10.252 [VerboseDebug] Loaded config 'awearablelight-client.json'.
+1.6.2026 22:25:10.252 [VerboseDebug] Loaded config 'awearablelight-client.json'.
+1.6.2026 22:25:10.252 [VerboseDebug] Loaded config 'awearablelight-client.json'.
+1.6.2026 22:25:10.252 [VerboseDebug] Loaded config 'awearablelight-client.json'.
+1.6.2026 22:25:10.252 [VerboseDebug] Loaded config 'awearablelight-client.json'.
+1.6.2026 22:25:10.252 [VerboseDebug] Loaded config 'awearablelight-client.json'.
+1.6.2026 22:25:10.582 [VerboseDebug] Done items OnLoaded
+1.6.2026 22:25:10 [Debug] Unique crafting ingredients count: 3556
+1.6.2026 22:25:10.590 [VerboseDebug] All clientside asset loading complete, game launch can proceed
+1.6.2026 22:25:10.668 [VerboseDebug] Received player data for playeruid YrY0v8GF7MEGKM6i4vk1QHL/
+1.6.2026 22:25:10.669 [VerboseDebug] Received inventory contents hotbar-YrY0v8GF7MEGKM6i4vk1QHL/
+1.6.2026 22:25:10.671 [VerboseDebug] Received inventory contents creative-YrY0v8GF7MEGKM6i4vk1QHL/
+1.6.2026 22:25:10.734 [VerboseDebug] Received inventory contents backpack-YrY0v8GF7MEGKM6i4vk1QHL/
+1.6.2026 22:25:10.734 [VerboseDebug] Received inventory contents ground-YrY0v8GF7MEGKM6i4vk1QHL/
+1.6.2026 22:25:10.734 [VerboseDebug] Received inventory contents mouse-YrY0v8GF7MEGKM6i4vk1QHL/
+1.6.2026 22:25:10.734 [VerboseDebug] Received inventory contents craftinggrid-YrY0v8GF7MEGKM6i4vk1QHL/
+1.6.2026 22:25:10.735 [VerboseDebug] Received inventory contents character-YrY0v8GF7MEGKM6i4vk1QHL/
+1.6.2026 22:25:10.735 [VerboseDebug] Informing clientsystems playerdata received
+1.6.2026 22:25:10.757 [VerboseDebug] GuiDialogInventory: starting composeGUI
+1.6.2026 22:25:10.899 [VerboseDebug] GuiDialogInventory: done composeGUI
+1.6.2026 22:25:10.927 [VerboseDebug] Done handling playerdata packet
+1.6.2026 22:25:10.930 [VerboseDebug] Received level finalize
+1.6.2026 22:25:12.513 [VerboseDebug] Handling LevelFinalize packet; requires remapping is False
+1.6.2026 22:25:12.517 [VerboseDebug] Done level finalize clientsystems
+1.6.2026 22:25:12.565 [VerboseDebug] Done init WeatherSystemClient
+1.6.2026 22:25:12.680 [VerboseDebug] Loading sound file, game may stutter game:sounds/raft-moving.ogg
+1.6.2026 22:25:12.747 [VerboseDebug] Loading sound file, game may stutter game:sounds/raft-idle.ogg
+1.6.2026 22:25:13.076 [VerboseDebug] Starting initialising handbook
+1.6.2026 22:25:13.196 [VerboseDebug] Done creating handbook index GUI
+1.6.2026 22:25:13.196 [VerboseDebug] Done initialising handbook
+1.6.2026 22:25:13.220 [VerboseDebug] Done scanning for liquid containers 
+1.6.2026 22:25:13.235 [VerboseDebug] Done init huge gears
+1.6.2026 22:25:13.236 [VerboseDebug] Done wearable stats
+1.6.2026 22:25:13.266 [VerboseDebug] [Extra Info] [TradeHandbookInfoSystem] Done traders handbook stuff
+1.6.2026 22:25:13.307 [VerboseDebug] Done traders handbook stuff
+1.6.2026 22:25:13.308 [VerboseDebug] Done level finalize
+1.6.2026 22:25:13.582 [VerboseDebug] Starting initialising handbook
+1.6.2026 22:25:13.598 [VerboseDebug] Done creating handbook index GUI
+1.6.2026 22:25:13.598 [VerboseDebug] Done initialising handbook
+1.6.2026 22:25:13.629 [VerboseDebug] Received player data for playeruid YrY0v8GF7MEGKM6i4vk1QHL/
+1.6.2026 22:25:13.630 [VerboseDebug] Received inventory contents hotbar-YrY0v8GF7MEGKM6i4vk1QHL/
+1.6.2026 22:25:13.630 [VerboseDebug] Received inventory contents backpack-YrY0v8GF7MEGKM6i4vk1QHL/
+1.6.2026 22:25:13.630 [VerboseDebug] Received inventory contents character-YrY0v8GF7MEGKM6i4vk1QHL/
+1.6.2026 22:25:13.631 [VerboseDebug] Done handling playerdata packet
+1.6.2026 22:25:17.703 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-bluemeanie-charred
+1.6.2026 22:25:17.704 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-foolsconecap-charred
+1.6.2026 22:25:17.704 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-goldcap-charred
+1.6.2026 22:25:17.704 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-honeymushroom-charred
+1.6.2026 22:25:17.705 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-laughingjim-charred
+1.6.2026 22:25:17.705 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-libertycap-charred
+1.6.2026 22:25:17.705 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-sickener-charred
+1.6.2026 22:25:17.706 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-wavycap-charred
+1.6.2026 22:25:18.372 [VerboseDebug] Lang key not found: expandedfoods:item-fruitsyrupportion-beautyberry
+1.6.2026 22:25:18.373 [VerboseDebug] Lang key not found: expandedfoods:item-fruitsyrupportion-blackberry
+1.6.2026 22:25:18.374 [VerboseDebug] Lang key not found: expandedfoods:item-fruitsyrupportion-cloudberry
+1.6.2026 22:25:18.374 [VerboseDebug] Lang key not found: expandedfoods:item-fruitsyrupportion-raspberry
+1.6.2026 22:25:18.375 [VerboseDebug] Lang key not found: expandedfoods:item-fruitsyrupportion-strawberry
+1.6.2026 22:25:18.932 [VerboseDebug] Lang key not found: expandedfoods:block-bowl-peat-earthyorange
+1.6.2026 22:25:22.693 [VerboseDebug] Lang key not found: awearablelight:item-windup
+1.6.2026 22:25:23.454 [VerboseDebug] Lang key not found: expandedfoods:item-candiedfruit-beautyberry
+1.6.2026 22:25:23.455 [VerboseDebug] Lang key not found: expandedfoods:item-candiedfruit-blackberry
+1.6.2026 22:25:23.455 [VerboseDebug] Lang key not found: expandedfoods:item-candiedfruit-cactusfruit
+1.6.2026 22:25:23.456 [VerboseDebug] Lang key not found: expandedfoods:item-candiedfruit-cloudberry
+1.6.2026 22:25:23.457 [VerboseDebug] Lang key not found: expandedfoods:item-candiedfruit-gooseberry
+1.6.2026 22:25:23.457 [VerboseDebug] Lang key not found: expandedfoods:item-candiedfruit-guava
+1.6.2026 22:25:23.458 [VerboseDebug] Lang key not found: expandedfoods:item-candiedfruit-kumquat
+1.6.2026 22:25:23.459 [VerboseDebug] Lang key not found: expandedfoods:item-candiedfruit-plumnatal
+1.6.2026 22:25:23.459 [VerboseDebug] Lang key not found: expandedfoods:item-candiedfruit-raspberry
+1.6.2026 22:25:23.460 [VerboseDebug] Lang key not found: expandedfoods:item-candiedfruit-strawberry
+1.6.2026 22:25:23.465 [VerboseDebug] Lang key not found: expandedfoods:item-choppedmushroom-bluemeanie
+1.6.2026 22:25:23.466 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-bluemeanie-charred
+1.6.2026 22:25:23.466 [VerboseDebug] Lang key not found: expandedfoods:item-choppedmushroom-foolsconecap
+1.6.2026 22:25:23.467 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-foolsconecap-charred
+1.6.2026 22:25:23.467 [VerboseDebug] Lang key not found: expandedfoods:item-choppedmushroom-goldcap
+1.6.2026 22:25:23.468 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-goldcap-charred
+1.6.2026 22:25:23.469 [VerboseDebug] Lang key not found: expandedfoods:item-choppedmushroom-honeymushroom
+1.6.2026 22:25:23.469 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-honeymushroom-charred
+1.6.2026 22:25:23.470 [VerboseDebug] Lang key not found: expandedfoods:item-choppedmushroom-laughingjim
+1.6.2026 22:25:23.471 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-laughingjim-charred
+1.6.2026 22:25:23.471 [VerboseDebug] Lang key not found: expandedfoods:item-choppedmushroom-libertycap
+1.6.2026 22:25:23.472 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-libertycap-charred
+1.6.2026 22:25:23.474 [VerboseDebug] Lang key not found: expandedfoods:item-choppedmushroom-sickener
+1.6.2026 22:25:23.475 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-sickener-charred
+1.6.2026 22:25:23.475 [VerboseDebug] Lang key not found: expandedfoods:item-choppedmushroom-wavycap
+1.6.2026 22:25:23.476 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-wavycap-charred
+1.6.2026 22:25:23.491 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-bluemeanie-partbaked
+1.6.2026 22:25:23.492 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-foolsconecap-partbaked
+1.6.2026 22:25:23.493 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-goldcap-partbaked
+1.6.2026 22:25:23.494 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-honeymushroom-partbaked
+1.6.2026 22:25:23.495 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-laughingjim-partbaked
+1.6.2026 22:25:23.496 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-libertycap-partbaked
+1.6.2026 22:25:23.498 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-sickener-partbaked
+1.6.2026 22:25:23.499 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-wavycap-partbaked
+1.6.2026 22:25:23.511 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-bluemeanie-perfect
+1.6.2026 22:25:23.512 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-foolsconecap-perfect
+1.6.2026 22:25:23.513 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-goldcap-perfect
+1.6.2026 22:25:23.514 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-honeymushroom-perfect
+1.6.2026 22:25:23.515 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-laughingjim-perfect
+1.6.2026 22:25:23.516 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-libertycap-perfect
+1.6.2026 22:25:23.517 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-sickener-perfect
+1.6.2026 22:25:23.519 [VerboseDebug] Lang key not found: expandedfoods:item-cookedchoppedmushroom-wavycap-perfect
+1.6.2026 22:25:23.566 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-bluemeanie-partbaked
+1.6.2026 22:25:23.568 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-foolsconecap-partbaked
+1.6.2026 22:25:23.569 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-goldcap-partbaked
+1.6.2026 22:25:23.570 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-honeymushroom-partbaked
+1.6.2026 22:25:23.572 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-laughingjim-partbaked
+1.6.2026 22:25:23.573 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-libertycap-partbaked
+1.6.2026 22:25:23.574 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-sickener-partbaked
+1.6.2026 22:25:23.575 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-wavycap-partbaked
+1.6.2026 22:25:23.591 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-bluemeanie-perfect
+1.6.2026 22:25:23.592 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-foolsconecap-perfect
+1.6.2026 22:25:23.593 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-goldcap-perfect
+1.6.2026 22:25:23.595 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-honeymushroom-perfect
+1.6.2026 22:25:23.596 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-laughingjim-perfect
+1.6.2026 22:25:23.597 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-libertycap-perfect
+1.6.2026 22:25:23.598 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-sickener-perfect
+1.6.2026 22:25:23.599 [VerboseDebug] Lang key not found: expandedfoods:item-cookedmushroom-wavycap-perfect
+1.6.2026 22:25:23.635 [VerboseDebug] Lang key not found: expandedfoods:item-dehydratedfruit-beautyberry
+1.6.2026 22:25:23.638 [VerboseDebug] Lang key not found: expandedfoods:item-dehydratedfruit-blackberry
+1.6.2026 22:25:23.639 [VerboseDebug] Lang key not found: expandedfoods:item-dehydratedfruit-cactusfruit
+1.6.2026 22:25:23.640 [VerboseDebug] Lang key not found: expandedfoods:item-dehydratedfruit-cloudberry
+1.6.2026 22:25:23.640 [VerboseDebug] Lang key not found: expandedfoods:item-dehydratedfruit-gooseberry
+1.6.2026 22:25:23.641 [VerboseDebug] Lang key not found: expandedfoods:item-dehydratedfruit-guava
+1.6.2026 22:25:23.642 [VerboseDebug] Lang key not found: expandedfoods:item-dehydratedfruit-kumquat
+1.6.2026 22:25:23.642 [VerboseDebug] Lang key not found: expandedfoods:item-dehydratedfruit-plumnatal
+1.6.2026 22:25:23.643 [VerboseDebug] Lang key not found: expandedfoods:item-dehydratedfruit-raspberry
+1.6.2026 22:25:23.644 [VerboseDebug] Lang key not found: expandedfoods:item-dehydratedfruit-strawberry
+1.6.2026 22:25:23.647 [VerboseDebug] Lang key not found: expandedfoods:item-dryfruit-beautyberry
+1.6.2026 22:25:23.647 [VerboseDebug] Lang key not found: expandedfoods:item-dryfruit-blackberry
+1.6.2026 22:25:23.648 [VerboseDebug] Lang key not found: expandedfoods:item-dryfruit-cactusfruit
+1.6.2026 22:25:23.649 [VerboseDebug] Lang key not found: expandedfoods:item-dryfruit-cloudberry
+1.6.2026 22:25:23.650 [VerboseDebug] Lang key not found: expandedfoods:item-dryfruit-gooseberry
+1.6.2026 22:25:23.650 [VerboseDebug] Lang key not found: expandedfoods:item-dryfruit-guava
+1.6.2026 22:25:23.651 [VerboseDebug] Lang key not found: expandedfoods:item-dryfruit-kumquat
+1.6.2026 22:25:23.652 [VerboseDebug] Lang key not found: expandedfoods:item-dryfruit-plumnatal
+1.6.2026 22:25:23.653 [VerboseDebug] Lang key not found: expandedfoods:item-dryfruit-raspberry
+1.6.2026 22:25:23.653 [VerboseDebug] Lang key not found: expandedfoods:item-dryfruit-strawberry
+1.6.2026 22:25:23.661 [VerboseDebug] Lang key not found: expandedfoods:item-gelatin-beautyberry
+1.6.2026 22:25:23.662 [VerboseDebug] Lang key not found: expandedfoods:item-gelatin-blackberry
+1.6.2026 22:25:23.663 [VerboseDebug] Lang key not found: expandedfoods:item-gelatin-cloudberry
+1.6.2026 22:25:23.664 [VerboseDebug] Lang key not found: expandedfoods:item-gelatin-raspberry
+1.6.2026 22:25:23.665 [VerboseDebug] Lang key not found: expandedfoods:item-gelatin-strawberry
+1.6.2026 22:25:23.666 [VerboseDebug] Lang key not found: expandedfoods:item-gelatin-cactusfruit
+1.6.2026 22:25:23.666 [VerboseDebug] Lang key not found: expandedfoods:item-gelatin-gooseberry
+1.6.2026 22:25:23.667 [VerboseDebug] Lang key not found: expandedfoods:item-gelatin-guava
+1.6.2026 22:25:23.668 [VerboseDebug] Lang key not found: expandedfoods:item-gelatin-kumquat
+1.6.2026 22:25:23.668 [VerboseDebug] Lang key not found: expandedfoods:item-gelatin-plumnatal
+1.6.2026 22:25:23.683 [VerboseDebug] Lang key not found: expandedfoods:item-fruitsyrupportion-cactusfruit
+1.6.2026 22:25:23.684 [VerboseDebug] Lang key not found: expandedfoods:item-fruitsyrupportion-gooseberry
+1.6.2026 22:25:23.685 [VerboseDebug] Lang key not found: expandedfoods:item-fruitsyrupportion-guava
+1.6.2026 22:25:23.686 [VerboseDebug] Lang key not found: expandedfoods:item-fruitsyrupportion-kumquat
+1.6.2026 22:25:23.686 [VerboseDebug] Lang key not found: expandedfoods:item-fruitsyrupportion-plumnatal
+1.6.2026 22:25:23.689 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-sunflower-butter
+1.6.2026 22:25:23.690 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-walnut-butter
+1.6.2026 22:25:23.691 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-almond-butter
+1.6.2026 22:25:23.692 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-pinenut-butter
+1.6.2026 22:25:23.692 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-macadamia-butter
+1.6.2026 22:25:23.693 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-acorn-butter
+1.6.2026 22:25:23.694 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-chestnut-butter
+1.6.2026 22:25:23.695 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-hazelnut-butter
+1.6.2026 22:25:23.697 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-pumpkinseed-butter
+1.6.2026 22:25:23.698 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-cashew-butter
+1.6.2026 22:25:23.699 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-pistachio-butter
+1.6.2026 22:25:23.700 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-sunflower-sweetened
+1.6.2026 22:25:23.701 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-walnut-sweetened
+1.6.2026 22:25:23.702 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-almond-sweetened
+1.6.2026 22:25:23.703 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-pinenut-sweetened
+1.6.2026 22:25:23.703 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-macadamia-sweetened
+1.6.2026 22:25:23.704 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-acorn-sweetened
+1.6.2026 22:25:23.705 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-chestnut-sweetened
+1.6.2026 22:25:23.706 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-hazelnut-sweetened
+1.6.2026 22:25:23.707 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-pumpkinseed-sweetened
+1.6.2026 22:25:23.708 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-cashew-sweetened
+1.6.2026 22:25:23.709 [VerboseDebug] Lang key not found: expandedfoods:item-nutliquid-pistachio-sweetened
+1.6.2026 22:25:23.716 [VerboseDebug] Lang key not found: expandedfoods:item-potentspiritportion-beautyberry
+1.6.2026 22:25:23.717 [VerboseDebug] Lang key not found: expandedfoods:item-potentspiritportion-blackberry
+1.6.2026 22:25:23.718 [VerboseDebug] Lang key not found: expandedfoods:item-potentspiritportion-cactusfruit
+1.6.2026 22:25:23.719 [VerboseDebug] Lang key not found: expandedfoods:item-potentspiritportion-cloudberry
+1.6.2026 22:25:23.720 [VerboseDebug] Lang key not found: expandedfoods:item-potentspiritportion-gooseberry
+1.6.2026 22:25:23.721 [VerboseDebug] Lang key not found: expandedfoods:item-potentspiritportion-guava
+1.6.2026 22:25:23.722 [VerboseDebug] Lang key not found: expandedfoods:item-potentspiritportion-kumquat
+1.6.2026 22:25:23.722 [VerboseDebug] Lang key not found: expandedfoods:item-potentspiritportion-plumnatal
+1.6.2026 22:25:23.723 [VerboseDebug] Lang key not found: expandedfoods:item-potentspiritportion-raspberry
+1.6.2026 22:25:23.724 [VerboseDebug] Lang key not found: expandedfoods:item-potentspiritportion-strawberry
+1.6.2026 22:25:23.731 [VerboseDebug] Lang key not found: expandedfoods:item-potentwineportion-beautyberry
+1.6.2026 22:25:23.732 [VerboseDebug] Lang key not found: expandedfoods:item-potentwineportion-blackberry
+1.6.2026 22:25:23.733 [VerboseDebug] Lang key not found: expandedfoods:item-potentwineportion-cactusfruit
+1.6.2026 22:25:23.734 [VerboseDebug] Lang key not found: expandedfoods:item-potentwineportion-cloudberry
+1.6.2026 22:25:23.735 [VerboseDebug] Lang key not found: expandedfoods:item-potentwineportion-gooseberry
+1.6.2026 22:25:23.736 [VerboseDebug] Lang key not found: expandedfoods:item-potentwineportion-guava
+1.6.2026 22:25:23.737 [VerboseDebug] Lang key not found: expandedfoods:item-potentwineportion-kumquat
+1.6.2026 22:25:23.738 [VerboseDebug] Lang key not found: expandedfoods:item-potentwineportion-plumnatal
+1.6.2026 22:25:23.738 [VerboseDebug] Lang key not found: expandedfoods:item-potentwineportion-raspberry
+1.6.2026 22:25:23.739 [VerboseDebug] Lang key not found: expandedfoods:item-potentwineportion-strawberry
+1.6.2026 22:25:23.747 [VerboseDebug] Lang key not found: expandedfoods:item-strongspiritportion-beautyberry
+1.6.2026 22:25:23.748 [VerboseDebug] Lang key not found: expandedfoods:item-strongspiritportion-blackberry
+1.6.2026 22:25:23.749 [VerboseDebug] Lang key not found: expandedfoods:item-strongspiritportion-cactusfruit
+1.6.2026 22:25:23.750 [VerboseDebug] Lang key not found: expandedfoods:item-strongspiritportion-cloudberry
+1.6.2026 22:25:23.751 [VerboseDebug] Lang key not found: expandedfoods:item-strongspiritportion-gooseberry
+1.6.2026 22:25:23.751 [VerboseDebug] Lang key not found: expandedfoods:item-strongspiritportion-guava
+1.6.2026 22:25:23.752 [VerboseDebug] Lang key not found: expandedfoods:item-strongspiritportion-kumquat
+1.6.2026 22:25:23.753 [VerboseDebug] Lang key not found: expandedfoods:item-strongspiritportion-plumnatal
+1.6.2026 22:25:23.754 [VerboseDebug] Lang key not found: expandedfoods:item-strongspiritportion-raspberry
+1.6.2026 22:25:23.755 [VerboseDebug] Lang key not found: expandedfoods:item-strongspiritportion-strawberry
+1.6.2026 22:25:23.763 [VerboseDebug] Lang key not found: expandedfoods:item-strongwineportion-beautyberry
+1.6.2026 22:25:23.764 [VerboseDebug] Lang key not found: expandedfoods:item-strongwineportion-blackberry
+1.6.2026 22:25:23.765 [VerboseDebug] Lang key not found: expandedfoods:item-strongwineportion-cactusfruit
+1.6.2026 22:25:23.765 [VerboseDebug] Lang key not found: expandedfoods:item-strongwineportion-cloudberry
+1.6.2026 22:25:23.766 [VerboseDebug] Lang key not found: expandedfoods:item-strongwineportion-gooseberry
+1.6.2026 22:25:23.767 [VerboseDebug] Lang key not found: expandedfoods:item-strongwineportion-guava
+1.6.2026 22:25:23.768 [VerboseDebug] Lang key not found: expandedfoods:item-strongwineportion-kumquat
+1.6.2026 22:25:23.769 [VerboseDebug] Lang key not found: expandedfoods:item-strongwineportion-plumnatal
+1.6.2026 22:25:23.770 [VerboseDebug] Lang key not found: expandedfoods:item-strongwineportion-raspberry
+1.6.2026 22:25:23.771 [VerboseDebug] Lang key not found: expandedfoods:item-strongwineportion-strawberry
+1.6.2026 22:25:23.776 [VerboseDebug] Lang key not found: expandedfoods:item-yogurt-beautyberry
+1.6.2026 22:25:23.777 [VerboseDebug] Lang key not found: expandedfoods:item-yogurt-blackberry
+1.6.2026 22:25:23.778 [VerboseDebug] Lang key not found: expandedfoods:item-yogurt-cloudberry
+1.6.2026 22:25:23.778 [VerboseDebug] Lang key not found: expandedfoods:item-yogurt-raspberry
+1.6.2026 22:25:23.779 [VerboseDebug] Lang key not found: expandedfoods:item-yogurt-strawberry
+1.6.2026 22:25:23.780 [VerboseDebug] Lang key not found: expandedfoods:item-yogurt-cactusfruit
+1.6.2026 22:25:23.780 [VerboseDebug] Lang key not found: expandedfoods:item-yogurt-gooseberry
+1.6.2026 22:25:23.781 [VerboseDebug] Lang key not found: expandedfoods:item-yogurt-guava
+1.6.2026 22:25:23.782 [VerboseDebug] Lang key not found: expandedfoods:item-yogurt-kumquat
+1.6.2026 22:25:23.782 [VerboseDebug] Lang key not found: expandedfoods:item-yogurt-plumnatal
+1.6.2026 22:27:36 [Debug] Unpatching harmony methods
+1.6.2026 22:27:37 [Debug] Unpatching harmony methods
+1.6.2026 22:27:37.964 [VerboseDebug] [smithingplus] Unpatching...
+1.6.2026 22:27:38.170 [VerboseDebug] [toolsmith] Unpatching Harmony Patches.
+1.6.2026 22:27:38.186 [VerboseDebug] [toolsmith] Unpatching Harmony Patches.
+1.6.2026 22:27:38 [Debug] GuiScreenConnectingToServer constructed
+1.6.2026 22:27:39 [Debug] After gamewindow.Run()
