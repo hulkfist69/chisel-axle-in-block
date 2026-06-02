@@ -80,6 +80,14 @@ namespace AxleChisel
                 var be = world.BlockAccessor.GetBlockEntity(blockSel.Position);
                 if (be == null || FindBehavior(be, AxleBehaviorType) == null) return true; // not an axle -> normal chiseling
 
+                // Require a hammer in the offhand, exactly like vanilla chiseling (creative
+                // bypasses). If it's missing, don't intercept - let vanilla ItemChisel run and
+                // show its own "Requires a hammer in the off hand" error.
+                var byPlayer = (byEntity as EntityPlayer)?.Player;
+                if (byPlayer == null) return true;
+                bool creative = byPlayer.WorldData.CurrentGameMode == EnumGameMode.Creative;
+                if (byPlayer.InventoryManager.OffhandTool != EnumTool.Hammer && !creative) return true;
+
                 var cover = FindBehavior(be, typeof(BlockEntityBehaviorCoverable)) as BlockEntityBehaviorCoverable;
                 if (cover?.WallStack?.Block == null)
                 {
