@@ -1,4 +1,4 @@
-# Axle Chisel — push Vintage Story logs back to the git repo for remote review.
+# Axle Chisel - push Vintage Story logs back to the git repo for remote review.
 # Copies the VS log files into ./logs, writes a filtered [axlechisel]-only view,
 # then commits and pushes just that folder so they can be pulled on the dev Mac.
 #

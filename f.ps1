@@ -1,4 +1,4 @@
-# Axle Chisel — "f" dev command dispatcher.
+# Axle Chisel - "f" dev command dispatcher.
 #
 #   f dev     open the interactive dev terminal (numbered menu)
 #   f test    run the game now (build + deploy + launch)
@@ -46,7 +46,7 @@ function Show-Menu {
         $ver = Get-ModVersion
         $br  = Get-Branch
         Write-Host ""
-        Write-Host "  Axle Chisel — dev terminal" -ForegroundColor Cyan -NoNewline
+        Write-Host "  Axle Chisel - dev terminal" -ForegroundColor Cyan -NoNewline
         Write-Host "      v$ver  " -ForegroundColor DarkGray -NoNewline
         Write-Host "branch: $br" -ForegroundColor Green
         Write-Host "  ---------------------------------------------------------" -ForegroundColor DarkGray

@@ -1,4 +1,4 @@
-# Axle Chisel — dev hot-loop (Windows)
+# Axle Chisel - dev hot-loop (Windows)
 # Closes any running Vintage Story, builds the mod, swaps the zip into the Mods
 # folder, and relaunches the game. For fast iterate-and-test cycles.
 #
@@ -7,7 +7,7 @@
 #   .\dev.ps1 -PushLogs  # launch, then auto-push VS logs when you close the game
 #
 # Requires $env:VINTAGE_STORY to point at your VS install dir (the one that
-# contains Vintagestory.exe + VintagestoryAPI.dll) — same var build.ps1 uses.
+# contains Vintagestory.exe + VintagestoryAPI.dll) - same var build.ps1 uses.
 param(
     [switch]$NoLaunch,
     [switch]$PushLogs
@@ -80,7 +80,7 @@ $game = Start-Process -FilePath $exe -PassThru
 
 # --- 5. Auto-push logs on exit (optional) -------------------------------------
 if ($PushLogs) {
-    Write-Host "Waiting for you to close Vintage Story — logs will auto-push on exit..." -ForegroundColor Cyan
+    Write-Host "Waiting for you to close Vintage Story - logs will auto-push on exit..." -ForegroundColor Cyan
     $game.WaitForExit()
     & (Join-Path $root "pushlogs.ps1")
 }

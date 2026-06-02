@@ -1,4 +1,4 @@
-# Axle Chisel — Windows build + package
+# Axle Chisel - Windows build + package
 $ErrorActionPreference = "Stop"
 
 if (-not $env:VINTAGE_STORY) {
