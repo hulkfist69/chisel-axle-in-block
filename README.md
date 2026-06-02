@@ -46,6 +46,21 @@ The build output is saved to `dist/AxleChisel-<version>.zip`. Install it by copy
 ./build.sh
 ```
 
+### Dev hot-loop (Windows)
+
+`dev.ps1` runs the full iterate-and-test cycle in one command: it closes any
+running Vintage Story, builds the mod, removes the old install from your Mods
+folder, copies the fresh zip in, and relaunches the game.
+
+```powershell
+.\dev.ps1            # build + redeploy + launch
+.\dev.ps1 -NoLaunch  # build + redeploy, but don't start the game
+```
+
+It uses `$env:VINTAGE_STORY` (your VS install dir) and defaults the Mods folder
+to `%APPDATA%\VintagestoryData\Mods` — override with `$env:VINTAGE_STORY_DATA`
+if your data path is custom.
+
 ## Development
 
 This repository includes:
