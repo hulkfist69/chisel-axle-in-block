@@ -91,9 +91,13 @@ then commits and pushes them — so they can be pulled and read remotely instead
 of copy-pasting by hand.
 
 ```powershell
-.\log                    # copy logs, commit, push to main
-.\log -Branch test-logs  # push to a separate branch instead
+.\log                    # copy logs, commit, push to the current branch
+.\log -Branch test-logs  # push to a specific branch instead
 ```
+
+Active development happens on the `dev` branch (logs are committed there, public),
+with `main` kept as the stable baseline. `.\log` pushes to whatever branch you
+have checked out, so working from `dev` needs no extra flags.
 
 The easiest workflow is `.\dev -PushLogs`: it builds, deploys, launches, and
 then waits — when you quit the game it pushes the logs automatically.

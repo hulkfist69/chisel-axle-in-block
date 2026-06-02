@@ -2,17 +2,20 @@
 # Copies the VS log files into ./logs, writes a filtered [axlechisel]-only view,
 # then commits and pushes just that folder so they can be pulled on the dev Mac.
 #
-#   .\pushlogs.ps1                  # copy logs, commit, push to main
-#   .\pushlogs.ps1 -Branch test-logs   # push to a different branch instead
+#   .\pushlogs.ps1                  # copy logs, commit, push to the CURRENT branch
+#   .\pushlogs.ps1 -Branch test-logs   # push to a specific branch instead
 #
 # Reads the same paths as dev.ps1: $env:APPDATA\VintagestoryData\Logs by default,
 # or $env:VINTAGE_STORY_DATA\Logs if that override is set.
 param(
-    [string]$Branch = "main"
+    [string]$Branch = ""
 )
 $ErrorActionPreference = "Stop"
 
 $root = Split-Path -Parent $MyInvocation.MyCommand.Definition
+
+# Default to whatever branch you're working out of (e.g. dev), so logs land there.
+if (-not $Branch) { $Branch = (git -C $root rev-parse --abbrev-ref HEAD).Trim() }
 
 $dataDir = if ($env:VINTAGE_STORY_DATA) { $env:VINTAGE_STORY_DATA } else { Join-Path $env:APPDATA "VintagestoryData" }
 $logsSrc = Join-Path $dataDir "Logs"
