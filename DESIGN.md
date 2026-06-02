@@ -24,6 +24,66 @@ The encasing logic itself appears to live in closed-source VintagestoryLib (not
 in ItemWrench.cs / BlockAxle.cs), which is why we capture it from the running
 game instead of reading source.
 
+## 0b. BREAKTHROUGH (v0.3.0 in-game capture) — how encasing actually works
+
+Right-clicking an encased axle with a chisel dumped the truth. An encased axle:
+- Block stays `game:woodenaxle-<rot>` (`BlockAxle`). **Encasing never changes the
+  block or the axle** — it is purely additive.
+- BE is `BlockEntityGeneric` with behaviors: `BEBehaviorBurning`,
+  `BEBehaviorMPAxle`, **`BlockEntityBehaviorCoverable`**.
+- The cover block is an `ItemStack WallStack` on `BlockEntityBehaviorCoverable`.
+  - Render: `OnTesselation` → `mesher.AddMeshData(capi.TesselatorManager
+    .GetDefaultBlockMesh(WallStack.Block))` (a full-block mesh).
+  - `BlockBehaviorCoverable` derives solidity/collision/selection/light from
+    `WallStack`. Encase interaction: sprint + wrench-in-offhand + suitable block
+    in main hand → `TryAddMaterial` sets `WallStack`.
+  - Serialized as itemstack `wallStack`.
+
+**Power is block-driven.** `BEBehaviorMPBase` resolves connectivity via
+`GetBlock(pos) as IMechanicalPowerBlock` and even `(Block as
+IMechanicalPowerBlock).DidConnectAt(...)`. So the block at the position MUST
+implement `IMechanicalPowerBlock` or power breaks. This is why encasing is clean
+(block stays `BlockAxle`) and why a plain `chiseledblock` (not an
+`IMechanicalPowerBlock`) would sever power.
+
+`IMechanicalPowerBlock` (3 members):
+```
+MechanicalNetwork GetNetwork(IWorldAccessor world, BlockPos pos);
+bool HasMechPowerConnectorAt(IWorldAccessor world, BlockPos pos, BlockFacing face, BlockMPBase forBlock);
+void DidConnectAt(IWorldAccessor world, BlockPos pos, BlockFacing face);
+```
+BlockAxle impl: `HasMechPowerConnectorAt = IsOrientedTo(face)` where
+`IsOrientedTo` checks the rotation code (`LastCodePart()`, e.g. "ns" connects
+n/s); `DidConnectAt` is a no-op; `GetNetwork` reads the BE behavior's Network.
+
+## 0c. Two viable build paths (chisel an encased axle, keep power)
+
+**Path A — new combined block `BlockChiseledAxle : BlockChisel, IMechanicalPowerBlock`.**
+- Inherits the full interactive chisel system (voxel editing, mesh, selection;
+  the chisel tool edits anything `is BlockChisel`). Implement the 3 power members
+  (mirroring BlockAxle, orientation from rotation variant). BE =
+  `BlockEntityChiseledAxle : BlockEntityChisel` hosting the MPAxle behavior.
+- Chiseling an encased axle converts it to this block, seeding voxels from
+  `WallStack.Block` and carrying the axle orientation/network.
+- Cost: an intricate new blocktype JSON merging chisel + axle behaviors; network
+  rejoin on convert; render the shaft + voxels together. Reuses chisel UX.
+
+**Path B — keep `BlockAxle`, give the cover voxel geometry (extend Coverable).**
+- Block stays `BlockAxle` ⇒ **power is free** (no IMechanicalPowerBlock work, no
+  network rejoin). Store chiseled voxel cuboids in a companion BE behavior;
+  Harmony-patch `BlockEntityBehaviorCoverable.OnTesselation` to render the
+  microblock mesh (reuse `BlockEntityMicroBlock.CreateMesh` static) instead of
+  the full-block cover; derive selection/collision from voxels.
+- Chiseling an encased axle edits our voxel data (intercept ItemChisel; reuse
+  voxel math) rather than converting the block.
+- Cost: reimplement the chisel editing loop (can't inherit BlockEntityChisel).
+  Keeps power trivially correct and needs no new blocktype.
+
+**Recommendation: Path B.** Power correctness is the whole point of the mod, and
+B keeps it free by never changing the block; it also avoids the fragile chisel
+blocktype JSON. The tradeoff is reimplementing voxel editing, but the microblock
+static helpers (CreateMesh/ToUint/FromUint/voxel math) carry most of it.
+
 ## 1. Class map (verified)
 
 ### Mechanical power / axle
