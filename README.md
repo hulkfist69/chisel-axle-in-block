@@ -55,11 +55,27 @@ folder, copies the fresh zip in, and relaunches the game.
 ```powershell
 .\dev.ps1            # build + redeploy + launch
 .\dev.ps1 -NoLaunch  # build + redeploy, but don't start the game
+.\dev.ps1 -PushLogs  # launch, then auto-push VS logs when you close the game
 ```
 
 It uses `$env:VINTAGE_STORY` (your VS install dir) and defaults the Mods folder
 to `%APPDATA%\VintagestoryData\Mods` — override with `$env:VINTAGE_STORY_DATA`
 if your data path is custom.
+
+### Sending logs back for review
+
+`pushlogs.ps1` copies the Vintage Story logs into `logs/` in this repo, writes a
+filtered `logs/axlechisel-filtered.log` containing only `[axlechisel]` lines,
+then commits and pushes them — so they can be pulled and read remotely instead
+of copy-pasting by hand.
+
+```powershell
+.\pushlogs.ps1                    # copy logs, commit, push to main
+.\pushlogs.ps1 -Branch test-logs  # push to a separate branch instead
+```
+
+The easiest workflow is `.\dev.ps1 -PushLogs`: it builds, deploys, launches, and
+then waits — when you quit the game it pushes the logs automatically.
 
 ## Development
 

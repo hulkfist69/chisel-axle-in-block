@@ -4,11 +4,13 @@
 #
 #   .\dev.ps1            # build + redeploy + launch
 #   .\dev.ps1 -NoLaunch  # build + redeploy, but don't start the game
+#   .\dev.ps1 -PushLogs  # launch, then auto-push VS logs when you close the game
 #
 # Requires $env:VINTAGE_STORY to point at your VS install dir (the one that
 # contains Vintagestory.exe + VintagestoryAPI.dll) — same var build.ps1 uses.
 param(
-    [switch]$NoLaunch
+    [switch]$NoLaunch,
+    [switch]$PushLogs
 )
 $ErrorActionPreference = "Stop"
 
@@ -74,4 +76,11 @@ if ($NoLaunch) {
 $exe = Join-Path $env:VINTAGE_STORY "Vintagestory.exe"
 if (-not (Test-Path $exe)) { Write-Error "Vintagestory.exe not found at $exe" }
 Write-Host "Launching Vintage Story..." -ForegroundColor Cyan
-Start-Process -FilePath $exe
+$game = Start-Process -FilePath $exe -PassThru
+
+# --- 5. Auto-push logs on exit (optional) -------------------------------------
+if ($PushLogs) {
+    Write-Host "Waiting for you to close Vintage Story — logs will auto-push on exit..." -ForegroundColor Cyan
+    $game.WaitForExit()
+    & (Join-Path $root "pushlogs.ps1")
+}
