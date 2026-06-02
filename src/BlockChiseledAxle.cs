@@ -1,7 +1,9 @@
 using System;
+using System.Collections.Generic;
 using System.Reflection;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
+using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
 using Vintagestory.GameContent;
 using Vintagestory.GameContent.Mechanics;
@@ -40,6 +42,31 @@ namespace AxleChisel
             if (f != null) { f.SetValue(this, val); return; }
             var p = t.GetProperty(name, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
             if (p != null && p.CanWrite) p.SetValue(this, val);
+        }
+
+        // Breaking a chiseled axle returns both the carved block (as a normal chiseledblock,
+        // preserving the pattern/materials) and the wooden axle that was inside it.
+        public override ItemStack[] GetDrops(IWorldAccessor world, BlockPos pos, IPlayer byPlayer, float dropQuantityMultiplier = 1f)
+        {
+            var drops = new List<ItemStack>();
+
+            var bec = GetBlockEntity<BlockEntityMicroBlock>(pos);
+            var chiseledblock = world.GetBlock(new AssetLocation("chiseledblock"));
+            if (bec != null && chiseledblock != null)
+            {
+                var tree = new TreeAttribute();
+                bec.ToTreeAttributes(tree);
+                tree.RemoveAttribute("posx");
+                tree.RemoveAttribute("posy");
+                tree.RemoveAttribute("posz");
+                tree.RemoveAttribute("snowcuboids");
+                drops.Add(new ItemStack(chiseledblock.Id, EnumItemClass.Block, 1, tree, world));
+            }
+
+            var axle = world.GetBlock(new AssetLocation("woodenaxle-ud"));
+            if (axle != null) drops.Add(new ItemStack(axle));
+
+            return drops.ToArray();
         }
 
         public bool IsOrientedTo(BlockFacing facing)

@@ -23,6 +23,7 @@ namespace AxleChisel
             DumpDiscovery(logger);
             AxleBlockType = ResolveType("Vintagestory.GameContent.Mechanics.BlockAxle");
             TryPatchChisel(harmony, logger);
+            TryPatchCoverInteract(harmony, logger);
         }
 
         private static void TryPatchChisel(Harmony harmony, ILogger logger)
@@ -105,6 +106,76 @@ namespace AxleChisel
             {
                 (byEntity?.World?.Logger)?.Error("[axlechisel] ChiselInteractPrefix error: " + ex);
                 return true; // fail open
+            }
+        }
+
+        // Story 2: encase an axle with a CHISELED block. Same gesture as normal encasing
+        // (sprint + wrench in offhand + right-click the axle) but holding a chiseled block.
+        // Vanilla's Coverable rejects non-cube materials, so we intercept and convert the
+        // axle straight to chiseledaxle, restoring the held block's chisel pattern.
+        private static void TryPatchCoverInteract(Harmony harmony, ILogger logger)
+        {
+            try
+            {
+                var covType = ResolveType("Vintagestory.GameContent.BlockBehaviorCoverable");
+                var target = covType?
+                    .GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly)
+                    .FirstOrDefault(m => m.Name == "OnBlockInteractStart" && m.GetParameters().Length == 4);
+                if (target == null) { logger.Warning("[axlechisel] BlockBehaviorCoverable.OnBlockInteractStart not found; story-2 patch skipped"); return; }
+
+                harmony.Patch(target, prefix: new HarmonyMethod(
+                    typeof(RuntimePatches).GetMethod(nameof(CoverInteractPrefix), BindingFlags.Static | BindingFlags.NonPublic)));
+                logger.Notification("[axlechisel] patched BlockBehaviorCoverable.OnBlockInteractStart (chiseled-block encasing active)");
+            }
+            catch (Exception ex) { logger.Error("[axlechisel] TryPatchCoverInteract FAILED: " + ex); }
+        }
+
+        private static bool CoverInteractPrefix(object __instance, IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel, ref EnumHandling handling, ref bool __result)
+        {
+            try
+            {
+                if (byPlayer == null || blockSel == null || world == null) return true;
+                var block = world.BlockAccessor.GetBlock(blockSel.Position);
+                if (AxleBlockType == null || block == null || !AxleBlockType.IsInstanceOfType(block)) return true; // raw axle only
+
+                // Same encase gesture as vanilla: sprint + wrench in the offhand.
+                var offhand = byPlayer.InventoryManager.OffhandHotbarSlot;
+                bool gesture = byPlayer.Entity.Controls.Sprint
+                    && offhand?.Itemstack?.Collectible?.GetTool(offhand) == EnumTool.Wrench;
+                if (!gesture) return true;
+
+                var hslot = byPlayer.InventoryManager.ActiveHotbarSlot;
+                if (!(hslot?.Itemstack?.Block is BlockChisel)) return true; // only chiseled material; vanilla handles cubes
+
+                if (world.Side == EnumAppSide.Server)
+                {
+                    string rot = block.Variant?["rotation"] ?? "ud";
+                    var newBlock = world.GetBlock(new AssetLocation("axlechisel", "chiseledaxle-" + rot));
+                    if (newBlock != null)
+                    {
+                        // SetBlock with the held stack -> OnBlockPlaced restores the chisel pattern.
+                        world.BlockAccessor.SetBlock(newBlock.BlockId, blockSel.Position, hslot.Itemstack);
+                        var newBe = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityChisel;
+                        var mp = newBe?.GetBehavior<BEBehaviorMPBase>();
+                        if (mp != null)
+                            foreach (var f in OrientedFaces(rot))
+                                if (mp.tryConnect(f)) break;
+                        newBe?.MarkDirty(true);
+
+                        if (byPlayer.WorldData.CurrentGameMode != EnumGameMode.Creative) { hslot.TakeOut(1); hslot.MarkDirty(); }
+                        world.Logger.Notification("[axlechisel] placed chiseled block onto axle -> chiseledaxle-" + rot + " at " + blockSel.Position);
+                    }
+                }
+
+                Msg(world, "[axlechisel] chiseled block placed onto axle - power keeps flowing");
+                handling = EnumHandling.PreventDefault;
+                __result = true;
+                return false;
+            }
+            catch (Exception ex)
+            {
+                world?.Logger?.Error("[axlechisel] CoverInteractPrefix error: " + ex);
+                return true;
             }
         }
 
