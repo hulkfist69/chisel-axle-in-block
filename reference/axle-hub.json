@@ -1,0 +1,78 @@
+{
+	code: "woodenaxlehub",
+	class: "BlockAxle",
+	entityClass: "Generic",
+	entityBehaviors: [{ name: "Burning" }, { name: "MPAxle" }, { name: "Coverable" } ],
+	behaviors: [{name: "Pillar", properties: { invertedPlacement: true } }, { name: "Coverable" }],
+	attributes: {
+		handbook: {
+			groupBy: ["woodenaxlehub-*"]
+		}
+	},
+	creativeinventory: { "general": ["*-ud"], "mechanics": ["*-ud"] },
+	variantgroups: [
+		{ code: "metal", states: ["iron", "meteoriciron", "steel"] },
+		{ code: "rotation", states: ["ud", "ns", "we"] },
+	],
+	shapeByType: {
+		"*-ns": { base: "block/wood/mechanics/axle-hub-light4way", rotateY: 90 },
+		"*-ud": { base: "block/wood/mechanics/axle-hub-light4way", rotateZ: 90 },
+		"*-we": { base: "block/wood/mechanics/axle-hub-light4way", rotateY: 0 },
+	},
+	blockmaterial: "Wood",
+	materialDensity: 450,
+	textures: {
+		wood: { base: "block/wood/planks/generic" },
+		metal: { base: "block/metal/sheet/{metal}1" }
+	},
+	sidesolid: {
+		all: false
+	},
+	sideopaque: {
+		all: false
+	},
+	combustibleProps: {
+		burnTemperature: 600,
+		burnDuration: 20,
+	},
+	rainPermeable: true,
+	resistance: 3.5,
+	lightAbsorption: 0,
+	maxStackSize: 16,
+	drops: [
+		{ type: "block", code: "woodenaxlehub-{metal}-ud", quantity: { avg: 1 }  }
+	],
+	heldTpIdleAnimation: "holdbothhandslarge",
+	groundTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: -90, y: 0, z: 0 },
+		origin: { x: 0.5, y: 0.45, z: 0.38 },
+		scale: 2.7
+	},
+	guiTransform: {
+		rotation: { x: -115, y: 4, z: -33 },
+		scale: 1.88
+	},
+	tpHandTransform: {
+		translation: { x: -1.5, y: -0.4, z: -0.9 },
+		rotation: { x: 0, y: 0, z: 90 },
+		origin: { x: 0.5, y: 0.25, z: 0.5 },
+		scale: 0.55
+	},
+	collisionSelectionBoxByType: {
+		"*-we": { x1: 0, y1: 0, z1: 0.25, x2: 1, y2: 0.875, z2: 0.75 },
+		"*-ns": { x1: 0, y1: 0, z1: 0.25, x2: 1, y2: 0.875, z2: 0.75, rotateY: 90 },
+		"*-ud": { x1: 0.25, y1: 0, z1: 0.25, x2: 0.75, y2: 1, z2: 0.75 }
+	},
+	particleCollisionBoxByType: {
+		"*-we": { x1: 0, y1: 0, z1: 0.375, x2: 1, y2: 0.625, z2: 0.625 },
+		"*-ns": { x1: 0, y1: 0, z1: 0.375, x2: 1, y2: 0.625, z2: 0.625, rotateY: 90 },
+		"*-ud": { x1: 0.375, y1: 0, z1: 0.375, x2: 0.625, y2: 1, z2: 0.625 }
+	},
+	sounds: {
+		"hit": "block/planks",
+		"break": "block/planks",
+		"place": "block/planks",
+		"walk": "walk/wood"
+	}
+}

@@ -1,0 +1,19 @@
+{
+	// Non editable variant of the chiseledblock
+	code: "microblock",
+	class: "BlockMicroBlock",
+	entityBehaviors: [ { name: "SupportBeam" }, { name: "MicroblockSnowCover" } ],
+	attributes: {
+		dropSelf: false
+	},
+	faceCullMode: "NeverCull",
+	entityClass: "MicroBlock",
+	creativeinventory: { "general": [""] },
+	shape: { base: "game:block/basic/cube" },
+	replaceable: 90,
+	drops: [],
+	sidesolid: { all: false },
+	sideopaque: { all: false },
+	sideao: { all: true },
+	lightAbsorption: 99
+}

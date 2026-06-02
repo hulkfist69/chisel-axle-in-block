@@ -1,0 +1,81 @@
+{
+	code: "axlearm",
+	class: "BlockMPConsumer",
+	entityClass: "Generic",
+	entityBehaviors: [
+		{ name: "Burning" }, 
+															//  Resistance is increased at runtime when something is connected to this arm
+		{ name: "MPConsumer", properties: { resistance: 0.01 } }
+	],
+	behaviors: [{name: "HorizontalOrientable"}],
+	attributes: {
+		handbook: {
+			groupBy: ["axlearm-{tier}-*"]
+		}
+	},
+	variantgroups: [
+		{ code: "tier", states:["wood"] },
+		{ code: "side", loadFromProperties: "abstract/horizontalorientation" },
+	],
+	creativeinventory: { "general": ["*-north"], "mechanics": ["*-north"] },
+	shapebytype: {
+		"*-north": { base: "block/{tier}/mechanics/axle-arm05h", rotateY: 270 },
+		"*-east": { base: "block/{tier}/mechanics/axle-arm05h", rotateY: 180 },
+		"*-south": { base: "block/{tier}/mechanics/axle-arm05h", rotateY: 90 },
+		"*-west": { base: "block/{tier}/mechanics/axle-arm05h", rotateY: 0 }
+	},
+	blockmaterial: "Wood",
+	textures: {
+		wood: { base: "block/wood/planks/generic" }
+	},
+	sidesolid: {
+		all: false
+	},
+	sideopaque: {
+		all: false
+	},
+	combustibleProps: {
+		burnTemperature: 600,
+		burnDuration: 10,
+	},
+	rainPermeable: true,
+	drops: [
+		{ type: "block", code: "axlearm-{tier}-north" }
+	],
+	resistance: 3.5,
+	lightAbsorption: 0,
+	maxStackSize: 4,
+	heldTpIdleAnimation: "holdbothhandslarge",
+	guiTransform: {
+		rotation: { x: -22.6, y: 140, z: 0 },
+		origin: { x: 0.5, y: 0.5, z: 0.3 },
+		scale: 2.32
+	},
+	tpHandTransformByType: {
+		"*-metal-north": {
+			translation: { x: -0.85, y: -0.6, z: -0.33 },
+			rotation: { x: 13, y: -74, z: 0 },
+			scale: 0.7
+		},
+		"*": {
+			translation: { x: -0.6, y: -0.4, z: -0.33 },
+			rotation: { x: -77, y: 1, z: 31 },
+			scale: 0.8
+		}
+	},
+	collisionSelectionBoxes: [
+		{ x1: 0, y1: 0.375, z1: 0.3125, x2: 0.625, y2: 0.6875, z2: 0.625, rotateYByType: { "*-north": 270, "*-east": 180, "*-south": 90 } }
+	],
+	groundTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: -2, y: 0, z: 90 },
+		origin: { x: 0.37, y: 0.46, z: 0.26 },
+		scale: 3.5
+	},
+	sounds: {
+		"hit": "block/planks",
+		"break": "block/planks",
+		"place": "block/planks",
+		"walk": "walk/wood"
+	}
+}
