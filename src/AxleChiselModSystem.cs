@@ -17,6 +17,9 @@ namespace AxleChisel
             Logger = api.Logger;
             api.Logger.Notification("[axlechisel] starting v" + BuildInfo.Version + " " + BuildInfo.Sha + " side=" + api.Side);
 
+            api.RegisterBlockClass("BlockChiseledAxle", typeof(BlockChiseledAxle));
+            api.RegisterBlockEntityClass("ChiseledAxle", typeof(BlockEntityChiseledAxle));
+
             harmony = new Harmony(HarmonyId);
             try
             {
@@ -37,7 +40,6 @@ namespace AxleChisel
 
         public override void StartClientSide(ICoreClientAPI capi)
         {
-            RuntimePatches.ClientApi = capi;
         }
 
         public override void Dispose()

@@ -1,0 +1,19 @@
+{
+	code: "chiseledaxle",
+	class: "BlockChiseledAxle",
+	entityClass: "ChiseledAxle",
+	entityBehaviors: [ { name: "SupportBeam" }, { name: "MicroblockSnowCover" }, { name: "MPAxle", properties: { withStands: false } } ],
+	attributes: {
+		dropSelf: true
+	},
+	variantgroups: [
+		{ code: "rotation", states: ["ud", "ns", "we"] }
+	],
+	shape: { base: "game:block/basic/cube" },
+	replaceable: 90,
+	drops: [],
+	sidesolid: { all: false },
+	sideopaque: { all: false },
+	sideao: { all: true },
+	lightAbsorption: 99
+}

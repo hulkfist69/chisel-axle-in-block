@@ -1,41 +1,30 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using HarmonyLib;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
-using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
 using Vintagestory.GameContent;
+using Vintagestory.GameContent.Mechanics;
 
 namespace AxleChisel
 {
-    // Path B: keep the axle block (so mechanical power keeps working for free) and
-    // give its "cover" (BlockEntityBehaviorCoverable.WallStack) chiseled voxel geometry.
-    // We store voxel cuboids on the WallStack's attributes, render them in place of the
-    // full-block cover mesh, and (Layer 1) apply a fixed test carve when chiseling an
-    // encased axle to prove the rendering + power preservation end to end.
+    // Path A: chiseling an encased axle converts it to our combined block, BlockChiseledAxle
+    // (a real BlockChisel that also implements IMechanicalPowerBlock). From then on it chisels
+    // exactly like vanilla AND conducts power, because it IS a chisel block and an axle.
     public static class RuntimePatches
     {
-        public static ICoreClientAPI ClientApi; // set in StartClientSide, used during tesselation
-
-        private const string VoxelKey = "axlechiselVoxels"; // byte[] of uint cuboids on WallStack.Attributes
-
-        private static Type AxleBehaviorType; // Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle
+        private static Type AxleBlockType; // Vintagestory.GameContent.Mechanics.BlockAxle
 
         public static void Apply(Harmony harmony, ILogger logger)
         {
             DumpDiscovery(logger);
-            AxleBehaviorType = ResolveType("Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle");
+            AxleBlockType = ResolveType("Vintagestory.GameContent.Mechanics.BlockAxle");
             TryPatchChisel(harmony, logger);
-            TryPatchCoverRender(harmony, logger);
         }
 
-        // ---------------------------------------------------------------------------
-        // Patch wiring
-        // ---------------------------------------------------------------------------
         private static void TryPatchChisel(Harmony harmony, ILogger logger)
         {
             try
@@ -48,46 +37,32 @@ namespace AxleChisel
 
                 harmony.Patch(target, prefix: new HarmonyMethod(
                     typeof(RuntimePatches).GetMethod(nameof(ChiselInteractPrefix), BindingFlags.Static | BindingFlags.NonPublic)));
-                logger.Notification("[axlechisel] patched ItemChisel.OnHeldInteractStart");
+                logger.Notification("[axlechisel] patched ItemChisel.OnHeldInteractStart (encased-axle conversion active)");
             }
             catch (Exception ex) { logger.Error("[axlechisel] TryPatchChisel FAILED: " + ex); }
         }
 
-        private static void TryPatchCoverRender(Harmony harmony, ILogger logger)
-        {
-            try
-            {
-                var m = typeof(BlockEntityBehaviorCoverable).GetMethod("OnTesselation",
-                    BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly);
-                if (m == null) { logger.Warning("[axlechisel] Coverable.OnTesselation not found; render patch skipped"); return; }
-
-                harmony.Patch(m, prefix: new HarmonyMethod(
-                    typeof(RuntimePatches).GetMethod(nameof(CoverTesselationPrefix), BindingFlags.Static | BindingFlags.NonPublic)));
-                logger.Notification("[axlechisel] patched BlockEntityBehaviorCoverable.OnTesselation");
-            }
-            catch (Exception ex) { logger.Error("[axlechisel] TryPatchCoverRender FAILED: " + ex); }
-        }
-
-        // ---------------------------------------------------------------------------
-        // Chisel an encased axle -> carve the cover (Layer 1: fixed test carve)
-        // ---------------------------------------------------------------------------
+        // Intercept chiseling of a RAW encased axle (BlockAxle with a Coverable cover) and
+        // convert it to our chiseledaxle block, seeded from the cover material. After this the
+        // block is a BlockChisel (not a BlockAxle) so we no longer intercept it - vanilla
+        // chiseling handles all further edits while our block keeps power flowing.
         private static bool ChiselInteractPrefix(EntityAgent byEntity, BlockSelection blockSel, ref EnumHandHandling handling)
         {
             try
             {
                 if (byEntity?.World == null || blockSel == null) return true;
                 var world = byEntity.World;
-                var be = world.BlockAccessor.GetBlockEntity(blockSel.Position);
-                if (be == null || FindBehavior(be, AxleBehaviorType) == null) return true; // not an axle -> normal chiseling
+                var block = world.BlockAccessor.GetBlock(blockSel.Position);
+                if (AxleBlockType == null || block == null || !AxleBlockType.IsInstanceOfType(block)) return true; // not a raw axle
 
-                // Require a hammer in the offhand, exactly like vanilla chiseling (creative
-                // bypasses). If it's missing, don't intercept - let vanilla ItemChisel run and
-                // show its own "Requires a hammer in the off hand" error.
+                // Require a hammer in the offhand, like vanilla (creative bypasses). If missing,
+                // don't intercept -> vanilla shows its own "Requires a hammer in the off hand".
                 var byPlayer = (byEntity as EntityPlayer)?.Player;
                 if (byPlayer == null) return true;
                 bool creative = byPlayer.WorldData.CurrentGameMode == EnumGameMode.Creative;
                 if (byPlayer.InventoryManager.OffhandTool != EnumTool.Hammer && !creative) return true;
 
+                var be = world.BlockAccessor.GetBlockEntity(blockSel.Position);
                 var cover = FindBehavior(be, typeof(BlockEntityBehaviorCoverable)) as BlockEntityBehaviorCoverable;
                 if (cover?.WallStack?.Block == null)
                 {
@@ -96,75 +71,53 @@ namespace AxleChisel
                     return false;
                 }
 
-                // Server mutates; MarkDirty syncs the updated WallStack (with voxels) to clients.
                 if (world.Side == EnumAppSide.Server)
                 {
-                    var cuboids = new List<uint> { BlockEntityMicroBlock.ToUint(0, 0, 0, 16, 8, 16, 0) }; // bottom half
-                    SetVoxels(cover.WallStack, cuboids);
-                    be.MarkDirty(true);
-                    world.Logger.Notification("[axlechisel] carved cover (test) at " + blockSel.Position + " material=" + cover.WallStack.Block.Code);
+                    var coverBlock = cover.WallStack.Block;
+                    string rot = block.Variant?["rotation"] ?? "ud";
+                    var newBlock = world.GetBlock(new AssetLocation("axlechisel", "chiseledaxle-" + rot));
+                    if (newBlock == null)
+                    {
+                        world.Logger.Error("[axlechisel] chiseledaxle-" + rot + " not found; conversion aborted");
+                        return false;
+                    }
+                    world.BlockAccessor.SetBlock(newBlock.BlockId, blockSel.Position);
+                    var newBe = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityChisel;
+                    newBe?.WasPlaced(coverBlock, null);
+
+                    // Join the mechanical network. The vanilla axle joins via BlockAxle.TryPlaceBlock,
+                    // which our SetBlock bypasses, so trigger it manually on the oriented faces.
+                    // (Chunk reloads rejoin automatically via the serialized NetworkId.)
+                    var mp = newBe?.GetBehavior<BEBehaviorMPBase>();
+                    if (mp != null)
+                        foreach (var face in OrientedFaces(rot))
+                            if (mp.tryConnect(face)) break;
+
+                    newBe?.MarkDirty(true);
+                    world.Logger.Notification("[axlechisel] converted encased axle -> chiseledaxle-" + rot + " (material " + coverBlock.Code + ") at " + blockSel.Position);
                 }
-                Msg(world, "[axlechisel] chiseled the cover (test carve) - axle preserved");
+
+                Msg(world, "[axlechisel] axle is now chiselable - chisel away, power keeps flowing");
                 handling = EnumHandHandling.PreventDefaultAction;
                 return false;
             }
             catch (Exception ex)
             {
                 (byEntity?.World?.Logger)?.Error("[axlechisel] ChiselInteractPrefix error: " + ex);
-                return true;
+                return true; // fail open
             }
         }
 
-        // ---------------------------------------------------------------------------
-        // Render the chiseled cover instead of the full-block cover mesh
-        // ---------------------------------------------------------------------------
-        private static bool CoverTesselationPrefix(object __instance, ITerrainMeshPool mesher, ref bool __result)
+        private static BlockFacing[] OrientedFaces(string rot)
         {
-            try
+            switch (rot)
             {
-                var cover = __instance as BlockEntityBehaviorCoverable;
-                var ws = cover?.WallStack;
-                if (ws?.Block == null) return true;            // no cover -> vanilla
-                var cuboids = GetVoxels(ws);
-                if (cuboids == null || cuboids.Count == 0) return true; // not chiseled -> vanilla full cover
-                var capi = ClientApi;
-                if (capi == null) return true;
-
-                var mesh = BlockEntityMicroBlock.CreateMesh(capi, cuboids, new int[] { ws.Block.BlockId }, null);
-                if (mesh != null) mesher.AddMeshData(mesh);
-
-                __result = false; // keep default block tesselation (the axle shaft) running
-                return false;     // skip vanilla's full-block cover mesh
-            }
-            catch
-            {
-                return true; // fall back to vanilla cover render
+                case "ns": return new[] { BlockFacing.NORTH, BlockFacing.SOUTH };
+                case "we": return new[] { BlockFacing.WEST, BlockFacing.EAST };
+                default: return new[] { BlockFacing.DOWN, BlockFacing.UP }; // ud
             }
         }
 
-        // ---------------------------------------------------------------------------
-        // Voxel storage on the cover's WallStack attributes (byte[] of uint cuboids)
-        // ---------------------------------------------------------------------------
-        private static void SetVoxels(ItemStack ws, List<uint> cuboids)
-        {
-            if (ws?.Attributes == null) return;
-            var bytes = new byte[cuboids.Count * 4];
-            for (int i = 0; i < cuboids.Count; i++) BitConverter.GetBytes(cuboids[i]).CopyTo(bytes, i * 4);
-            ws.Attributes.SetBytes(VoxelKey, bytes);
-        }
-
-        private static List<uint> GetVoxels(ItemStack ws)
-        {
-            var bytes = ws?.Attributes?.GetBytes(VoxelKey, null);
-            if (bytes == null || bytes.Length < 4) return null;
-            var list = new List<uint>(bytes.Length / 4);
-            for (int i = 0; i + 4 <= bytes.Length; i += 4) list.Add(BitConverter.ToUInt32(bytes, i));
-            return list;
-        }
-
-        // ---------------------------------------------------------------------------
-        // Helpers
-        // ---------------------------------------------------------------------------
         private static void Msg(IWorldAccessor world, string text)
         {
             if (world.Side == EnumAppSide.Client) (world.Api as ICoreClientAPI)?.ShowChatMessage(text);
@@ -180,9 +133,6 @@ namespace AxleChisel
             return null;
         }
 
-        // ---------------------------------------------------------------------------
-        // Discovery dump (retained, abbreviated)
-        // ---------------------------------------------------------------------------
         private static void DumpDiscovery(ILogger logger)
         {
             logger.Notification("[axlechisel] ===== discovery dump begin =====");
@@ -191,7 +141,7 @@ namespace AxleChisel
                 "Vintagestory.GameContent.Mechanics.BlockAxle",
                 "Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle",
                 "Vintagestory.GameContent.BlockEntityBehaviorCoverable",
-                "Vintagestory.GameContent.BlockEntityMicroBlock",
+                "Vintagestory.GameContent.BlockChisel",
                 "Vintagestory.GameContent.ItemChisel"
             };
             foreach (var name in candidates)
