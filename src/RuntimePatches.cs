@@ -6,223 +6,193 @@ using HarmonyLib;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
+using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
+using Vintagestory.GameContent;
 
 namespace AxleChisel
 {
-    // Runtime reflection patches + one-time structure dumps. We resolve VS internal
-    // types by name (they vary across versions) and patch by reflection so a missing
-    // type logs and continues instead of crashing at startup.
+    // Path B: keep the axle block (so mechanical power keeps working for free) and
+    // give its "cover" (BlockEntityBehaviorCoverable.WallStack) chiseled voxel geometry.
+    // We store voxel cuboids on the WallStack's attributes, render them in place of the
+    // full-block cover mesh, and (Layer 1) apply a fixed test carve when chiseling an
+    // encased axle to prove the rendering + power preservation end to end.
     public static class RuntimePatches
     {
-        // Resolved once at startup, used by the chisel prefix.
-        private static Type AxleBlockType;       // Vintagestory.GameContent.Mechanics.BlockAxle
-        private static Type AxleBehaviorType;     // Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle
+        public static ICoreClientAPI ClientApi; // set in StartClientSide, used during tesselation
+
+        private const string VoxelKey = "axlechiselVoxels"; // byte[] of uint cuboids on WallStack.Attributes
+
+        private static Type AxleBehaviorType; // Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle
 
         public static void Apply(Harmony harmony, ILogger logger)
         {
             DumpDiscovery(logger);
+            AxleBehaviorType = ResolveType("Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle");
             TryPatchChisel(harmony, logger);
+            TryPatchCoverRender(harmony, logger);
         }
 
-        // --- v0.2.0: non-destructive axle-chisel interception --------------------------
-        // ItemChisel.OnHeldInteractStart (Item/ItemChisel.cs) is what converts a solid
-        // block into a "chiseledblock": it SetBlock()s the chiseled block over the axle
-        // (destroying it) then calls be.WasPlaced(originalBlock). We prefix that method:
-        // when the targeted block is an axle, we log everything we need to build the
-        // combined block and PREVENT the vanilla conversion so the axle is preserved.
+        // ---------------------------------------------------------------------------
+        // Patch wiring
+        // ---------------------------------------------------------------------------
         private static void TryPatchChisel(Harmony harmony, ILogger logger)
         {
             try
             {
-                AxleBlockType = ResolveType("Vintagestory.GameContent.Mechanics.BlockAxle");
-                AxleBehaviorType = ResolveType("Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle");
-
                 var itemChiselType = ResolveType("Vintagestory.GameContent.ItemChisel");
-                if (itemChiselType == null)
-                {
-                    logger.Warning("[axlechisel] ItemChisel type not found; chisel patch skipped");
-                    return;
-                }
-
-                // OnHeldInteractStart(ItemSlot, EntityAgent, BlockSelection, EntitySelection, bool, ref EnumHandHandling)
-                var target = itemChiselType
+                var target = itemChiselType?
                     .GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly)
                     .FirstOrDefault(m => m.Name == "OnHeldInteractStart" && m.GetParameters().Length == 6);
+                if (target == null) { logger.Warning("[axlechisel] ItemChisel.OnHeldInteractStart not found; chisel patch skipped"); return; }
 
-                if (target == null)
-                {
-                    logger.Warning("[axlechisel] ItemChisel.OnHeldInteractStart(6 args) not found; chisel patch skipped");
-                    return;
-                }
-
-                var prefix = typeof(RuntimePatches).GetMethod(nameof(ChiselInteractPrefix),
-                    BindingFlags.Static | BindingFlags.NonPublic);
-
-                harmony.Patch(target, prefix: new HarmonyMethod(prefix));
-                logger.Notification("[axlechisel] patched ItemChisel.OnHeldInteractStart (axle interception active)");
+                harmony.Patch(target, prefix: new HarmonyMethod(
+                    typeof(RuntimePatches).GetMethod(nameof(ChiselInteractPrefix), BindingFlags.Static | BindingFlags.NonPublic)));
+                logger.Notification("[axlechisel] patched ItemChisel.OnHeldInteractStart");
             }
-            catch (Exception ex)
-            {
-                logger.Error("[axlechisel] TryPatchChisel FAILED: " + ex);
-            }
+            catch (Exception ex) { logger.Error("[axlechisel] TryPatchChisel FAILED: " + ex); }
         }
 
-        // Harmony injects byEntity / blockSel / handling by parameter name. Returning
-        // false skips the original method (the vanilla destructive conversion).
-        //
-        // v0.3.0 inspector: when the chiseled target is an axle-bearing position (the BE
-        // carries a BEBehaviorMPAxle - true for both a plain axle and an axle that's been
-        // encased in a block via the wrench), dump the FULL block/BE/behavior/decor state
-        // so we learn how 1.22 represents an encased axle, and preserve it (prevent the
-        // vanilla destructive conversion). Non-axle blocks chisel normally.
+        private static void TryPatchCoverRender(Harmony harmony, ILogger logger)
+        {
+            try
+            {
+                var m = typeof(BlockEntityBehaviorCoverable).GetMethod("OnTesselation",
+                    BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly);
+                if (m == null) { logger.Warning("[axlechisel] Coverable.OnTesselation not found; render patch skipped"); return; }
+
+                harmony.Patch(m, prefix: new HarmonyMethod(
+                    typeof(RuntimePatches).GetMethod(nameof(CoverTesselationPrefix), BindingFlags.Static | BindingFlags.NonPublic)));
+                logger.Notification("[axlechisel] patched BlockEntityBehaviorCoverable.OnTesselation");
+            }
+            catch (Exception ex) { logger.Error("[axlechisel] TryPatchCoverRender FAILED: " + ex); }
+        }
+
+        // ---------------------------------------------------------------------------
+        // Chisel an encased axle -> carve the cover (Layer 1: fixed test carve)
+        // ---------------------------------------------------------------------------
         private static bool ChiselInteractPrefix(EntityAgent byEntity, BlockSelection blockSel, ref EnumHandHandling handling)
         {
             try
             {
-                if (byEntity == null || blockSel == null) return true;
+                if (byEntity?.World == null || blockSel == null) return true;
                 var world = byEntity.World;
-                if (world == null) return true;
-
                 var be = world.BlockAccessor.GetBlockEntity(blockSel.Position);
-                var axleBeh = be == null ? null : FindBehavior(be, AxleBehaviorType);
-                if (axleBeh == null) return true; // no axle here -> normal chiseling
+                if (be == null || FindBehavior(be, AxleBehaviorType) == null) return true; // not an axle -> normal chiseling
 
-                DumpTarget(world, blockSel.Position, be, axleBeh);
-
-                if (world.Side == EnumAppSide.Client)
+                var cover = FindBehavior(be, typeof(BlockEntityBehaviorCoverable)) as BlockEntityBehaviorCoverable;
+                if (cover?.WallStack?.Block == null)
                 {
-                    (world.Api as ICoreClientAPI)?.ShowChatMessage(
-                        "[axlechisel] axle-bearing block inspected + preserved (see log)");
+                    Msg(world, "[axlechisel] encase this axle in a block first (wrench in offhand), then chisel the cover");
+                    handling = EnumHandHandling.PreventDefaultAction;
+                    return false;
                 }
 
+                // Server mutates; MarkDirty syncs the updated WallStack (with voxels) to clients.
+                if (world.Side == EnumAppSide.Server)
+                {
+                    var cuboids = new List<uint> { BlockEntityMicroBlock.ToUint(0, 0, 0, 16, 8, 16, 0) }; // bottom half
+                    SetVoxels(cover.WallStack, cuboids);
+                    be.MarkDirty(true);
+                    world.Logger.Notification("[axlechisel] carved cover (test) at " + blockSel.Position + " material=" + cover.WallStack.Block.Code);
+                }
+                Msg(world, "[axlechisel] chiseled the cover (test carve) - axle preserved");
                 handling = EnumHandHandling.PreventDefaultAction;
                 return false;
             }
             catch (Exception ex)
             {
                 (byEntity?.World?.Logger)?.Error("[axlechisel] ChiselInteractPrefix error: " + ex);
-                return true; // fail open: never break vanilla chiseling on our account
+                return true;
             }
         }
 
-        // Full ground-truth dump of an axle-bearing position so we can see exactly what an
-        // encased axle is in 1.22: the block, its variants, every BE behavior, the axle
-        // behavior's fields, and any decors at the position.
-        private static void DumpTarget(IWorldAccessor world, BlockPos pos, object be, object axleBeh)
+        // ---------------------------------------------------------------------------
+        // Render the chiseled cover instead of the full-block cover mesh
+        // ---------------------------------------------------------------------------
+        private static bool CoverTesselationPrefix(object __instance, ITerrainMeshPool mesher, ref bool __result)
         {
-            var log = world.Logger;
-            var block = world.BlockAccessor.GetBlock(pos);
-            log.Notification("[axlechisel] === axle-bearing block at " + pos + " ===");
-            log.Notification("[axlechisel]   block.Code = " + block?.Code);
-            log.Notification("[axlechisel]   block.GetType = " + (block?.GetType().FullName ?? "null"));
-            if (block?.Variant != null)
-                foreach (var kv in block.Variant)
-                    log.Notification("[axlechisel]   variant " + kv.Key + " = " + kv.Value);
-            log.Notification("[axlechisel]   block.Shape = " + (block?.Shape?.Base?.ToString() ?? "null"));
-            log.Notification("[axlechisel]   block.DrawType = " + block?.DrawType + "  material=" + block?.BlockMaterial);
-
-            log.Notification("[axlechisel]   BE type = " + be.GetType().FullName);
-            // All behaviors on the BE (an encasing may add/replace behaviors).
-            var behField = be.GetType().GetField("Behaviors", BindingFlags.Instance | BindingFlags.Public | BindingFlags.FlattenHierarchy);
-            if (behField?.GetValue(be) is System.Collections.IEnumerable behs)
-                foreach (var b in behs)
-                    if (b != null) log.Notification("[axlechisel]   behavior: " + b.GetType().FullName);
-
-            // Axle behavior field values (orientation, network, and any encasing block ref).
-            log.Notification("[axlechisel]   --- axle behavior fields ---");
-            foreach (var f in axleBeh.GetType().GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.DeclaredOnly))
-            {
-                object val;
-                try { val = f.GetValue(axleBeh); } catch { val = "<err>"; }
-                if (val is Array arr) val = "[" + string.Join(",", arr.Cast<object>()) + "]";
-                log.Notification("[axlechisel]     " + f.Name + " = " + val);
-            }
-
-            // Decors at this position (encasing may be implemented as a decor).
             try
             {
-                var ba = world.BlockAccessor;
-                var getDecors = ba.GetType().GetMethod("GetDecors", new[] { typeof(BlockPos) });
-                if (getDecors?.Invoke(ba, new object[] { pos }) is Array decors)
-                {
-                    log.Notification("[axlechisel]   decors[] length = " + decors.Length);
-                    for (int i = 0; i < decors.Length; i++)
-                        if (decors.GetValue(i) is Block d) log.Notification("[axlechisel]     decor[" + i + "] = " + d.Code);
-                }
-                else log.Notification("[axlechisel]   GetDecors -> none");
+                var cover = __instance as BlockEntityBehaviorCoverable;
+                var ws = cover?.WallStack;
+                if (ws?.Block == null) return true;            // no cover -> vanilla
+                var cuboids = GetVoxels(ws);
+                if (cuboids == null || cuboids.Count == 0) return true; // not chiseled -> vanilla full cover
+                var capi = ClientApi;
+                if (capi == null) return true;
+
+                var mesh = BlockEntityMicroBlock.CreateMesh(capi, cuboids, new int[] { ws.Block.BlockId }, null);
+                if (mesh != null) mesher.AddMeshData(mesh);
+
+                __result = false; // keep default block tesselation (the axle shaft) running
+                return false;     // skip vanilla's full-block cover mesh
             }
-            catch (Exception ex) { log.Notification("[axlechisel]   decor probe err: " + ex.Message); }
+            catch
+            {
+                return true; // fall back to vanilla cover render
+            }
         }
 
-        // Returns the BlockEntityBehavior on 'be' assignable to behaviorType, via the
-        // public Behaviors list (no compile-time dependency on the behavior type).
+        // ---------------------------------------------------------------------------
+        // Voxel storage on the cover's WallStack attributes (byte[] of uint cuboids)
+        // ---------------------------------------------------------------------------
+        private static void SetVoxels(ItemStack ws, List<uint> cuboids)
+        {
+            if (ws?.Attributes == null) return;
+            var bytes = new byte[cuboids.Count * 4];
+            for (int i = 0; i < cuboids.Count; i++) BitConverter.GetBytes(cuboids[i]).CopyTo(bytes, i * 4);
+            ws.Attributes.SetBytes(VoxelKey, bytes);
+        }
+
+        private static List<uint> GetVoxels(ItemStack ws)
+        {
+            var bytes = ws?.Attributes?.GetBytes(VoxelKey, null);
+            if (bytes == null || bytes.Length < 4) return null;
+            var list = new List<uint>(bytes.Length / 4);
+            for (int i = 0; i + 4 <= bytes.Length; i += 4) list.Add(BitConverter.ToUInt32(bytes, i));
+            return list;
+        }
+
+        // ---------------------------------------------------------------------------
+        // Helpers
+        // ---------------------------------------------------------------------------
+        private static void Msg(IWorldAccessor world, string text)
+        {
+            if (world.Side == EnumAppSide.Client) (world.Api as ICoreClientAPI)?.ShowChatMessage(text);
+        }
+
         private static object FindBehavior(object be, Type behaviorType)
         {
-            if (behaviorType == null) return null;
-            // BlockEntity.Behaviors is a public field (List<BlockEntityBehavior>).
-            object listObj = null;
+            if (behaviorType == null || be == null) return null;
             var field = be.GetType().GetField("Behaviors", BindingFlags.Instance | BindingFlags.Public | BindingFlags.FlattenHierarchy);
-            if (field != null) listObj = field.GetValue(be);
-            if (listObj == null)
-            {
-                var prop = be.GetType().GetProperty("Behaviors", BindingFlags.Instance | BindingFlags.Public | BindingFlags.FlattenHierarchy);
-                listObj = prop?.GetValue(be);
-            }
-            if (listObj is System.Collections.IEnumerable list)
-            {
+            if (field?.GetValue(be) is System.Collections.IEnumerable list)
                 foreach (var b in list)
                     if (b != null && behaviorType.IsInstanceOfType(b)) return b;
-            }
             return null;
         }
 
-        // --- discovery dump (unchanged from v0.1.1) ------------------------------------
+        // ---------------------------------------------------------------------------
+        // Discovery dump (retained, abbreviated)
+        // ---------------------------------------------------------------------------
         private static void DumpDiscovery(ILogger logger)
         {
             logger.Notification("[axlechisel] ===== discovery dump begin =====");
-
-            string[] candidates = new[]
+            string[] candidates =
             {
                 "Vintagestory.GameContent.Mechanics.BlockAxle",
                 "Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle",
-                "Vintagestory.GameContent.BlockMicroBlock",
+                "Vintagestory.GameContent.BlockEntityBehaviorCoverable",
                 "Vintagestory.GameContent.BlockEntityMicroBlock",
                 "Vintagestory.GameContent.ItemChisel"
             };
-
-            logger.Notification("[axlechisel] -- pass 1: exact-name probes --");
             foreach (var name in candidates)
             {
                 var t = ResolveType(name);
-                if (t == null) { logger.Notification("[axlechisel] type NOT FOUND: " + name); continue; }
-                DumpType(logger, t, dumpMembers: false);
+                logger.Notification(t == null ? "[axlechisel] type NOT FOUND: " + name
+                                              : "[axlechisel] type found: " + t.FullName + "  [in " + t.Assembly.GetName().Name + "]");
             }
-
             logger.Notification("[axlechisel] ===== discovery dump end =====");
-        }
-
-        private static void DumpType(ILogger logger, Type t, bool dumpMembers)
-        {
-            logger.Notification("[axlechisel] type found: " + (t.FullName ?? t.Name) + "  [in " + t.Assembly.GetName().Name + "]");
-            logger.Notification("[axlechisel]   extends: " + BaseChain(t));
-            if (!dumpMembers) return;
-            foreach (var f in t.GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.DeclaredOnly))
-                logger.Notification("[axlechisel]   field " + f.Name + " : " + f.FieldType.Name);
-        }
-
-        private static string BaseChain(Type t)
-        {
-            var parts = new List<string>();
-            var cur = t.BaseType;
-            int guard = 0;
-            while (cur != null && guard++ < 12)
-            {
-                parts.Add(cur.Name);
-                if (cur == typeof(object)) break;
-                cur = cur.BaseType;
-            }
-            return parts.Count > 0 ? string.Join(" -> ", parts) : "(none)";
         }
 
         private static Type ResolveType(string fullName)

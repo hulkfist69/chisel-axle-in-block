@@ -37,6 +37,7 @@ namespace AxleChisel
 
         public override void StartClientSide(ICoreClientAPI capi)
         {
+            RuntimePatches.ClientApi = capi;
         }
 
         public override void Dispose()

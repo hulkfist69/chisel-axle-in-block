@@ -2,7 +2,7 @@
   "type": "code",
   "name": "Axle Chisel",
   "modid": "axlechisel",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Lets mechanical axles coexist with chiseled blocks. Chisel a block that contains an axle, or place a pre-chiseled block onto an existing axle, without breaking the mechanical power network.",
   "authors": ["Cody"],
   "side": "Universal",
