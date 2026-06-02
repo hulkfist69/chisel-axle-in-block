@@ -21,7 +21,9 @@ $modinfo = Get-Content (Join-Path $root "modinfo.json") | ConvertFrom-Json
 $version = $modinfo.version
 $modid   = $modinfo.modid
 
-# Mods folder — override with $env:VINTAGE_STORY_DATA if you use a custom data path.
+# Mods folder. $env:APPDATA expands to C:\Users\<you>\AppData\Roaming, so this
+# resolves to ...\AppData\Roaming\VintagestoryData\Mods (the standard location).
+# Override with $env:VINTAGE_STORY_DATA if you use a custom data path.
 $dataDir = if ($env:VINTAGE_STORY_DATA) { $env:VINTAGE_STORY_DATA } else { Join-Path $env:APPDATA "VintagestoryData" }
 $modsDir = Join-Path $dataDir "Mods"
 
