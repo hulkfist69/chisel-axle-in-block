@@ -46,6 +46,27 @@ The build output is saved to `dist/AxleChisel-<version>.zip`. Install it by copy
 ./build.sh
 ```
 
+### Short commands
+
+`.cmd` shims let you skip the `.ps1`, so from the repo root you can run:
+
+```powershell
+.\dev            # build + redeploy + launch (alias for dev.ps1)
+.\build          # build the zip only      (alias for build.ps1)
+.\log            # push VS logs to the repo (alias for pushlogs.ps1)
+```
+
+Args still pass through, e.g. `.\dev -PushLogs` or `.\log -Branch test-logs`.
+
+Want to drop the `.\` and just type `dev` / `build` / `log`? Run `notepad $PROFILE`
+once and paste this (works whenever your current dir is a mod project root):
+
+```powershell
+function dev   { & "$PWD\dev.ps1"      @args }
+function build { & "$PWD\build.ps1"    @args }
+function log   { & "$PWD\pushlogs.ps1" @args }
+```
+
 ### Dev hot-loop (Windows)
 
 `dev.ps1` runs the full iterate-and-test cycle in one command: it closes any
@@ -53,9 +74,9 @@ running Vintage Story, builds the mod, removes the old install from your Mods
 folder, copies the fresh zip in, and relaunches the game.
 
 ```powershell
-.\dev.ps1            # build + redeploy + launch
-.\dev.ps1 -NoLaunch  # build + redeploy, but don't start the game
-.\dev.ps1 -PushLogs  # launch, then auto-push VS logs when you close the game
+.\dev            # build + redeploy + launch
+.\dev -NoLaunch  # build + redeploy, but don't start the game
+.\dev -PushLogs  # launch, then auto-push VS logs when you close the game
 ```
 
 It uses `$env:VINTAGE_STORY` (your VS install dir) and defaults the Mods folder
@@ -70,11 +91,11 @@ then commits and pushes them — so they can be pulled and read remotely instead
 of copy-pasting by hand.
 
 ```powershell
-.\pushlogs.ps1                    # copy logs, commit, push to main
-.\pushlogs.ps1 -Branch test-logs  # push to a separate branch instead
+.\log                    # copy logs, commit, push to main
+.\log -Branch test-logs  # push to a separate branch instead
 ```
 
-The easiest workflow is `.\dev.ps1 -PushLogs`: it builds, deploys, launches, and
+The easiest workflow is `.\dev -PushLogs`: it builds, deploys, launches, and
 then waits — when you quit the game it pushes the logs automatically.
 
 ## Development
