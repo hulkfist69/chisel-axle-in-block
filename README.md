@@ -1,5 +1,9 @@
 # Axle Chisel
 
+[![Release](https://img.shields.io/github/v/release/hulkfist69/chisel-axle-in-block?sort=semver)](https://github.com/hulkfist69/chisel-axle-in-block/releases)
+[![License](https://img.shields.io/github/license/hulkfist69/chisel-axle-in-block)](LICENSE)
+[![Issues](https://img.shields.io/github/issues-raw/hulkfist69/chisel-axle-in-block)](https://github.com/hulkfist69/chisel-axle-in-block/issues)
+
 Vintage Story 1.20+ mod. Goal: make the "axle in block" feature compatible with chiseled (microblock) blocks.
 
 ## What this should do
@@ -9,7 +13,28 @@ Vintage Story 1.20+ mod. Goal: make the "axle in block" feature compatible with 
 
 ## Status
 
-v0.1.0 — scaffolding only. The first build dumps the structure of the relevant VS internal classes (`BlockAxle`, `BlockEntityMicroBlock`, etc.) to the log so we can plan the actual integration around what 1.22 actually exposes.
+v0.1.0 — scaffolding only. The first build dumps the structure of the relevant Vintage Story internal classes (`BlockAxle`, `BlockEntityMicroBlock`, etc.) to the log so we can plan the actual integration around what 1.22 actually exposes.
+
+## Quick start
+
+```bash
+git clone https://github.com/hulkfist69/chisel-axle-in-block.git
+cd chisel-axle-in-block
+export VINTAGE_STORY="/path/to/Vintagestory"
+./build.sh
+```
+
+For Windows:
+
+```powershell
+$env:VINTAGE_STORY = "C:\path\to\Vintagestory"
+.\build.ps1
+```
+
+The build output is saved to `dist/AxleChisel-<version>.zip`. Install it by copying the zip into the Vintage Story mods folder:
+
+- Windows: `%APPDATA%\VintagestoryData\Mods\`
+- macOS: `~/Library/Application Support/VintagestoryData/Mods/`
 
 ## Build
 
@@ -21,9 +46,31 @@ v0.1.0 — scaffolding only. The first build dumps the structure of the relevant
 ./build.sh
 ```
 
-Output lands in `dist/AxleChisel-<version>.zip`. Drop into `%APPDATA%\VintagestoryData\Mods\` (Windows) / `~/Library/Application Support/VintagestoryData/Mods/` (macOS).
+## Development
 
-## Next steps
+This repository includes:
 
-1. Run once and paste the `[axlechisel] type found / NOT FOUND` lines from `client-main.log`.
-2. Based on which class names actually exist in 1.22, plan the Harmony hooks: probably postfix on the chiseling operation (preserve axle BE) and on the microblock place handler (allow placement on an axle position).
+- `AxleChisel.csproj` — .NET 10 mod project
+- `src/AxleChiselModSystem.cs` — mod lifecycle and Harmony bootstrap
+- `src/RuntimePatches.cs` — runtime discovery and future Harmony integration
+- `modinfo.json` — mod metadata and required game version
+- `assets/axlechisel/lang/en.json` — localization strings
+
+### Recommended workflow
+
+1. Create a branch from `main` for each change.
+2. Build with `./build.sh` or `.uild.ps1`.
+3. Install the resulting ZIP and launch Vintage Story.
+4. Copy any `[axlechisel]` log output into the issue or PR.
+
+## Contributing
+
+Contributions are welcome. Use the issue templates and PR checklist to keep work organized.
+
+- Bug reports: submit a bug report with reproduction steps, Vintage Story version, and any `[axlechisel]` log lines.
+- Feature requests: explain the desired outcome and why it improves the mod.
+- Pull requests: one logical change per PR, include build/test notes, and keep the branch scoped.
+
+## License
+
+This project is licensed under the MIT License. See `LICENSE` for details.
