@@ -9,7 +9,14 @@
 	variantgroups: [
 		{ code: "rotation", states: ["ud", "ns", "we"] }
 	],
-	shape: { base: "game:block/basic/cube" },
+	textures: {
+		wood: { base: "game:block/wood/planks/generic" }
+	},
+	shapeByType: {
+		"*-ns": { base: "game:block/wood/mechanics/axle", rotateY: 90 },
+		"*-ud": { base: "game:block/wood/mechanics/axle", rotateZ: 90 },
+		"*-we": { base: "game:block/wood/mechanics/axle", rotateY: 0 }
+	},
 	replaceable: 90,
 	drops: [],
 	sidesolid: { all: false },
