@@ -46,6 +46,33 @@ The build output is saved to `dist/AxleChisel-<version>.zip`. Install it by copy
 ./build.sh
 ```
 
+### Dev terminal (`f`)
+
+`f` is the one command to remember. It opens an interactive, numbered control
+panel — or jumps straight to an action.
+
+```powershell
+.\f dev     # interactive dev terminal: pick actions by number
+.\f test    # run the game now (build + deploy + launch)
+.\f build   # build the zip only
+.\f log     # push VS logs to the repo
+.\f         # same as .\f dev
+```
+
+`f dev` shows a live menu (current version + branch at the top):
+
+```
+  1) Run game          build + deploy + launch
+  2) Run + push logs   as above; auto-push logs when you quit VS
+  3) Build only        produce the zip, don't install
+  4) Deploy only       build + install, don't launch
+  5) Push logs now     copy VS logs to repo + push to this branch
+  6) Git pull          update from origin
+  7) Git status        show working tree
+  8) Tail mod logs     last 40 [axlechisel] lines
+  0) Quit
+```
+
 ### Short commands
 
 `.cmd` shims let you skip the `.ps1`, so from the repo root you can run:
@@ -58,10 +85,12 @@ The build output is saved to `dist/AxleChisel-<version>.zip`. Install it by copy
 
 Args still pass through, e.g. `.\dev -PushLogs` or `.\log -Branch test-logs`.
 
-Want to drop the `.\` and just type `dev` / `build` / `log`? Run `notepad $PROFILE`
-once and paste this (works whenever your current dir is a mod project root):
+Want to drop the `.\` and just type `f dev` / `dev` / `build` / `log`? Run
+`notepad $PROFILE` once and paste this (works whenever your current dir is a mod
+project root):
 
 ```powershell
+function f     { & "$PWD\f.ps1"        @args }
 function dev   { & "$PWD\dev.ps1"      @args }
 function build { & "$PWD\build.ps1"    @args }
 function log   { & "$PWD\pushlogs.ps1" @args }
