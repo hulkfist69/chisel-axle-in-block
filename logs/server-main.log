@@ -1,0 +1,760 @@
+1.6.2026 20:57:25 [Notification] Server logger started.
+1.6.2026 20:57:25 [Notification] Game Version: v1.22.3 (Stable)
+1.6.2026 20:57:25 [Event] It begins...
+1.6.2026 20:57:25 [Event] Launching server...
+1.6.2026 20:57:25 [Event] It senses...
+1.6.2026 20:57:25 [Event] Server v1.22.3, network v1.22.6, api v1.22.0
+1.6.2026 20:57:25 [Notification] Entering runphase Initialization
+1.6.2026 20:57:25 [Event] Loading configuration...
+1.6.2026 20:57:25 [Notification] Entering runphase Configuration
+1.6.2026 20:57:25 [Notification] Loading savegame
+1.6.2026 20:57:25 [Notification] Loaded existing save game data. Playstyle: creativebuilding, Playstyle Lang code: creativebuilding, WorldType: superflat
+1.6.2026 20:57:25 [Notification] Savegame %appdata%\VintagestoryData\Saves\gloomy freestyle lands.vcdbs loaded
+1.6.2026 20:57:25 [Notification] World size = 1024000 256 1024000
+1.6.2026 20:57:25 [Notification] Start discovering assets
+1.6.2026 20:57:25 [Notification] Found 2 base assets in category blocktypes
+1.6.2026 20:57:25 [Notification] Found 0 base assets in category itemtypes
+1.6.2026 20:57:25 [Notification] Found 34 base assets in category lang
+1.6.2026 20:57:25 [Notification] Found 0 base assets in category patches
+1.6.2026 20:57:25 [Notification] Found 24 base assets in category config
+1.6.2026 20:57:25 [Notification] Found 0 base assets in category worldproperties
+1.6.2026 20:57:25 [Notification] Found 49 base assets in category sounds
+1.6.2026 20:57:25 [Notification] Found 230 base assets in category shapes
+1.6.2026 20:57:25 [Notification] Found 182 base assets in category textures
+1.6.2026 20:57:25 [Notification] Found 0 base assets in category recipes
+1.6.2026 20:57:25 [Notification] Found 0 base assets in category worldgen
+1.6.2026 20:57:25 [Notification] Found 3 base assets in category entities
+1.6.2026 20:57:25 [Notification] Found 524 base assets in total
+1.6.2026 20:57:25 [Event] Building assets...
+1.6.2026 20:57:25 [Notification] Entering runphase LoadAssets
+1.6.2026 20:57:25 [Notification] Will search the following paths for mods:
+1.6.2026 20:57:25 [Notification]     %appdata%\Vintagestory\Mods
+1.6.2026 20:57:25 [Notification]     %appdata%\VintagestoryData\Mods
+1.6.2026 20:57:25 [Notification] Found 71 mods (0 disabled)
+1.6.2026 20:57:25 [Notification] Mods, sorted by dependency: awearablelight, chickenfeed, cbr, chiseltools, darkvision, hqzlights, farmlandnutrientmanagement, fastpackeddirtpaths, fragilecharcoal, hardcorewaterforked, immersivemining, kilnshelves, longtermhusbandry, morefat, plainsandvalleys, primitivesurvival, prospecttogether, p2lumbersling, seedharvest, stonequarryrepckfipil, thetruearchimedesscrew, game, waterwheelnormalwater, aculinaryartillery, animalcages, animalhitch, archering, egocaribautomapmarkers, axlechisel, bedspawnv2, betterruins, bloodtrail, butchering, carryon, chestorganizerm4, chop, coriaendershaders, extrainfo, fennelfeed, firepitsshowfuel, foodshelves, footprints, forgetfulseeds, freedomunits, immersiveminingandahalf, knapster, medievalexpansion, movedoors, trailmodmaro, orekiwoofsbeehives, panningmachine, petai, placeonslabs, claywheel, realisticwater, rivers, roamingbees, seedsfromgrains, smithingplus, stonebakeoven, targetDotMedium, toolsmith, creative, vsecomachina, vsroofing, survival, waterfall, expandedfoods, pinrecipes, waterwheelriver, wolftaming
+1.6.2026 20:57:26 [Error] [medievalexpansion] Exception thrown when attempting to retrieve all types of the assembly medievalexpansion, Version=3.13.1.0, Culture=neutral, PublicKeyToken=null. Will ignore asssembly. Loader exceptions:
+1.6.2026 20:57:26 [Error] [medievalexpansion] Exception: Unable to load one or more of the requested types.
+Method 'HasMechPowerConnectorAt' in type 'medievalexpansion.src.block.mechanical.WaterWheel' from assembly 'medievalexpansion, Version=3.13.1.0, Culture=neutral, PublicKeyToken=null' does not have an implementation.
+   at System.Reflection.RuntimeModule.GetDefinedTypes()
+   at System.Reflection.RuntimeModule.GetTypes()
+   at Vintagestory.Common.ModContainer.GetModSystems(Assembly assembly) in VintagestoryLib\Common\API\ModContainer.cs:line 690
+1.6.2026 20:57:26 [Error] [medievalexpansion] Exception: Method 'HasMechPowerConnectorAt' in type 'medievalexpansion.src.block.mechanical.WaterWheel' from assembly 'medievalexpansion, Version=3.13.1.0, Culture=neutral, PublicKeyToken=null' does not have an implementation.
+   at Vintagestory.API.Common.LoggerBase.Error(Exception e) in VintagestoryApi\Common\API\ILogger.cs:line 269
+   at Vintagestory.Common.ModContainer.GetModSystems(Assembly assembly) in VintagestoryLib\Common\API\ModContainer.cs:line 690
+   at Vintagestory.Common.ModContainer.<>c__DisplayClass38_0.<LoadAssembly>b__1(Assembly ass) in VintagestoryLib\Common\API\ModContainer.cs:line 609
+   at System.Linq.Enumerable.IEnumerableWhereIterator`1.ToList()
+   at Vintagestory.Common.ModContainer.LoadAssembly(ModCompilationContext compilationContext, ModAssemblyLoader loader) in VintagestoryLib\Common\API\ModContainer.cs:line 606
+   at Vintagestory.Common.ModLoader.instantiateMods(List`1 mods) in VintagestoryLib\Common\API\ModLoader.cs:line 286
+   at Vintagestory.Common.ModLoader.LoadMods(List`1 mods, IEnumerable`1 disabledModsByIdAndVersion) in VintagestoryLib\Common\API\ModLoader.cs:line 262
+   at Vintagestory.Common.ModLoader.LoadMods(IEnumerable`1 disabledModsByIdAndVersion) in VintagestoryLib\Common\API\ModLoader.cs:line 199
+   at Vintagestory.Server.ServerSystemModHandler.OnLoadAssets() in VintagestoryLib\Server\Systems\ModHandler.cs:line 46
+   at Vintagestory.Server.ServerMain.EnterRunPhase(EnumServerRunPhase runPhase) in VintagestoryLib\Server\ServerMain.cs:line 670
+   at Vintagestory.Server.ServerMain.Launch() in VintagestoryLib\Server\ServerMain.cs:line 570
+   at Vintagestory.Client.ClientProgram.ServerThreadStart() in VintagestoryLib\Client\ClientProgram.cs:line 487
+   at System.Threading.Thread.StartCallback()
+1.6.2026 20:57:26 [Error] [medievalexpansion] An exception was thrown when trying to load assembly:
+1.6.2026 20:57:26 [Error] [medievalexpansion] Exception: C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\medievalexpansion-3.13.1.zip_8b717d5e1e2f\medievalexpansion.dll declared as code mod, but there are no .dll files that contain at least one ModSystem or has a ModInfo attribute
+   at Vintagestory.Common.ModContainer.LoadAssembly(ModCompilationContext compilationContext, ModAssemblyLoader loader) in VintagestoryLib\Common\API\ModContainer.cs:line 614
+1.6.2026 20:57:27 [Notification] [forgetfulseeds] Successfully compiled 1 source files
+1.6.2026 20:57:27 [Notification] Instantiated 239 mod systems from 66 enabled mods
+1.6.2026 20:57:27 [Event] Starting mod 'Knapster v4.0.0' by ApacheTech Solutions...
+1.6.2026 20:57:27 [Notification] [stonequarryrepckfipil] Config StoneQuarry.Config from StoneQuarry v1.0.0.0 loaded successfully
+1.6.2026 20:57:27 [Notification] CarryOn: Disabled AutoConfigLib patches.
+1.6.2026 20:57:28 [Notification] CarryOn: Harmony patches enabled.
+1.6.2026 20:57:28 [Event] started 'CarryOn' mod
+1.6.2026 20:57:28 [Notification] External Origins in load order: modorigin@%appdata%\Vintagestory\assets\creative\, modorigin@%appdata%\Vintagestory\assets\survival\, mod@awearablelight-v1.1.9.zip, mod@chickenfeed_v1.1.12.zip, mod@ChiseledBlockRetention-2.0.1.zip, mod@ChiselTools1.17.1.zip, mod@DarkVisionV1.3.2.zip, mod@drbraziers_1.1.3.zip, mod@FarmlandNutrientManagement_1.5.1.zip, mod@fastpackeddirtpaths_1.22.3.zip, mod@fragilecharcoal.zip, mod@hardcorewaterforked-1.4.5.zip, mod@ImmersiveMining_0.2.20.zip, mod@KilnShelves_1.1.0.zip, mod@long-term-husbandry-v1.0.0.zip, mod@more_fat.zip, mod@Plainsandvalleys-v1.0.13.zip, mod@primitivesurvival_5.0.5.zip, mod@ProspectTogether-2.2.1.zip, mod@PS_LumberSlings_1.0.3.zip, mod@SeedHarvesting_v1.0.0.zip, mod@StoneQuarryRepacked.3.6.2.zip, mod@thetruearchscrew-0.1.40.zip, mod@waterwheelnormalwater.zip, mod@ACulinaryArtillery 2.0.0-dev.19.zip, mod@animalcages_v5.0.0.zip, mod@AnimalHitch_V1.1.0.zip, mod@Auto Map Markers 5.0.3 - Vintage Story 1.22.zip, mod@AxleChisel-0.1.1.zip, mod@bedspawnv2_1.7.0.zip, mod@BetterRuinsv0.6.2.zip, mod@BloodTrail-v1.2.2.zip, mod@butchering_1.13.3.zip, mod@CarryOn-1.22.0_v1.14.1.zip, mod@chop_1.0.0.zip, mod@firepitsshowfuel_2.0.0-dev.1.zip, mod@foodshelves_3.0.3.zip, mod@Footprints-v1.2.2.zip, mod@ImmersiveMiningandaHalf_1.0.0.zip, mod@Knapster_v4.0.0.zip, mod@MoveWrench-0.5.14.zip, mod@NaturalTrailsMod_1.3.1.zip, mod@orekiwoofsbeehives_v2.0.0-v1.21.0.zip, mod@panningmachine_1.0.11.zip, mod@petai_v5.1.1.zip, mod@placeonslabs_1.1.3.zip, mod@pottery-wheel_2.0.1.zip, mod@realisticwater_0.2.2.zip, mod@roamingbees_v2.0.0-v1.21.0.zip, mod@seedsfromgrains.zip, mod@smithingplus_1.9.0-rc.1.zip, mod@stonebakeoven_1.3.0.zip, mod@TargetDot-Medium-1.1.0.zip, mod@toolsmith_1.2.16.zip, mod@vsecomachina_0.6.1.zip, mod@vsroofing_1.5.7.zip, mod@Waterfall_v1.2.2.zip, mod@ExpandedFoods 2.0.0-dev.8.zip, mod@wolftaming_v5.0.1.zip, themepack@fennelfeed-1.0.1.zip
+1.6.2026 20:57:28 [Notification] Found 760 external assets in category blocktypes
+1.6.2026 20:57:28 [Notification] Found 585 external assets in category itemtypes
+1.6.2026 20:57:28 [Notification] Found 342 external assets in category lang
+1.6.2026 20:57:28 [Notification] Found 594 external assets in category patches
+1.6.2026 20:57:28 [Notification] Found 330 external assets in category config
+1.6.2026 20:57:28 [Notification] Found 25 external assets in category worldproperties
+1.6.2026 20:57:28 [Notification] Found 751 external assets in category sounds
+1.6.2026 20:57:28 [Notification] Found 7690 external assets in category shapes
+1.6.2026 20:57:28 [Notification] Found 10993 external assets in category textures
+1.6.2026 20:57:28 [Notification] Found 941 external assets in category recipes
+1.6.2026 20:57:29 [Notification] Found 2115 external assets in category worldgen
+1.6.2026 20:57:29 [Notification] Found 90 external assets in category entities
+1.6.2026 20:57:29 [Notification] Found 255 external assets in category compatibility
+1.6.2026 20:57:29 [Notification] Reloaded lang file with mod assets
+1.6.2026 20:57:29 [Notification] Farmland Nutrient Management Mod: Started.
+1.6.2026 20:57:29 [Notification] Loaded Hardcore Water!
+1.6.2026 20:57:29 [Notification] Collapse Story not detected, disabling collapse story compat
+1.6.2026 20:57:29 [Notification] Realistic Water detected, enabling realistic water compat
+1.6.2026 20:57:29 [Notification] Stackable Kiln Shelves Mod: Started.
+1.6.2026 20:57:29 [Event] started 'Primitive Survival' mod
+1.6.2026 20:57:29 [Notification] Mod Config successfully loaded.
+1.6.2026 20:57:29 [Notification] [Auto Map Markers] Patched methods: OnGettingBroken, OnGettingBroken, TryUnmount, TryMount, breakMultiBlock
+1.6.2026 20:57:29 [Notification] [axlechisel] starting v0.1.1 b6b5c13 side=Server
+1.6.2026 20:57:29 [Notification] [axlechisel] PatchAll succeeded
+1.6.2026 20:57:29 [Notification] [axlechisel] ===== discovery dump begin =====
+1.6.2026 20:57:29 [Notification] [axlechisel] -- pass 1: exact-name probes --
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BlockAxle  [in VSSurvivalMod]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: BlockMPBase -> BlockGeneric -> Block -> CollectibleObject -> RegistryObject -> Object
+1.6.2026 20:57:29 [Notification] [axlechisel] type NOT FOUND: Vintagestory.GameContent.Mechanics.BlockEntityAxle
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle  [in VSSurvivalMod]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: BEBehaviorMPBase -> BlockEntityBehavior -> Object
+1.6.2026 20:57:29 [Notification] [axlechisel]   field center : Vec3f
+1.6.2026 20:57:29 [Notification] [axlechisel]   field orients : BlockFacing[]
+1.6.2026 20:57:29 [Notification] [axlechisel]   field capi : ICoreClientAPI
+1.6.2026 20:57:29 [Notification] [axlechisel]   field orientations : String
+1.6.2026 20:57:29 [Notification] [axlechisel]   field axleStandLocWest : AssetLocation
+1.6.2026 20:57:29 [Notification] [axlechisel]   field axleStandLocEast : AssetLocation
+1.6.2026 20:57:29 [Notification] [axlechisel]   field axleshape : CompositeShape
+1.6.2026 20:57:29 [Notification] [axlechisel]   prop  AddStands : Boolean
+1.6.2026 20:57:29 [Notification] [axlechisel] type NOT FOUND: Vintagestory.GameContent.Mechanics.BlockMechBase
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockMicroBlock  [in VSSurvivalMod]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: Block -> CollectibleObject -> RegistryObject -> Object
+1.6.2026 20:57:29 [Notification] [axlechisel]   field IsSnowCovered : Boolean
+1.6.2026 20:57:29 [Notification] [axlechisel]   field capi : ICoreClientAPI
+1.6.2026 20:57:29 [Notification] [axlechisel]   field snowLayerBlockId : Int32
+1.6.2026 20:57:29 [Notification] [axlechisel]   field MBSounds : ThreadLocal`1
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockEntityMicroBlock  [in VSSurvivalMod]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: BlockEntity -> Object
+1.6.2026 20:57:29 [Notification] [axlechisel]   field VoxelCuboids : List`1
+1.6.2026 20:57:29 [Notification] [axlechisel]   field originalCuboids : UInt32[]
+1.6.2026 20:57:29 [Notification] [axlechisel]   field BlockIds : Int32[]
+1.6.2026 20:57:29 [Notification] [axlechisel]   field DecorIds : Int32[]
+1.6.2026 20:57:29 [Notification] [axlechisel]   field DecorRotations : Int32
+1.6.2026 20:57:29 [Notification] [axlechisel]   field BlockIdsRotated : Int32[]
+1.6.2026 20:57:29 [Notification] [axlechisel]   field DecorIdsRotated : Int32[]
+1.6.2026 20:57:29 [Notification] [axlechisel]   field rotated : Int32
+1.6.2026 20:57:29 [Notification] [axlechisel]   field Mesh : MeshData
+1.6.2026 20:57:29 [Notification] [axlechisel]   field selectionBoxesMetaMode : Cuboidf[]
+1.6.2026 20:57:29 [Notification] [axlechisel]   field selectionBoxesStd : Cuboidf[]
+1.6.2026 20:57:29 [Notification] [axlechisel]   field selectionBoxesVoxels : Cuboidf[]
+1.6.2026 20:57:29 [Notification] [axlechisel]   field prevSize : Int32
+1.6.2026 20:57:29 [Notification] [axlechisel]   field <BlockName>k__BackingField : String
+1.6.2026 20:57:29 [Notification] [axlechisel]   field emitSideAo : Int32
+1.6.2026 20:57:29 [Notification] [axlechisel]   field absorbAnyLight : Boolean
+1.6.2026 20:57:29 [Notification] [axlechisel]   field sidecenterSolid : SmallBoolArray
+1.6.2026 20:57:29 [Notification] [axlechisel]   field sideAlmostSolid : SmallBoolArray
+1.6.2026 20:57:29 [Notification] [axlechisel]   field rotationY : Int16
+1.6.2026 20:57:29 [Notification] [axlechisel]   field sizeRel : Single
+1.6.2026 20:57:29 [Notification] [axlechisel]   field totalVoxels : Int32
+1.6.2026 20:57:29 [Notification] [axlechisel]   field withColorMapData : Boolean
+1.6.2026 20:57:29 [Notification] [axlechisel]   prop  OriginalVoxelCuboids : UInt32[]
+1.6.2026 20:57:29 [Notification] [axlechisel]   prop  MaterialIds : Int32[]
+1.6.2026 20:57:29 [Notification] [axlechisel]   prop  BlockName : String
+1.6.2026 20:57:29 [Notification] [axlechisel]   prop  VolumeRel : Single
+1.6.2026 20:57:29 [Notification] [axlechisel] -- pass 2: substring scan (Axle / MicroBlock) --
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: System.Xml.Schema.XmlSchemaMaxLengthFacet  [in System.Private.Xml]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: XmlSchemaNumericFacet -> XmlSchemaFacet -> XmlSchemaAnnotated -> XmlSchemaObject -> Object
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: OpenTK.Graphics.ES30.AppleTextureMaxLevel  [in OpenTK.Graphics]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: Enum -> ValueType -> Object
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: OpenTK.Graphics.ES20.AppleTextureMaxLevel  [in OpenTK.Graphics]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: Enum -> ValueType -> Object
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: OpenTK.Graphics.ES11.AppleTextureMaxLevel  [in OpenTK.Graphics]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: Enum -> ValueType -> Object
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: chisel.src.BELockedMicroblock  [in chiseltools]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: BlockEntityChisel -> BlockEntityMicroBlock -> BlockEntity -> Object
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.ServerMods.MicroblockCommands  [in VSSurvivalMod]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: Object
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.ServerMods.MicroblockTool  [in VSSurvivalMod]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: PaintBrushTool -> ToolBase -> Object
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.BEBehaviorMicroblockSnowCover  [in VSSurvivalMod]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: BlockEntityBehavior -> Object
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockEntityMicroBlock  [in VSSurvivalMod]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: BlockEntity -> Object
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.MicroBlockSounds  [in VSSurvivalMod]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: BlockSounds -> Object
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.BlockMicroBlock  [in VSSurvivalMod]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: Block -> CollectibleObject -> RegistryObject -> Object
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.IMicroblockBehavior  [in VSSurvivalMod]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: (none)
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.MicroBlockModelCache  [in VSSurvivalMod]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: ModSystem -> Object
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BEBehaviorMPAxle  [in VSSurvivalMod]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: BEBehaviorMPBase -> BlockEntityBehavior -> Object
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: Vintagestory.GameContent.Mechanics.BlockAxle  [in VSSurvivalMod]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: BlockMPBase -> BlockGeneric -> Block -> CollectibleObject -> RegistryObject -> Object
+1.6.2026 20:57:29 [Notification] [axlechisel] type found: AxleChisel.AxleChiselModSystem  [in AxleChisel]
+1.6.2026 20:57:29 [Notification] [axlechisel]   extends: ModSystem -> Object
+1.6.2026 20:57:29 [Notification] [axlechisel] ===== discovery dump end =====
+1.6.2026 20:57:29 [Notification] Mod Config successfully loaded.
+1.6.2026 20:57:29 [Notification] [chop] Chopping block mod loaded
+1.6.2026 20:57:29 [Notification] [movedoors] starting v0.5.14 89e7c97 (2026-05-23 13:38:23 UTC-06:00) side=Server
+1.6.2026 20:57:29 [Notification] [movedoors] PatchAll succeeded
+1.6.2026 20:57:29 [Notification] [movedoors] patched BEBehaviorDoor.OnTesselation
+1.6.2026 20:57:29 [Notification] [movedoors] patched BEBehaviorDoor.ColSelBoxes getter
+1.6.2026 20:57:29 [Notification] [movedoors] patched ItemWrench.OnHeldInteractStart
+1.6.2026 20:57:29 [Notification] Mod Config successfully loaded.
+1.6.2026 20:57:29 [Notification] Realistic Water loaded
+1.6.2026 20:57:29 [Notification] [WaterWheelRiver] Patched: getFlowSpeed
+1.6.2026 20:57:29 [Notification] [WaterWheelRiver] Patched: get_TorqueFactor
+1.6.2026 20:57:29 [Notification] [WaterWheelRiver] Patched: CheckWater
+1.6.2026 20:57:29 [Notification] Compatibility lib: 6 assets added, 5 assets replaced.
+1.6.2026 20:57:30 [Error] Patch 0 in immersivemining:patches/aws/shepeherd axe.json: File walkingstick:itemtypes/tool/walkingsticks/walkingstick-shepherds.json not found
+1.6.2026 20:57:30 [Error] Patch 1 in immersivemining:patches/aws/shepeherd axe.json: File walkingstick:itemtypes/tool/walkingsticks/walkingstick-shepherds.json not found
+1.6.2026 20:57:30 [Error] Patch 0 in immersivemining:patches/idg/axes.json: File indappledgroves:itemtypes/tools/forestaxe.json not found
+1.6.2026 20:57:30 [Error] Patch 1 in immersivemining:patches/idg/axes.json: File indappledgroves:itemtypes/tools/forestaxe.json not found
+1.6.2026 20:57:30 [Error] Patch 2 in immersivemining:patches/idg/axes.json: File indappledgroves:itemtypes/tools/maul.json not found
+1.6.2026 20:57:30 [Error] Patch 3 in immersivemining:patches/idg/axes.json: File indappledgroves:itemtypes/tools/maul.json not found
+1.6.2026 20:57:30 [Error] Patch 4 in immersivemining:patches/idg/axes.json: File indappledgroves:itemtypes/tools/grubaxe.json not found
+1.6.2026 20:57:30 [Error] Patch 5 in immersivemining:patches/idg/axes.json: File indappledgroves:itemtypes/tools/grubaxe.json not found
+1.6.2026 20:57:30 [Error] Patch 9 in butchering:patches/compatibility/expandedfoods/dough.json: File expandedfoods:itemtypes/food/mixing/breadedmushroomnugget.json not found
+1.6.2026 20:57:30 [Error] Patch 10 in butchering:patches/compatibility/expandedfoods/dough.json: File expandedfoods:itemtypes/food/mixing/breadedvegetablenugget.json not found
+1.6.2026 20:57:30 [Error] Patch 0 in butchering:patches/compatibility/expandedfoods/dumpling.json: File game:itemtypes/food/mixing/dumpling.json not found
+1.6.2026 20:57:30 [Notification] JsonPatch Loader: 2443 patches total, successfully applied 2507 patches, missing files on 11 patches, unmet conditions on 1056 patches, no errors
+1.6.2026 20:57:30 [Notification] [smithingplus] [MetalMaterial] Loading custom metal materials...
+1.6.2026 20:57:30 [Notification] [smithingplus] [MetalMaterial] Loading metal materials from worldproperties/block/metal ...
+1.6.2026 20:57:30 [Notification] [smithingplus] [MetalMaterial] Loaded 23 metal materials: game:bismuth, game:bismuthbronze, game:blackbronze, game:brass, game:chromium, game:copper, game:cupronickel, game:electrum, game:gold, game:iron, game:meteoriciron, game:lead, game:molybdochalkos, game:platinum, game:nickel, game:silver, game:stainlesssteel, game:steel, game:tin, game:tinbronze, game:titanium, game:uranium, game:zinc
+1.6.2026 20:57:32 [Event] It remembers...
+1.6.2026 20:57:34 [Notification] Loaded 7674 unique items
+1.6.2026 20:57:34 [Event] All that came before...
+1.6.2026 20:57:38 [Notification] Loaded 39005 unique blocks
+1.6.2026 20:57:38 [Notification] Loaded 865 unique entitiess
+1.6.2026 20:57:38 [Notification] BlockLoader: Entities, Blocks and Items loaded
+1.6.2026 20:57:38 [Notification] Remapper: No applicable remappings found for this save game, all seems good for now
+1.6.2026 20:57:38 [Event] Remapping blocks and items...
+1.6.2026 20:57:38 [Event] 21 cooking recipes loaded
+1.6.2026 20:57:38 [Event] Taste and smell...
+1.6.2026 20:57:38 [Event] 3 mixing recipes loaded
+1.6.2026 20:57:38 [Event] The chef and the apprentice...
+1.6.2026 20:57:38 [Event] 1059 kneading recipes loaded
+1.6.2026 20:57:38 [Event] Kneading the dough, letting it rise...
+1.6.2026 20:57:38 [Event] 725 simmer recipes loaded
+1.6.2026 20:57:38 [Event] A gentle simmer, then rolling boil...
+1.6.2026 20:57:38 [Event] 9 metal alloys loaded
+1.6.2026 20:57:38 [Event] Glimmers in the soil...
+1.6.2026 20:57:40 [Warning] Failed resolving crafting recipe ingredient with code game:lantern-up in Grid recipe
+1.6.2026 20:57:40 [Error] Grid Recipe with output 'chiseltools:palette-light' contains an ingredient that cannot be resolved: Block code game:lantern-up
+1.6.2026 20:57:40 [Warning] Crafting recipe Item hqzlights:metalstrip-* does not resolve to any collectible. Grid recipe expandedfoods:recipes/grid/braziers/brazier.json will never match.
+1.6.2026 20:57:40 [Warning] Crafting recipe Item hqzlights:metalstrip-* does not resolve to any collectible. Grid recipe expandedfoods:recipes/grid/braziers/brazier.json will never match.
+1.6.2026 20:57:40 [Event] 3081 grid recipes loaded from 561 files, failed to resolve 1 recipes
+1.6.2026 20:57:40 [Event] Grand inventions...
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:doortool-bismuthbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:doortool-blackbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:doortool-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:doortool-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:doortool-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:doortool-tinbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:handplaner-bismuthbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:handplaner-blackbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:handplaner-copper has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:handplaner-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:handplaner-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:handplaner-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:handplaner-tinbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:handwedge-bismuthbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:handwedge-blackbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:handwedge-copper has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:handwedge-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:handwedge-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:handwedge-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:handwedge-tinbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:laddermaker-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:laddermaker-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:laddermaker-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:locktool-bismuthbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:locktool-blackbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:locktool-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:locktool-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:locktool-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:locktool-tinbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:paintbrush-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:paintbrush-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:paintbrush-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:paintscraper-bismuthbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:paintscraper-blackbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:paintscraper-copper has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:paintscraper-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:paintscraper-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:paintscraper-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:paintscraper-tinbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:pantograph-bismuthbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:pantograph-blackbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:pantograph-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:pantograph-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:pantograph-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:pantograph-tinbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:pathmaker-bismuthbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:pathmaker-blackbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:pathmaker-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:pathmaker-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:pathmaker-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:pathmaker-tinbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:simplepantograph-bismuthbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:simplepantograph-blackbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:simplepantograph-copper has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:simplepantograph-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:simplepantograph-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:simplepantograph-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output chiseltools:simplepantograph-tinbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output archimedes_screw:chutesection-lead has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output butchering:hook-bismuthbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output butchering:hook-blackbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output butchering:hook-copper has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output butchering:hook-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Warning] Smithing recipe with output butchering:hook-tinbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:57:40 [Event] 77 smithing recipes loaded from 76 files
+1.6.2026 20:57:40 [Event] Burning sparks...
+1.6.2026 20:57:40 [Event] 44 clay forming recipes loaded from 44 files
+1.6.2026 20:57:40 [Event] Molded forms...
+1.6.2026 20:57:40 [Event] 18 knapping recipes loaded from 18 files
+1.6.2026 20:57:40 [Event] Simple tools...
+1.6.2026 20:57:40 [Event] 190 barrel recipe recipes loaded from 65 files
+1.6.2026 20:57:40 [Notification] Tags registry was locked.
+1.6.2026 20:57:40 [Notification] Entering runphase AssetsFinalize
+1.6.2026 20:57:40 [Notification] [smithingplus] [MetalMaterial] Resolving metal materials...
+1.6.2026 20:57:40 [Notification] [smithingplus] [MetalMaterial] Done resolving metal materials.
+1.6.2026 20:57:40 [Notification] [smithingplus] [MetalMaterial] Resolved 23 out of 23 metal materials.
+1.6.2026 20:57:40 [Notification] [Archering] Bow registry overwrite successful.
+1.6.2026 20:57:43 [Notification] [archimedes_screw] Effective config: fastTickMs=250, idleTickMs=2000, globalTickMs=50, maxControllersPerGlobalTick=48, assemblyAnalysisCacheMs=120, maxBlocksPerStep=1, enableIncrementalSourceDrain=True, incrementalDrainStepIntervalMs=120, maxIncrementalDrainStepsPerGlobalTick=32, maxScrewLength=32, minNetworkSpeed=0.001, vanillaClaimHaloDepth=2, intentQueueMaxPerGlobalTick=96, enableRelaySources=True, maxRelayPromotionsPerTick=1, maxRelaySourcesPerController=12, requiredMechPowerForMaxRelay=0.5, relayPowerHysteresisPct=0.05, relayCandidateOrderingMode=deterministic, debugControllerStatsOnInteract=False, enableWaterfallCompat=True, waterfallCompatDebug=False, disableVanillaWaterSourceRegen=True, verboseDebug=False
+1.6.2026 20:57:43 [Notification] [archimedes_screw] Loaded config/settings.json (with Config Lib: edit ModConfig/archimedes_screw.yaml or in-game; without Config Lib: edit mod asset defaults only)
+1.6.2026 20:57:43 [Event] Server assets loaded, parsed, registered and finalized
+1.6.2026 20:57:43 [Event] Initialising systems...
+1.6.2026 20:57:43 [Notification] Entering runphase LoadGamePre
+1.6.2026 20:57:43 [Notification] Applied patch to VintageStory's BlockBehaviorFiniteSpreadingLiquid.TryLoweringLiquidLevel from Hardcore Water!
+1.6.2026 20:57:43 [Notification] Applied postfix to Vintage Story's BlockBehaviorFiniteSpreadingLiquid.CanSpreadIntoBlock from Hardcore Water!
+1.6.2026 20:57:43 [Notification] Applied patch to VintageStory's BlockBehaviorFiniteSpreadingLiquid.FindDownwardPaths from Hardcore Water!
+1.6.2026 20:57:43 [Notification] Applied prefix to Vintage Story's BlockBehaviorFiniteSpreadingLiquid.updateOwnFlowDir from Hardcore Water!
+1.6.2026 20:57:43 [Notification] Applied patch to VintageStory's BlockBehaviorRealisticSpreadingLiquid.TryLoweringLiquidLevel from Hardcore Water!
+1.6.2026 20:57:43 [Notification] Applied prefix to Realistic Water's BlockBehaviorRealisticSpreadingLiquid.CanSpreadIntoBlock from Hardcore Water!
+1.6.2026 20:57:43 [Notification] Applied patch to VintageStory's BlockBehaviorRealisticSpreadingLiquid.FindDownwardPaths from Hardcore Water!
+1.6.2026 20:57:43 [Warning] [hardcorewaterforked][realisticwater compat] Skipped patch for BlockRealistcSpreadingLiquid.updateOwnFlowDir. Method lookup failed for current game version.
+1.6.2026 20:57:44 [Notification] Reloaded 19 weather patterns, 5 wind patterns and 5 weather events
+1.6.2026 20:57:44 [Notification] Mod is configured to always use the default config. Falling back to default settings
+1.6.2026 20:57:44 [Notification] [AnimalHitch] Server-side loaded.
+1.6.2026 20:57:44 [Notification] Eco Machina: Tree Growth disabled by config (EnableTreeGrowthLifecycle=false).
+1.6.2026 20:57:44 [Notification] [WaterWheelRiver] Config loaded. flowRate=0.3 torqueFactor=1.75
+1.6.2026 20:57:44 [Notification] [archimedes_screw] [compat/realisticwater] Outlet sustain patch active
+1.6.2026 20:57:44 [Notification] [archimedes_screw] [compat/realisticwater] Compat active; relay sources disabled and outlet sustain patch enabled
+1.6.2026 20:57:44 [Notification] [archimedes_screw] [compat/source-regen] Water source regeneration disable active
+1.6.2026 20:57:44 [Warning] [archimedes_screw] [compat/waterfall] Spill transpiler expected 2 FirstCodePart equality sites (Waterfall 1.1.0); found 0. Update patch if Waterfall changed.
+1.6.2026 20:57:44 [Notification] [archimedes_screw] [compat/waterfall] Compat patch set active
+1.6.2026 20:57:44 [Notification] [archimedes_screw] Server side initialized (central water tick)
+1.6.2026 20:57:44 [Notification] Started 199 systems on Server:
+1.6.2026 20:57:44 [Notification]     Mod 'Knapster_v4.0.0.zip' (knapster):
+1.6.2026 20:57:44 [Notification]         Knapster.Program
+1.6.2026 20:57:44 [Notification]         Knapster.Features.ModMenu.Systems.KnapsterAdminModMenu
+1.6.2026 20:57:44 [Notification]         Knapster.Features.EasyTilling.Systems.EasyTillingServer
+1.6.2026 20:57:44 [Notification]         Knapster.Features.EasySmithing.Systems.EasySmithingServer
+1.6.2026 20:57:44 [Notification]         Knapster.Features.EasyPressing.Systems.EasyPressingServer
+1.6.2026 20:57:44 [Notification]         Knapster.Features.EasyPanning.Systems.EasyPanningServer
+1.6.2026 20:57:44 [Notification]         Knapster.Features.EasyMixingBowl.Systems.EasyMixingBowlServer
+1.6.2026 20:57:44 [Notification]         Knapster.Features.EasyKnapping.Systems.EasyKnappingServer
+1.6.2026 20:57:44 [Notification]         Knapster.Features.EasyHarvesting.Systems.EasyHarvestingServer
+1.6.2026 20:57:44 [Notification]         Knapster.Features.EasyGrinding.Systems.EasyGrindingServer
+1.6.2026 20:57:44 [Notification]         Knapster.Features.EasyClayForming.Systems.EasyClayFormingServer
+1.6.2026 20:57:44 [Notification]     Mod 'VSEssentials.dll' (game):
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.Core
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenTerra
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenSnowLayer
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.EntityPartitioning
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ErrorReporter
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenTerraPostProcess
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.ModCompatiblityUtil
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.NoObf.ModJsonPatchLoader
+1.6.2026 20:57:44 [Notification]         FluffyClouds.FluffyCloudsModSystem
+1.6.2026 20:57:44 [Notification]         Vintagestory.Systems.ModSystemTfEditFromAttributes
+1.6.2026 20:57:44 [Notification]         Vintagestory.Essentials.PathfindSystem
+1.6.2026 20:57:44 [Notification]         Vintagestory.Essentials.PathFindDebug
+1.6.2026 20:57:44 [Notification]         Vintagestory.Essentials.PathfindingAsync
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.JsonExport
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.ModBasicBlocksLoader
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenMaps
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenRockStrataNew
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenHotSprings
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenCreatures
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.ModSystemWorldGenStructures
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemItemRendererOptimizer
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.AiRuntimeConfig
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemSyncHarvestableDropsToClient
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemEmotes
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.LeafBlockDecay
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.POIRegistry
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.RoomRegistry
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.WeatherSystemCommands
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.WeatherSystemServer
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.SystemRemotePlayerTracking
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.WorldMapManager
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenDeposits
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.NoObf.ModRegistryObjectTypeLoader
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.LoadColorMaps
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenCaves
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenStructures
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.WgenCommands
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenBlockLayers
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenPonds
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ClothManager
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenStructuresPosPass
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenVegetationAndPatches
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenRivulets
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenLightSurvival
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.CollectibleBuffDebug
+1.6.2026 20:57:44 [Notification]     Mod 'NaturalTrailsMod_1.3.1.zip' (trailmodmaro):
+1.6.2026 20:57:44 [Notification]         TrailMod.TrailModCore
+1.6.2026 20:57:44 [Notification]         TrailMod.ModSystemTrampleProtection
+1.6.2026 20:57:44 [Notification]     Mod 'rivers_5.0.0.zip' (rivers):
+1.6.2026 20:57:44 [Notification]         Rivers.RiversApi
+1.6.2026 20:57:44 [Notification]         Rivers.NewGenTerra
+1.6.2026 20:57:44 [Notification]         Rivers.GeneratePartialFeatures
+1.6.2026 20:57:44 [Notification]         Rivers.GravelGen
+1.6.2026 20:57:44 [Notification]         Rivers.GravityBlocksPass
+1.6.2026 20:57:44 [Notification]         Rivers.RiversMod
+1.6.2026 20:57:44 [Notification]     Mod 'VSSurvivalMod.dll' (survival):
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemControlPoints
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.SurvivalCoreSystem
+1.6.2026 20:57:44 [Notification]         Vintagestory.Systems.StoryLockableDoor
+1.6.2026 20:57:44 [Notification]         Vintagestory.Client.NoObf.StoryGenFailedSystem
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.UpgradeTasks
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.ChiselBlockBulkSetMaterial
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.ModSystemDetailModeSync
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.NpcControl
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.ModSystemTiledDungeons
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemExplosionAffectedStability
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.MyceliumSystem
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModsystemButterflySpawnCondsExtra
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemFishInstaFlee
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemCatchCreature
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.FishingSupportModSystem
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemGliding
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemSnowShoveling
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemSubTongsDurability
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemSwoopDev
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.Timeswitch
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ClutterBookshelfUtil
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ScreenshakeToClientModSystem
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemResoArchiveCommands
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.StoryStructuresSpawnConditions
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemNPCHairStyling
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemSkinnableAdditions
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemVillagerDebug
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemAuction
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemBlockReinforcement
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.Core
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemBoatingSoundAndRatlineStamina
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.CharacterSystem
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.CustomSpawnConditions
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.VariablesModSystem
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModsystemElevator
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ActivityModSystem
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ActivityEditorSystem
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemFarming
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemCommandHandbook
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemTutorial
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.HeldItemMouseInputHandler
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemCorpseReturnTeleporter
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemNightVision
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.TobiasTeleporter
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModJournal
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.LiquidItemStackRenderer
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemStructureLocator
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModLootRandomizer
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemEntityOwnership
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemRifts
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemRiftWeather
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSleeping
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemSupportBeamPlacer
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.TeleporterManager
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModTemperature
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.SystemTemporalStability
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.TemporalStabilityEffects
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemClimateSpecificTraderTypes
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemWearableStats
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemEditableBook
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.Mechanics.ModSystemWindTurbulence
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.Mechanics.MechanicalPowerMod
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenDungeons
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.GenStoryStructures
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.WgenCommandsExt
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenDevastationLayer
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.RecipeRegistrySystem
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.RecipeLoader
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemFishDepletion
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemWormGrunting
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemFireFromLightning
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemOreMap
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemSnowballs
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.HumanoidOutfits
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.ModSystemDevastationEffects
+1.6.2026 20:57:44 [Notification]         Vintagestory.GameContent.DisableRecipeRegisteringSystem
+1.6.2026 20:57:44 [Notification]     Mod 'StoneQuarryRepacked.3.6.2.zip' (stonequarryrepckfipil):
+1.6.2026 20:57:44 [Notification]         StoneQuarry.Lib.Config.ConfigManager
+1.6.2026 20:57:44 [Notification]         StoneQuarry.Core
+1.6.2026 20:57:44 [Notification]         StoneQuarry.RockManager
+1.6.2026 20:57:44 [Notification]     Mod 'VSCreativeMod.dll' (creative):
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.Core
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.WorldEdit.WorldEdit
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenBlockLayersFlat
+1.6.2026 20:57:44 [Notification]         Vintagestory.ServerMods.GenLightCreative
+1.6.2026 20:57:44 [Notification]     Mod 'smithingplus_1.9.0-rc.1.zip' (smithingplus):
+1.6.2026 20:57:44 [Notification]         SmithingPlus.Config.ConfigLoader
+1.6.2026 20:57:44 [Notification]         SmithingPlus.Common.Metal.MetalMaterialLoader
+1.6.2026 20:57:44 [Notification]         SmithingPlus.Core
+1.6.2026 20:57:44 [Notification]         SmithingPlus.Test.TestCommands
+1.6.2026 20:57:44 [Notification]         SmithingPlus.HammerTweaks.HammerTweaksNetwork
+1.6.2026 20:57:44 [Notification]     Mod 'awearablelight-v1.1.9.zip' (awearablelight):
+1.6.2026 20:57:44 [Notification]         AWearableLight.AWearableLightCore
+1.6.2026 20:57:44 [Notification]     Mod 'ChiselTools1.17.1.zip' (chiseltools):
+1.6.2026 20:57:44 [Notification]         chisel.src.ChiselToolLoader
+1.6.2026 20:57:44 [Notification]     Mod 'DarkVisionV1.3.2.zip' (darkvision):
+1.6.2026 20:57:44 [Notification]         DarkVision.DarkVisionServerMod
+1.6.2026 20:57:44 [Notification]     Mod 'FarmlandNutrientManagement_1.5.1.zip' (farmlandnutrientmanagement):
+1.6.2026 20:57:44 [Notification]         FarmlandNutrientManagement.FNMCore
+1.6.2026 20:57:44 [Notification]     Mod 'hardcorewaterforked-1.4.5.zip' (hardcorewaterforked):
+1.6.2026 20:57:44 [Notification]         HardcoreWater.HardcoreWaterModSystem
+1.6.2026 20:57:44 [Notification]     Mod 'ImmersiveMining_0.2.20.zip' (immersivemining):
+1.6.2026 20:57:44 [Notification]         ImmersiveMining.ImmersiveMiningClient
+1.6.2026 20:57:44 [Notification]         ImmersiveMining.ImmersiveMiningServer
+1.6.2026 20:57:44 [Notification]     Mod 'KilnShelves_1.1.0.zip' (kilnshelves):
+1.6.2026 20:57:44 [Notification]         KilnShelves.KilnShelvesModSystem
+1.6.2026 20:57:44 [Notification]     Mod 'primitivesurvival_5.0.5.zip' (primitivesurvival):
+1.6.2026 20:57:44 [Notification]         PrimitiveSurvival.ModSystem.PrimitiveSurvivalSystem
+1.6.2026 20:57:44 [Notification]         PrimitiveSurvival.ModSystem.TreeHollows
+1.6.2026 20:57:44 [Notification]     Mod 'ProspectTogether-2.2.1.zip' (prospecttogether):
+1.6.2026 20:57:44 [Notification]         ProspectTogether.ProspectTogetherModSystem
+1.6.2026 20:57:44 [Notification]     Mod 'ACulinaryArtillery 2.0.0-dev.19.zip' (aculinaryartillery):
+1.6.2026 20:57:44 [Notification]         ACulinaryArtillery.ACulinaryArtillery
+1.6.2026 20:57:44 [Notification]         ACulinaryArtillery.ACARecipeRegistrySystem
+1.6.2026 20:57:44 [Notification]     Mod 'animalcages_v5.0.0.zip' (animalcages):
+1.6.2026 20:57:44 [Notification]         Animalcages.Animalcages
+1.6.2026 20:57:44 [Notification]     Mod 'AnimalHitch_V1.1.0.zip' (animalhitch):
+1.6.2026 20:57:44 [Notification]         AnimalHitch.AnimalHitchSystem
+1.6.2026 20:57:44 [Notification]     Mod 'archering_1.0.5.zip' (archering):
+1.6.2026 20:57:44 [Notification]         Archering.ArcheringModSystem
+1.6.2026 20:57:44 [Notification]     Mod 'Auto Map Markers 5.0.3 - Vintage Story 1.22.zip' (egocaribautomapmarkers):
+1.6.2026 20:57:44 [Notification]         Egocarib.AutoMapMarkers.MapMarkerMod
+1.6.2026 20:57:44 [Notification]     Mod 'AxleChisel-0.1.1.zip' (axlechisel):
+1.6.2026 20:57:44 [Notification]         AxleChisel.AxleChiselModSystem
+1.6.2026 20:57:44 [Notification]     Mod 'bedspawnv2_1.7.0.zip' (bedspawnv2):
+1.6.2026 20:57:44 [Notification]         BedSpawn.BedSpawnModSystem
+1.6.2026 20:57:44 [Notification]     Mod 'BloodTrail-v1.2.2.zip' (bloodtrail):
+1.6.2026 20:57:44 [Notification]         BloodTrail.Core
+1.6.2026 20:57:44 [Notification]     Mod 'butchering_1.13.3.zip' (butchering):
+1.6.2026 20:57:44 [Notification]         Butchering.src.system.ButcheringSystem
+1.6.2026 20:57:44 [Notification]     Mod 'CarryOn-1.22.0_v1.14.1.zip' (carryon):
+1.6.2026 20:57:44 [Notification]         CarryOn.CarrySystem
+1.6.2026 20:57:44 [Notification]     Mod 'chop_1.0.0.zip' (chop):
+1.6.2026 20:57:44 [Notification]         Chop.ChopModSystem
+1.6.2026 20:57:44 [Notification]     Mod 'firepitsshowfuel_2.0.0-dev.1.zip' (firepitsshowfuel):
+1.6.2026 20:57:44 [Notification]         FirepitsShowFuel.FirepitsShowFuelModSystem
+1.6.2026 20:57:44 [Notification]     Mod 'foodshelves_3.0.3.zip' (foodshelves):
+1.6.2026 20:57:44 [Notification]         FoodShelves.Core
+1.6.2026 20:57:44 [Notification]     Mod 'Footprints-v1.2.2.zip' (footprints):
+1.6.2026 20:57:44 [Notification]         Core
+1.6.2026 20:57:44 [Notification]     Mod 'MoveWrench-0.5.14.zip' (movedoors):
+1.6.2026 20:57:44 [Notification]         MoveDoors.MoveDoorsModSystem
+1.6.2026 20:57:44 [Notification]     Mod 'orekiwoofsbeehives_v2.0.0-v1.21.0.zip' (orekiwoofsbeehives):
+1.6.2026 20:57:44 [Notification]         OrekiWoofsBees.Common.PlantPositionRegistryModSystem2
+1.6.2026 20:57:44 [Notification]         OrekiWoofsBeehives.OrekiWoofsBeehivesModSystem
+1.6.2026 20:57:44 [Notification]     Mod 'panningmachine_1.0.11.zip' (panningmachine):
+1.6.2026 20:57:44 [Notification]         PanningMachine.PanningMachineModSystem
+1.6.2026 20:57:44 [Notification]     Mod 'petai_v5.1.1.zip' (petai):
+1.6.2026 20:57:44 [Notification]         PetAI.PetAI
+1.6.2026 20:57:44 [Notification]     Mod 'placeonslabs_1.1.3.zip' (placeonslabs):
+1.6.2026 20:57:44 [Notification]         PlaceOnSlabs.Source.Systems.ConfigSystem
+1.6.2026 20:57:44 [Notification]         PlaceOnSlabs.Source.Systems.MainSystem
+1.6.2026 20:57:44 [Notification]     Mod 'pottery-wheel_2.0.1.zip' (claywheel):
+1.6.2026 20:57:44 [Notification]         SimplePotteryWheel.ClayWheelModSystem
+1.6.2026 20:57:44 [Notification]     Mod 'realisticwater_0.2.2.zip' (realisticwater):
+1.6.2026 20:57:44 [Notification]         RealisticWater.RealisticWaterModSystem
+1.6.2026 20:57:44 [Notification]     Mod 'roamingbees_v2.0.0-v1.21.0.zip' (roamingbees):
+1.6.2026 20:57:44 [Notification]         OrekiWoofsBees.Common.PlantPositionRegistryModSystem2
+1.6.2026 20:57:44 [Notification]         RoamingBees.RoamingBeesModSystem
+1.6.2026 20:57:44 [Notification]     Mod 'stonebakeoven_1.3.0.zip' (stonebakeoven):
+1.6.2026 20:57:44 [Notification]         StoneBakeOven.OatsOven
+1.6.2026 20:57:44 [Notification]     Mod 'toolsmith_1.2.16.zip' (toolsmith):
+1.6.2026 20:57:44 [Notification]         Toolsmith.ToolsmithModSystem
+1.6.2026 20:57:44 [Notification]         Toolsmith.RecipeRegisterModSystem
+1.6.2026 20:57:44 [Notification]     Mod 'vsecomachina_0.6.1.zip' (vsecomachina):
+1.6.2026 20:57:44 [Notification]         vsecomachina.EcoMachinaModSystem
+1.6.2026 20:57:44 [Notification]     Mod 'vsroofing_1.5.7.zip' (vsroofing):
+1.6.2026 20:57:44 [Notification]         VSRoofing.VSRoofingModSystem
+1.6.2026 20:57:44 [Notification]     Mod 'Waterfall_v1.2.2.zip' (waterfall):
+1.6.2026 20:57:44 [Notification]         WaterfallMod.Waterfall
+1.6.2026 20:57:44 [Notification]     Mod 'waterwheelforrivers.zip' (waterwheelriver):
+1.6.2026 20:57:44 [Notification]         WaterWheelRiver.WaterWheelRiverModSystem
+1.6.2026 20:57:44 [Notification]     Mod 'wolftaming_v5.0.1.zip' (wolftaming):
+1.6.2026 20:57:44 [Notification]         WolfTaming.Wolftaming
+1.6.2026 20:57:44 [Notification]     Mod 'forgetfulseeds-1.0.0.zip' (forgetfulseeds):
+1.6.2026 20:57:44 [Notification]         ForgetfulSeeds.ForgetfulSeedsMod
+1.6.2026 20:57:44 [Notification]     Mod 'thetruearchscrew-0.1.40.zip' (thetruearchimedesscrew):
+1.6.2026 20:57:44 [Notification]         ArchimedesScrew.ArchimedesScrewModSystem
+1.6.2026 20:57:44 [Event] 28 traits loaded from 2 files
+1.6.2026 20:57:44 [Event] 6 classes loaded from 1 files
+1.6.2026 20:57:45 [Notification] [hardcorewaterforked] Archimedes compatibility active.
+1.6.2026 20:57:45 [Notification] [archimedes_screw] SaveGameLoaded: loading mod water state (then re-merge chunk ownership if controllers initialized early)
+1.6.2026 20:57:45 [Notification] [archimedes_screw] Load: no mod blob archimedes_screw/controllerowned (first run or legacy save); ownership will come from block entities when chunks load
+1.6.2026 20:57:45 [Notification] [archimedes_screw] Loaded water manager state: screws=0, controllers=0, trackedSources=0, lockedVanilla=0
+1.6.2026 20:57:46 [Warning] 'ItemWearable' class is obsolete. Please, replace it with 'Wearable' behavior for chiseltools:clothes-head-ptahs-diadem instead
+1.6.2026 20:57:46 [Warning] 'ItemWearable' class is obsolete. Please, replace it with 'Wearable' behavior for chiseltools:clothes-head-ballcap instead
+1.6.2026 20:57:46 [Warning] 'ItemWearable' class is obsolete. Please, replace it with 'Wearable' behavior for chiseltools:clothes-head-nights instead
+1.6.2026 20:57:46 [Notification] Server map set
+1.6.2026 20:57:46 [Event] A world unbroken...
+1.6.2026 20:57:46 [Notification] Entering runphase GameReady
+1.6.2026 20:57:46 [Notification] Entering runphase WorldReady
+1.6.2026 20:57:46 [Event] The center unfolding...
+1.6.2026 20:57:46 [Event] Starting world generators...
+1.6.2026 20:57:46 [Notification] Reloaded 35 tree generators
+1.6.2026 20:57:46 [Event] Loading 7x7x8 spawn chunks...
+1.6.2026 20:57:46 [Event] 0% (49 in queue)
+1.6.2026 20:57:46 [Event] The carved mountains...
+1.6.2026 20:57:47 [Event] Begin game ticking...
+1.6.2026 20:57:47 [Event] ... it calls to you
+1.6.2026 20:57:47 [Notification] Entering runphase RunGame
+1.6.2026 20:57:47 [Notification] Successfully loaded 0 waypoints
+1.6.2026 20:57:47 [Notification] Starting server threads
+1.6.2026 20:57:47 [Event] Singleplayer Server now running!
+1.6.2026 20:57:47 [Event] Return again.
+1.6.2026 20:57:47 [Notification] Please be aware that as of 1.20, servers default configurations have changed - servers no longer register themselves to the public servers list and are invite-only (whitelisted) out of the box. If you desire so, you can enable server advertising with '/serverconfig advertise on' and disable the whitelist mode with '/serverconfig whitelistmode off'
+1.6.2026 20:57:47 [Notification] [archimedes_screw] Post-load managed fluid reactivation pass touched=0 (anchors=0)
+1.6.2026 20:57:47 [Notification] [archimedes_screw] Post-load managed fluid reactivation pass touched=0 (anchors=0)
+1.6.2026 20:57:48 [Notification] Sending server identification. Server control privilege is True
+1.6.2026 20:57:48 [Notification] [archimedes_screw] Post-load managed fluid reactivation pass touched=0 (anchors=0)
+1.6.2026 20:57:49 [Notification] [archimedes_screw] Post-load managed fluid reactivation pass touched=0 (anchors=0)
+1.6.2026 20:57:50 [Notification] [archimedes_screw] Post-load managed fluid reactivation pass touched=0 (anchors=0)
+1.6.2026 20:57:50 [Notification] [archimedes_screw] Post-load managed fluid reactivation pass touched=0 (anchors=0)
+1.6.2026 20:57:51 [Notification] [archimedes_screw] Post-load managed fluid reactivation pass touched=0 (anchors=0)
+1.6.2026 20:57:52 [Notification] [archimedes_screw] Post-load managed fluid reactivation pass touched=0 (anchors=0)
+1.6.2026 20:57:52 [Notification] [archimedes_screw] Post-load managed fluid reactivation finished; touched=0
+1.6.2026 20:57:58 [Warning] Server overloaded. A tick took 1938ms to complete.
+1.6.2026 20:57:59 [Notification] A Client attempts connecting via Dummy connection on 127.0.0.1:0, assigning client id 1
+1.6.2026 20:57:59 [Notification] Client 1 uid YrY0v8GF7MEGKM6i4vk1QHL/ attempting identification. Name: Midgetman69
+1.6.2026 20:57:59 [Notification] Delayed join, need to load one spawn chunk first.
+1.6.2026 20:57:59 [Notification] Placing Midgetman69 at 512011.5626220703 3.875 511953.5211791992
+1.6.2026 20:58:07 [Event] Midgetman69 127.0.0.1:0 joins.
+1.6.2026 20:58:07 [Notification] A client reconnected, resuming game calendar.
+1.6.2026 20:58:10 [Error] [medievalexpansion] Exception thrown when attempting to retrieve all types of the assembly medievalexpansion, Version=3.13.1.0, Culture=neutral, PublicKeyToken=null. Will ignore asssembly. Loader exceptions:
+1.6.2026 20:58:10 [Error] [medievalexpansion] Exception: Unable to load one or more of the requested types.
+Method 'HasMechPowerConnectorAt' in type 'medievalexpansion.src.block.mechanical.WaterWheel' from assembly 'medievalexpansion, Version=3.13.1.0, Culture=neutral, PublicKeyToken=null' does not have an implementation.
+   at System.Reflection.RuntimeModule.GetDefinedTypes()
+   at System.Reflection.RuntimeModule.GetTypes()
+   at Vintagestory.Common.ModContainer.GetModSystems(Assembly assembly) in VintagestoryLib\Common\API\ModContainer.cs:line 690
+1.6.2026 20:58:10 [Error] [medievalexpansion] Exception: Method 'HasMechPowerConnectorAt' in type 'medievalexpansion.src.block.mechanical.WaterWheel' from assembly 'medievalexpansion, Version=3.13.1.0, Culture=neutral, PublicKeyToken=null' does not have an implementation.
+   at Vintagestory.API.Common.LoggerBase.Error(Exception e) in VintagestoryApi\Common\API\ILogger.cs:line 269
+   at Vintagestory.Common.ModContainer.GetModSystems(Assembly assembly) in VintagestoryLib\Common\API\ModContainer.cs:line 690
+   at Vintagestory.Common.ModContainer.<>c__DisplayClass38_0.<LoadAssembly>b__1(Assembly ass) in VintagestoryLib\Common\API\ModContainer.cs:line 609
+   at System.Linq.Enumerable.IEnumerableWhereIterator`1.ToList()
+   at Vintagestory.Common.ModContainer.LoadAssembly(ModCompilationContext compilationContext, ModAssemblyLoader loader) in VintagestoryLib\Common\API\ModContainer.cs:line 606
+   at Vintagestory.Common.ModLoader.instantiateMods(List`1 mods) in VintagestoryLib\Common\API\ModLoader.cs:line 286
+   at Vintagestory.Common.ModLoader.LoadMods(List`1 mods, IEnumerable`1 disabledModsByIdAndVersion) in VintagestoryLib\Common\API\ModLoader.cs:line 262
+   at Vintagestory.Common.ModLoader.LoadMods(IEnumerable`1 disabledModsByIdAndVersion) in VintagestoryLib\Common\API\ModLoader.cs:line 199
+   at Vintagestory.Server.ServerSystemModHandler.OnLoadAssets() in VintagestoryLib\Server\Systems\ModHandler.cs:line 46
+   at Vintagestory.Server.ServerMain.EnterRunPhase(EnumServerRunPhase runPhase) in VintagestoryLib\Server\ServerMain.cs:line 670
+   at Vintagestory.Server.ServerMain.Launch() in VintagestoryLib\Server\ServerMain.cs:line 570
+   at Vintagestory.Client.ClientProgram.ServerThreadStart() in VintagestoryLib\Client\ClientProgram.cs:line 487
+   at System.Threading.Thread.StartCallback()
+1.6.2026 20:58:10 [Error] [medievalexpansion] An exception was thrown when trying to load assembly:
+1.6.2026 20:58:10 [Error] [medievalexpansion] Exception: C:\Users\codye\AppData\Roaming\VintagestoryData\Cache\unpack\medievalexpansion-3.13.1.zip_8b717d5e1e2f\medievalexpansion.dll declared as code mod, but there are no .dll files that contain at least one ModSystem or has a ModInfo attribute
+   at Vintagestory.Common.ModContainer.LoadAssembly(ModCompilationContext compilationContext, ModAssemblyLoader loader) in VintagestoryLib\Common\API\ModContainer.cs:line 614
+1.6.2026 20:58:10 [Error] Patch 0 in immersivemining:patches/aws/shepeherd axe.json: File walkingstick:itemtypes/tool/walkingsticks/walkingstick-shepherds.json not found
+1.6.2026 20:58:10 [Error] Patch 1 in immersivemining:patches/aws/shepeherd axe.json: File walkingstick:itemtypes/tool/walkingsticks/walkingstick-shepherds.json not found
+1.6.2026 20:58:10 [Error] Patch 0 in immersivemining:patches/idg/axes.json: File indappledgroves:itemtypes/tools/forestaxe.json not found
+1.6.2026 20:58:10 [Error] Patch 1 in immersivemining:patches/idg/axes.json: File indappledgroves:itemtypes/tools/forestaxe.json not found
+1.6.2026 20:58:10 [Error] Patch 2 in immersivemining:patches/idg/axes.json: File indappledgroves:itemtypes/tools/maul.json not found
+1.6.2026 20:58:10 [Error] Patch 3 in immersivemining:patches/idg/axes.json: File indappledgroves:itemtypes/tools/maul.json not found
+1.6.2026 20:58:10 [Error] Patch 4 in immersivemining:patches/idg/axes.json: File indappledgroves:itemtypes/tools/grubaxe.json not found
+1.6.2026 20:58:10 [Error] Patch 5 in immersivemining:patches/idg/axes.json: File indappledgroves:itemtypes/tools/grubaxe.json not found
+1.6.2026 20:58:10 [Error] Patch 9 in butchering:patches/compatibility/expandedfoods/dough.json: File expandedfoods:itemtypes/food/mixing/breadedmushroomnugget.json not found
+1.6.2026 20:58:10 [Error] Patch 10 in butchering:patches/compatibility/expandedfoods/dough.json: File expandedfoods:itemtypes/food/mixing/breadedvegetablenugget.json not found
+1.6.2026 20:58:10 [Error] Patch 0 in butchering:patches/compatibility/expandedfoods/dumpling.json: File game:itemtypes/food/mixing/dumpling.json not found
+1.6.2026 20:58:10 [Warning] Failed resolving crafting recipe ingredient with code game:lantern-up in Grid recipe
+1.6.2026 20:58:10 [Error] Grid Recipe with output 'chiseltools:palette-light' contains an ingredient that cannot be resolved: Block code game:lantern-up
+1.6.2026 20:58:10 [Warning] Crafting recipe Item hqzlights:metalstrip-* does not resolve to any collectible. Grid recipe expandedfoods:recipes/grid/braziers/brazier.json will never match.
+1.6.2026 20:58:10 [Warning] Crafting recipe Item hqzlights:metalstrip-* does not resolve to any collectible. Grid recipe expandedfoods:recipes/grid/braziers/brazier.json will never match.
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:doortool-bismuthbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:doortool-blackbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:doortool-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:doortool-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:doortool-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:doortool-tinbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:handplaner-bismuthbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:handplaner-blackbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:handplaner-copper has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:handplaner-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:handplaner-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:handplaner-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:handplaner-tinbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:handwedge-bismuthbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:handwedge-blackbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:handwedge-copper has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:handwedge-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:handwedge-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:handwedge-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:handwedge-tinbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:laddermaker-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:laddermaker-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:laddermaker-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:locktool-bismuthbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:locktool-blackbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:locktool-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:locktool-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:locktool-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:locktool-tinbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:paintbrush-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:paintbrush-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:paintbrush-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:paintscraper-bismuthbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:paintscraper-blackbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:paintscraper-copper has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:paintscraper-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:paintscraper-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:paintscraper-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:paintscraper-tinbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:pantograph-bismuthbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:pantograph-blackbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:pantograph-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:pantograph-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:pantograph-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:pantograph-tinbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:pathmaker-bismuthbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:pathmaker-blackbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:pathmaker-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:pathmaker-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:pathmaker-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:pathmaker-tinbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:simplepantograph-bismuthbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:simplepantograph-blackbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:simplepantograph-copper has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:simplepantograph-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:simplepantograph-meteoriciron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:simplepantograph-steel has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output chiseltools:simplepantograph-tinbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output archimedes_screw:chutesection-lead has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output butchering:hook-bismuthbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output butchering:hook-blackbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output butchering:hook-copper has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output butchering:hook-iron has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] Smithing recipe with output butchering:hook-tinbronze has no code. For 1.23 all smithing recipes need to have a unique, unchanging code
+1.6.2026 20:58:10 [Warning] [hardcorewaterforked][realisticwater compat] Skipped patch for BlockRealistcSpreadingLiquid.updateOwnFlowDir. Method lookup failed for current game version.
+1.6.2026 20:58:10 [Warning] [archimedes_screw] [compat/waterfall] Spill transpiler expected 2 FirstCodePart equality sites (Waterfall 1.1.0); found 0. Update patch if Waterfall changed.
+1.6.2026 20:58:10 [Warning] 'ItemWearable' class is obsolete. Please, replace it with 'Wearable' behavior for chiseltools:clothes-head-ptahs-diadem instead
+1.6.2026 20:58:10 [Warning] 'ItemWearable' class is obsolete. Please, replace it with 'Wearable' behavior for chiseltools:clothes-head-ballcap instead
+1.6.2026 20:58:10 [Warning] 'ItemWearable' class is obsolete. Please, replace it with 'Wearable' behavior for chiseltools:clothes-head-nights instead
+1.6.2026 20:58:10 [Warning] Server overloaded. A tick took 1938ms to complete.
+1.6.2026 20:58:14 [Notification] Server ticking has been suspended
+1.6.2026 20:58:15 [Notification] A client reconnected, resuming game calendar.
+1.6.2026 20:58:15 [Notification] Server ticking has been resumed
+1.6.2026 20:58:19 [Notification] Server ticking has been suspended
+1.6.2026 20:58:28 [Notification] Client 1 disconnected: Server shutting down - Exit request by client
+1.6.2026 20:58:29 [Notification] Last player disconnected, compacting large object heap...
+1.6.2026 20:58:30 [Event] Player Midgetman69 got removed. Reason: Server shutting down - Exit request by client
+1.6.2026 20:58:30 [Notification] Server stop requested, begin shutdown sequence. Stop reason: Exit request by client
+1.6.2026 20:58:30 [Notification] Entering runphase Shutdown
+1.6.2026 20:58:32 [Notification] [archimedes_screw] [compat/realisticwater] Outlet sustain patch unpatched
+1.6.2026 20:58:32 [Notification] [archimedes_screw] [compat/source-regen] Patch unpatched
+1.6.2026 20:58:32 [Notification] [archimedes_screw] [compat/waterfall] Compat unpatched
+1.6.2026 20:58:32 [Event] Mods and systems notified, now saving everything...
+1.6.2026 20:58:32 [Event] It pauses.
+1.6.2026 20:58:32 [Event] One last gaze...
+1.6.2026 20:58:32 [Event] Saved player world data...
+1.6.2026 20:58:32 [Event] Saved map regions...
+1.6.2026 20:58:32 [Event] Then all goes quiet...
+1.6.2026 20:58:32 [Event] Saved map chunks...
+1.6.2026 20:58:32 [Event] The waters recede...
+1.6.2026 20:58:32 [Event] Saved loaded chunks...
+1.6.2026 20:58:32 [Event] The mountains fade...
+1.6.2026 20:58:32 [Event] The dark settles in.
+1.6.2026 20:58:32 [Event] Saved generating chunks...
+1.6.2026 20:58:32 [Event] Saved savegamedata...2
+1.6.2026 20:58:32 [Event] World saved! Saved 1 chunks, 1 mapchunks, 23 mapregions.
+1.6.2026 20:58:32 [Event] It sighs...
+1.6.2026 20:58:32 [Event] Shutting down 10 server threads... 
+1.6.2026 20:58:32 [Event] Killed console thread
+1.6.2026 20:58:32 [Event] Alone again...
+1.6.2026 20:58:32 [Event] All threads gracefully shut down
+1.6.2026 20:58:32 [Event] Time to rest.
+1.6.2026 20:58:32 [Event] Doing last tick...
+1.6.2026 20:58:32 [Event] Stopped the server!
